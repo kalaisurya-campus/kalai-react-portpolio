@@ -1,0 +1,57 @@
+// :root {
+//     --bg-color: red;
+//     --text-main: orange;
+// }
+// :dark {
+//     --texts-clor: blue;
+// }
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+// body {
+//     background-color: var(--bg-color);
+// }
+
+// .colo-items {
+//     width: 40px;
+//     height: 40px;
+//     background-color: var(--bg-color);
+// }
+// .color-list {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 1rem;
+// }
+// p {
+//     color: var(--texts-clor);
+// }
+@use "scss" as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// .darks {
+//     background-color: black;
+//     height: 100vh;
+//     overflow: hidden;
+//     color: white;
+// }
+// .lights {
+//     background-color: white;
+//     color: black !important;
+// }
+
+.port-polio {
+    width: 100vw;
+    height: auto;
+
+    @include themed() {
+        background: t($background);
+        color: t($text);
+    }
+}

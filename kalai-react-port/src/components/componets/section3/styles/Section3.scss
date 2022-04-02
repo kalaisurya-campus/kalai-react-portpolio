@@ -1,0 +1,32 @@
+@use "../../../../scss/abstract/" as *;
+
+.section3 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    .inside-section3 {
+        display: flex;
+        width: 100%;
+        .left-section3 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+        }
+        .right-section3 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+.thinks
+{
+    position: absolute;
+    top:50%;
+    left:35%;
+}
