@@ -23,7 +23,7 @@ const Imagesection6 = {
             image: section63,
             title: "About Startup Business",
             day: "15 July 2020",
-            description: "Review",
+            description: "Demo",
         },
     ],
 };

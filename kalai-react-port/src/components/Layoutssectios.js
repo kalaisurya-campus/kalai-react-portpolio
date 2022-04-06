@@ -13,16 +13,16 @@ import TopButton from "./componets/topbutton/TopButton";
 function Layoutssectios({ dark, setdark }) {
     return (
         <div>
-            <Navbar dark={dark} setdark={setdark} />
-            <Section1 />
+            {/* <Navbar dark={dark} setdark={setdark} /> */}
+            {/* <Section1 />
             <Section2 />
-            <Section3 />
+            <Section3 /> */}
             <Section4 />
-            <Section5 />
+            {/* <Section5 />
             <Section6 />
             <Section7 />
             <Footer />
-            <TopButton />
+            <TopButton /> */}
         </div>
     );
 }

@@ -169,7 +169,7 @@ function Section2Mobile(props) {
                     </div>
                     <div
                         className="car1 mb-5 mt-3"
-                        data-aos="fade-left"
+                        data-aos="fade-top"
                         data-aos-easing="linear"
                         data-aos-duration="1500"
                     >

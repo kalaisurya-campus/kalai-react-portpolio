@@ -33,25 +33,25 @@ function Everything(props) {
     return (
         <>
             <div className="main-ever">
-            <div className="container mt-5">
-                <div className="row justify-content-center gap-5">
-                    {imagedata.images.map((items, index) => {
-                        return (
-                            <div
-                                class="card col-lg-3 col-md-10 col-sm-11 gap-5"
-                                key={index}
-                            >
-                                <img
-                                    src={items.image}
-                                    class="card-img-top"
-                                    alt="No Images...."
-                                    onClick={() => handleimage(items.id)}
-                                />
-                            </div>
-                        );
-                    })}
+                <div className="container mt-5">
+                    <div className="row justify-content-center gap-5">
+                        {imagedata.images.map((items, index) => {
+                            return (
+                                <div
+                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mt-2 mb-4"
+                                    key={index}
+                                >
+                                    <img
+                                        src={items.image}
+                                        class="card-img-top"
+                                        alt="No Images...."
+                                        onClick={() => handleimage(items.id)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
             </div>
             <p
                 type="button"

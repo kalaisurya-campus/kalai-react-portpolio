@@ -9,6 +9,22 @@
     right: -60px;
     position: fixed;
     z-index: 70000000000000000;
+    @include xsBreakPoint {
+        width: 40%;
+        right: -1%;
+    }
+    @include smBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
+    @include mdBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
+    @include lgBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
 }
 .fiexd-orgins {
     position: absolute;
@@ -41,6 +57,5 @@ a:hover {
     }
     100% {
         transform: translateY(-30px);
-     
     }
 }

@@ -8,9 +8,10 @@ import Pre from "./pre/Pre";
 import offsetslefts from "../../../assets/kalai-port/offset-left.png";
 import rightoffset from "../../../assets/kalai-port/offset.png";
 import star from "../../../assets/kalai-port/star.png";
+import persan from '../../../assets/kalai-port/san.png';
 function Section4(props) {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
@@ -28,7 +29,7 @@ function Section4(props) {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 },
             },
             {
@@ -37,6 +38,7 @@ function Section4(props) {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
+                    dots: false,
                 },
             },
             {
@@ -45,6 +47,7 @@ function Section4(props) {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
+                    dots: false,
                 },
             },
 
@@ -53,6 +56,7 @@ function Section4(props) {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: false,
                 },
             },
         ],
@@ -101,7 +105,7 @@ function Section4(props) {
                                     <div className="card col-lg-11 col-xs-12">
                                         <img
                                             src={items.image}
-                                            class="card-img-top"
+                                            class="card-img-tops"
                                             alt={items.title}
                                         />
                                         <div class="card-body">
@@ -166,8 +170,8 @@ function Section4(props) {
                                 flexDirection: "column",
                             }}
                         >
-                            <div className="stars mb-5">
-                                <img src={star} className="stars" />
+                            <div className="sans mb-5">
+                                <img src={persan} className="san" />
                             </div>
                             <img src={Artemptyimage.image} className="w-50" />
                         </div>

@@ -3,8 +3,73 @@
 .section6 {
     width: 100%;
     height: auto;
-    padding-bottom: 30px;
- 
+    position: relative;
+    .person-work {
+        .pa1 {
+            position: absolute;
+
+            @include xsBreakPoint {
+                width: 10%;
+                top: 4%;
+                left: 12%;
+            }
+            @include smBreakPoint {
+                width: 10%;
+                top: 4%;
+                left: 5%;
+            }
+            @include mdBreakPoint {
+                width: 10%;
+                top: 4%;
+                left: 5%;
+            }
+            @include lgBreakPoint {
+                width: 18%;
+                top: 6%;
+                left: 1%;
+            }
+            @include xlBreakPoint {
+                width: 18%;
+                top: 6%;
+                left: 1%;
+            }
+            @include xxlBreakPoint {
+                left: 1%;
+            }
+        }
+    }
+    .persons {
+        .pa2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include xsBreakPoint {
+                width: 8%;
+                bottom: -1%;
+            }
+            @include smBreakPoint {
+                width: 8%;
+                bottom: -1%;
+            }
+            @include mdBreakPoint {
+                width: 8%;
+                bottom: -1%;
+            }
+            @include lgBreakPoint {
+                width: 30%;
+                bottom: -1%;
+            }
+            @include xlBreakPoint {
+                width: 34%;
+                bottom: -1%;
+            }
+            @include xxlBreakPoint {
+                bottom: -1%;
+                right: 0;
+                object-fit: cover;
+            }
+        }
+    }
     .latest {
         padding-left: 3rem;
         font-size: 2.5rem;
@@ -16,6 +81,23 @@
         border-radius: 20px;
         background-color: $back_export_color-white;
         cursor: pointer;
+        position: relative;
+        .demo {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            width: 20%;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #04a9f3;
+            color: white;
+            font-size: 1rem;
+            @include lgBreakPoint {
+                width: 30%;
+            }
+        }
 
         .card-img-top {
             height: 250px;
@@ -42,18 +124,19 @@
         animation: rotatesset 5s ease-in-out infinite;
     }
 }
-
+.sta-bike {
+    width: 100%;
+    border-radius: 10px;
+}
 @keyframes rotatesset {
-    0%,100%
-    {
+    0%,
+    100% {
         transform: rotate(0deg);
     }
-    50%
-    {
-        transform: rotate(360deg);
+    50% {
+        transform: rotate(20deg);
     }
-    100%
-    {
+    100% {
         transform: rotate(0);
     }
 }

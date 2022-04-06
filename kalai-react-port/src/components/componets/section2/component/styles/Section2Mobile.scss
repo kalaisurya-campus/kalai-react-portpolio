@@ -104,8 +104,16 @@
     }
     .cars11 {
         // width: 100%;
+        @include xsBreakPoint {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         @include smBreakPoint {
-            width: 70%;
+            width: 60%;
             margin: 0 auto;
             text-align: center;
             display: flex;
@@ -113,7 +121,7 @@
             justify-content: center;
         }
         @include mdBreakPoint {
-            width: 70%;
+            width: 40%;
             margin: 0 auto;
             text-align: center;
             display: flex;

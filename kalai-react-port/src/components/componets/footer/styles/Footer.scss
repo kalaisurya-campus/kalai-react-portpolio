@@ -24,6 +24,7 @@
         position: absolute;
         bottom: 25%;
         right: 20%;
+        z-index: 800000000000;
         @include lgBreakPoint {
             right: 0;
             bottom: 0;
@@ -66,6 +67,108 @@
         }
         @include xxlBreakPoint {
             left: 7%;
+        }
+    }
+    .box-footers {
+        .button-homes {
+            position: absolute;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #04a9f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #04a9f3;
+            animation: home 5s ease-in-out infinite;
+
+            @include lgBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+            @include xlBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .button-aboutuss {
+            position: absolute;
+            left: 50%;
+            top: 15%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #04a9f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #04a9f3;
+            animation: about 5s ease-in-out infinite;
+
+            @include lgBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+            @include xlBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .button-contacts {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #04a9f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #04a9f3;
+            animation: contact 5s ease-in-out infinite;
+
+            @include lgBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+            @include xlBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .button-servicess {
+            position: absolute;
+            right: 9%;
+            bottom: 40%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #04a9f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #04a9f3;
+            animation: service 5s ease-in-out infinite;
+            @include lgBreakPoint {
+                width: 120px;
+                height: 120px;
+            }
+            @include xlBreakPoint {
+                width: 120px;
+                height: 120px;
+                bottom: 50%;
+            }
+            @include xxlBreakPoint {
+                bottom: 50%;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
         }
     }
 }

@@ -3,7 +3,6 @@
 .section5 {
     width: 100%;
     height: auto;
-    padding-bottom: 40px;
     @include xsBreakPoint {
         height: auto !important;
         display: flex;
@@ -11,6 +10,8 @@
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
+        overflow: hidden;
+        overflow-y: auto;
     }
     @include smBreakPoint {
         height: auto !important;
@@ -19,6 +20,8 @@
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
+        overflow: hidden;
+        overflow-y: auto;
     }
     @include mdBreakPoint {
         height: auto !important;
@@ -27,6 +30,8 @@
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
+        overflow: hidden;
+        overflow-y: auto;
     }
     @include lgBreakPoint {
         height: auto !important;

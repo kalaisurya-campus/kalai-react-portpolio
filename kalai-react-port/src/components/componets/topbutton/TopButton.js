@@ -26,12 +26,7 @@ function TopButton(props) {
                         <img src={rotes} className="toprotest" />
                     </div>
                 )}
-                <div className="fiexd-orgins">
-                    <a href="#home" className="home">Home</a>
-                    <a href="#aboutus">Aboutus</a>
-                    <a href="#service">Service</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                
             </div>
         </>
     );
