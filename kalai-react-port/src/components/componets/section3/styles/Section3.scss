@@ -4,29 +4,161 @@
     width: 100%;
     height: auto;
     padding-bottom: 30px;
+
     .inside-section3 {
         display: flex;
         width: 100%;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
         .left-section3 {
-            flex: 1;
+            width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
             flex-direction: column;
+            gap:10px;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            .g1 {
+                @include xsBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include mdBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include lgBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .g2 {
+                @include xsBreakPoint {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include mdBreakPoint {
+                    width: 90%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include lgBreakPoint {
+                    width: 90%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
         }
         .right-section3 {
-            flex: 1;
+            width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            @include xsBreakPoint {
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            .g3 {
+                @include xsBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include mdBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include lgBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .g4 {
+                @include xsBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include smBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include mdBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include lgBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
         }
     }
-}
-.thinks
-{
-    position: absolute;
-    top:50%;
-    left:35%;
 }

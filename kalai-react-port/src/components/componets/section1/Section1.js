@@ -12,10 +12,13 @@ import offsetleft from "../../../assets/kalai-port/offset-left.png";
 import round1 from "../../../assets/kalai-port/section-round1.png";
 import round2 from "../../../assets/kalai-port/section-round2.png";
 import purush from "../../../assets/kalai-port/purush.png";
+import Mobilesection1 from "./components/mobilesection1/Mobilesection1";
+import circles from '../../../assets/kalai-port/topcirles.png';
 
 function Section1(props) {
     return (
-        <div className="section1">
+        <>
+        <div className="section1 d-none d-lg-block" id="home">
             <div className="secion1-inside">
                 <div className="section1-left col-lg-6 col-md-10 col-sm-11 my-auto ">
                     <div className="offset-top">
@@ -46,7 +49,7 @@ function Section1(props) {
                         <img src={purush} className="purushed" />
                     </div>
                     <div className="image-rounds">
-                        <img src={round1} className="round1" />
+                        <img src={circles} className="round1" />
                     </div>
                     <div className="smile1">
                         <img src={sm1} className="smiles" />
@@ -63,12 +66,16 @@ function Section1(props) {
                     <div className="smile5">
                         <img src={sm5} className="smiles4" />
                     </div>
-                    <div className="image-round">
+                    {/* <div className="image-round">
                         <img src={round2} className="round2" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
+        <div>
+            <Mobilesection1/>
+        </div>
+        </>
     );
 }
 

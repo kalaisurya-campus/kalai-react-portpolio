@@ -1,32 +1,38 @@
 @use "../../../../scss//abstract/" as *;
 
-// p {
-//     font-size: 3rem;
-//     font-weight: 700;
-//     @include themed() {
-//         color: t($orange);
-//     }
-// }
-
 .section1 {
     width: 100%;
     height: 100vh;
     position: relative;
     // padding-bottom: 60px;
     overflow: hidden;
+    @include xlBreakPoint {
+        // height: auto !important;
+        border: 2px solid red;
+        padding: 10px;
+    }
+
     .secion1-inside {
         width: 100%;
         height: 100%;
         display: flex;
         margin: 0 auto;
-
         z-index: 10000;
+
         .section1-left {
             width: 50%;
             display: flex;
             flex-direction: column;
-
             height: 100%;
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+            }
             .content-section1 {
                 display: flex;
                 flex-direction: column;
@@ -47,16 +53,34 @@
                 position: absolute;
                 top: 5%;
                 left: 28%;
+                @include lgBreakPoint {
+                    left: 32%;
+                }
+                @include xlBreakPoint {
+                    left: 32%;
+                    top: 4% !important;
+                }
                 .section-image {
                     width: 100%;
                     height: 400px !important;
                     transform: translateY(0);
                     animation: bounces 3s ease-in-out infinite;
+                    @include lgBreakPoint {
+                        width: 100%;
+                        height: 220px !important;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                        height: 280px !important;
+                    }
                 }
             }
             .hy {
                 font-size: 4rem;
                 font-size: 700;
+                @include xlBreakPoint {
+                    font-size: 4.2rem;
+                }
             }
             .kalai {
                 color: $back_export_color-white;
@@ -65,6 +89,16 @@
             .loream {
                 font-size: 2rem;
                 width: 90%;
+                @include lgBreakPoint {
+                    font-size: 1.4rem;
+                    width: 50%;
+                }
+                @include xlBreakPoint {
+                    width: 60%;
+                }
+                @include xxlBreakPoint {
+                    width: 60%;
+                }
             }
             .hire {
                 width: 25%;
@@ -80,59 +114,117 @@
                 font-size: 1.6rem;
                 font-weight: 700;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                @include lgBreakPoint {
+                    width: 20%;
+                }
+                @include xlBreakPoint {
+                    width: 20%;
+                }
+                @include xxlBreakPoint {
+                    width: 16%;
+                }
             }
             .bottom-image {
                 position: absolute;
                 top: 65%;
                 left: 25%;
+                @include xlBreakPoint {
+                    left: 30%;
+                    top: 67%;
+                }
                 .rocket {
                     width: 100%;
                     height: 320px;
                     transform: rotate(-15deg);
                     // animation: rocket 3s ease-in-out infinite;
+                    @include lgBreakPoint {
+                        width: 100%;
+                        height: 270px;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                        height: 250px;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                        height: 240px;
+                    }
                 }
             }
         }
         .section1-right {
             width: 50%;
             height: 100%;
+            @include xlBreakPoint {
+                // height: auto;
+                padding-bottom: 100rem !important;
+            }
             .right-offset {
-                // position: absolute;
-
                 .right-oofsets {
                     width: 8%;
                     right: 0;
                     position: absolute;
                 }
             }
-            // position: relative;
+
             .purush {
                 .purushed {
-                    width: 25%;
-
+                    width: 20%;
                     position: absolute;
                     z-index: 100000;
                     right: 10%;
                     top: 20%;
+                    @include lgBreakPoint {
+                        width: 25%;
+                        left: 67%;
+                        top: 35%;
+                    }
+                    @include xlBreakPoint {
+                        width: 20%;
+                        left: 70%;
+                        top: 35%;
+                    }
                 }
             }
             .image-rounds {
                 .round1 {
-                    width: 25%;
+                    width: 35%;
                     position: absolute;
-                    left: 55%;
-                    top: 5%;
+                    left: 60%;
+                    top: 14%;
+
+                    @include lgBreakPoint {
+                        width: 38%;
+                        top: 28%;
+                    }
+                    @include xlBreakPoint {
+                        width: 35%;
+                        top: 28%;
+                    }
                 }
             }
             .image-round {
                 .round2 {
-                    width: 25%;
+                    width: 20%;
                     position: absolute;
                     right: 5%;
                     bottom: 0;
+                    @include lgBreakPoint {
+                        // width: 55%;
+                        right: 2% !important;
+                    }
+                    @include xlBreakPoint {
+                        width: 20%;
+                        right: 2% !important;
+                        top: 70%;
+                        bottom: 100px;
+                    }
                 }
             }
             .smile1 {
+                @include lgBreakPoint {
+                    left: 0;
+                }
                 .smiles {
                     position: absolute;
                     top: 5%;
@@ -148,6 +240,10 @@
                     animation: smile2 5s ease-in-out infinite;
                     position: absolute;
                     top: 50%;
+
+                    @include xlBreakPoint {
+                        top: 20% !important;
+                    }
                 }
             }
             .smile3 {

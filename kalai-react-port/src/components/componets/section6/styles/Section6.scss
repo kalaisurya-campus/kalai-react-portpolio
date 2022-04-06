@@ -1,0 +1,59 @@
+@use "../../../../scss/abstract/" as *;
+
+.section6 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+ 
+    .latest {
+        padding-left: 3rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .cards {
+        // border: 2px solid red;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $back_export_color-white;
+        cursor: pointer;
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .card-text {
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-align: center;
+            @include themed() {
+                color: t($text-black-color);
+            }
+        }
+        .day {
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: end;
+        }
+    }
+    .cards:hover {
+        transform: scale(1.1);
+        transition: all 2s ease;
+        animation: rotatesset 5s ease-in-out infinite;
+    }
+}
+
+@keyframes rotatesset {
+    0%,100%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0);
+    }
+}

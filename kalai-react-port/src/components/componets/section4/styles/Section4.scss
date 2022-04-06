@@ -1,0 +1,154 @@
+@use "../../../../scss/abstract/" as *;
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    // overflow: hidden;
+    position: relative;
+    .off-sets {
+        position: absolute;
+        right: 0;
+        width: 10%;
+        @include xsBreakPoint {
+            width: 20%;
+        }
+        @include smBreakPoint {
+            width: 20%;
+        }
+        @include mdBreakPoint {
+            width: 20%;
+        }
+        @include lgBreakPoint {
+            width: 12%;
+        }
+        @include xlBreakPoint {
+            width: 10%;
+        }
+    }
+    .projects {
+        font-size: 3rem;
+        font-weight: 500;
+        padding-left: 4rem;
+        @include xsBreakPoint {
+            padding-left: 1rem;
+            font-size: 2.2rem;
+        }
+        @include smBreakPoint {
+            padding-left: 1.8rem;
+            font-size: 2.4rem;
+        }
+        @include mdBreakPoint {
+            padding-left: 1.8rem;
+            font-size: 2.4rem;
+        }
+    }
+    .offsets-right {
+        position: absolute;
+        left: 0;
+        width: 10%;
+        bottom: 0;
+        @include xsBreakPoint {
+            width: 30%;
+        }
+        @include smBreakPoint {
+            width: 22%;
+        }
+        @include mdBreakPoint {
+            width: 20%;
+        }
+        @include lgBreakPoint {
+            width: 13%;
+        }
+        @include xlBreakPoint {
+            width: 10%;
+        }
+    }
+    .slik-sliders {
+        background-color: transparent;
+        padding: 30px;
+        // height: 100vh;
+
+        .card {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            background: #fdb510;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            cursor: pointer;
+            @include xsBreakPoint {
+                width: 90%;
+                height: 400px;
+            }
+            @include smBreakPoint {
+                width: 80%;
+                height: 400px;
+            }
+            @include mdBreakPoint {
+                width: 70%;
+                height: 430px;
+            }
+            @include lgBreakPoint {
+                width: 70%;
+                height: 430px;
+            }
+
+            .card-img-top {
+                width: 50%;
+                height: 430px;
+                // border: 2px solid red;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                @include themed() {
+                    color: t($text-rose);
+                }
+            }
+            .card-text {
+                @include themed() {
+                    color: t($text-black-color);
+                }
+            }
+            .buttonss {
+                background: linear-gradient(180deg, #74dbee 0%, rgba(116, 219, 238, 0.66) 100%);
+                border-radius: 20px;
+                font-size: 1rem;
+                font-weight: 600;
+                width: 50%;
+                padding: 10px;
+                border: none;
+                outline: none;
+                @include themed() {
+                    color: t($text-black-color);
+                }
+
+                @include xsBreakPoint {
+                    width: 40% !important;
+                }
+                @include smBreakPoint {
+                    width: 50% !important;
+                }
+                @include xlBreakPoint {
+                    width: 55% !important;
+                }
+            }
+        }
+        .slick-dots li button:before {
+            color: orange;
+            font-size: 10px;
+            padding-top: 8vh;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./styles/Section3.scss";
-import layer from "../../../assets/kalai-port/layer.png";
+
 import g1 from "../../../assets/kalai-port/exper1.png";
 import g2 from "../../../assets/kalai-port/exper2.png";
 import g3 from "../../../assets/kalai-port/g2.png";
@@ -13,10 +13,11 @@ function Section3(props) {
         AOS.init();
         AOS.refresh();
     }, []);
+    
     return (
         <>
-            <div className="section3">
-                <h1 className="mt-5 mb-5">Experience</h1>
+            <div className="section3" id="service">
+                <h1 className="mt-5 mb-5 ms-4">Experience</h1>
                 <div className="inside-section3">
                     <div className="left-section3">
                         <div
@@ -25,26 +26,26 @@ function Section3(props) {
                             data-aos-easing="linear"
                             data-aos-duration="1500"
                         >
-                            <img src={g1} />
+                            <img src={g1} className="g1" />
                         </div>
                         <div
                             className="mt-5"
-                            data-aos="fade-right"
+                            data-aos="fade-up-right"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
                         >
-                            <img src={g4} />
+                            <img src={g4} className="g2" />
                         </div>
                     </div>
 
                     <div className="right-section3">
                         <div
                             className="mb-5"
-                            data-aos="zoom-in-up"
+                            data-aos="fade-up-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
                         >
-                            <img src={g3} />
+                            <img src={g3} className="g3" />
                         </div>
                         <div
                             className="mt-5"
@@ -52,14 +53,11 @@ function Section3(props) {
                             ata-aos-easing="linear"
                             data-aos-duration="1500"
                         >
-                            <img src={g2} />
+                            <img src={g2} className="g4 mt-5" />
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div className="think">
-        <img src={personthink} className="thinks"/>
-    </div> */}
         </>
     );
 }

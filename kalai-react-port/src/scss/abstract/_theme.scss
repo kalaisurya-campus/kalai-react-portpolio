@@ -26,6 +26,7 @@ $orange: "lightorange";
 
 $text-blue-darks: "textbluedark";
 $text-black-color: "textblack";
+$text-rose: "textrose";
 $themes: (
     light: (
         primary: $primary--light,
@@ -47,6 +48,7 @@ $themes: (
         frosted: $frosted-light,
         lightorange: $back_export_color-white,
         textblack: $text-color-black,
+        textrose: $text-blur-color,
     ),
     dark: (
         primary: $primary--dark,
@@ -70,5 +72,6 @@ $themes: (
         textbluedark: $text-color-blue-dark,
         // new
         textblack: $text-color-black,
+        textrose: $text-blur-color,
     ),
 );
