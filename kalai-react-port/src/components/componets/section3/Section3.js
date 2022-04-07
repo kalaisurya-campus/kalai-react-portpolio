@@ -17,7 +17,7 @@ function Section3(props) {
     return (
         <>
             <div className="section3" id="service">
-                <h1 className="mt-5 mb-5 ms-4">Experience</h1>
+                <h1 className="mb-5 ms-4">Experience</h1>
                 <div className="inside-section3">
                     <div className="left-section3">
                         <div

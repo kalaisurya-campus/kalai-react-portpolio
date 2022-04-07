@@ -4,7 +4,6 @@
     width: 100%;
     height: 100vh;
     position: relative;
-
     overflow: hidden;
     @include xlBreakPoint {
         padding: 10px;
@@ -40,7 +39,7 @@
 
             .offset-top {
                 .offs {
-                    width: 8%;
+                    width: 6%;
                     position: absolute;
                     left: 0;
                     top: 5%;
@@ -153,15 +152,15 @@
         .section1-right {
             width: 50%;
             height: 100%;
-            @include xlBreakPoint {
-                // height: auto;
-                padding-bottom: 100rem !important;
+            @include lgBreakPoint {
+                width: 100%;
             }
             .right-offset {
                 .right-oofsets {
-                    width: 8%;
+                    width: 10%;
                     right: 0;
                     position: absolute;
+                    bottom: 0;
                 }
             }
 
@@ -173,7 +172,7 @@
                     right: 10%;
                     top: 20%;
                     @include lgBreakPoint {
-                        width: 25%;
+                        width: 20%;
                         left: 67%;
                         top: 35%;
                     }
@@ -192,7 +191,7 @@
                     top: 14%;
 
                     @include lgBreakPoint {
-                        width: 38%;
+                        width: 39%;
                         top: 28%;
                     }
                     @include xlBreakPoint {
@@ -201,24 +200,7 @@
                     }
                 }
             }
-            .image-round {
-                .round2 {
-                    width: 20%;
-                    position: absolute;
-                    right: 5%;
-                    bottom: 0;
-                    @include lgBreakPoint {
-                        // width: 55%;
-                        right: 2% !important;
-                    }
-                    @include xlBreakPoint {
-                        width: 20%;
-                        right: 2% !important;
-                        top: 70%;
-                        bottom: 100px;
-                    }
-                }
-            }
+
             .smile1 {
                 @include lgBreakPoint {
                     left: 0;

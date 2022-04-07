@@ -3,6 +3,7 @@
 .section5 {
     width: 100%;
     height: auto;
+
     @include xsBreakPoint {
         height: auto !important;
         display: flex;
@@ -80,8 +81,6 @@
         padding: 10px 30px;
         border-radius: 10% 30% 50% 70%;
         cursor: pointer;
-        @include themed() {
-            color: t($text-rose);
-        }
+        color: black;
     }
 }

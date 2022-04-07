@@ -43,12 +43,12 @@
         bottom: 0;
         left: 0;
         z-index: 20000000000000000000000;
-        width: 52%;
+        width: 45%;
         @include lgBreakPoint {
-            width: 65%;
+            width: 50%;
         }
         @include xlBreakPoint {
-            width: 60%;
+            width: 50%;
         }
         @include xxlBreakPoint {
             width: 57%;
@@ -59,11 +59,16 @@
         left: 10%;
         animation: pers 5s ease-in-out infinite;
         transition: 0s;
+        width: 25%;
         @include lgBreakPoint {
             left: 5%;
+            width: 30%;
+            top: 10%;
         }
         @include xlBreakPoint {
             left: 7%;
+            top: 10%;
+            width: 33%;
         }
         @include xxlBreakPoint {
             left: 7%;
@@ -82,14 +87,16 @@
             border-radius: 50%;
             background-color: #04a9f3;
             animation: home 5s ease-in-out infinite;
-
+            top: 15%;
             @include lgBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 10%;
             }
             @include xlBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 16%;
             }
         }
         .button-aboutuss {
@@ -107,17 +114,19 @@
             animation: about 5s ease-in-out infinite;
 
             @include lgBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 25%;
             }
             @include xlBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 30%;
             }
         }
         .button-contacts {
             position: absolute;
-            bottom: 20%;
+            bottom: 30%;
             left: 50%;
             width: 150px;
             height: 150px;
@@ -130,12 +139,14 @@
             animation: contact 5s ease-in-out infinite;
 
             @include lgBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 60%;
             }
             @include xlBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 70%;
             }
         }
         .button-servicess {
@@ -152,13 +163,14 @@
             background-color: #04a9f3;
             animation: service 5s ease-in-out infinite;
             @include lgBreakPoint {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                top: 40%;
             }
             @include xlBreakPoint {
-                width: 120px;
-                height: 120px;
-                bottom: 50%;
+                width: 100px;
+                height: 100px;
+                bottom: 40%;
             }
             @include xxlBreakPoint {
                 bottom: 50%;

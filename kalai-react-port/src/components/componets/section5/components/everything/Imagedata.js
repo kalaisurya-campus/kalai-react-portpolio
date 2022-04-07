@@ -32,10 +32,6 @@ const imagedata = {
             id: 6,
             image: p6,
         },
-        {
-            id: 7,
-            image: p7,
-        },
     ],
 };
 

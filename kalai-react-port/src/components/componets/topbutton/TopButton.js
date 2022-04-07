@@ -26,7 +26,6 @@ function TopButton(props) {
                         <img src={rotes} className="toprotest" />
                     </div>
                 )}
-                
             </div>
         </>
     );

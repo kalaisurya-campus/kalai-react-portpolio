@@ -19,7 +19,7 @@ function Section2Mobile(props) {
                 <div className="conatiner mx-auto">
                     <div className="row p-4 mx-auto">
                         <div
-                            className="card-javas col-xs-10 col-sm-10 col-md-10"
+                            className="card-javas col-xs-10 col-sm-10 col-md-8"
                             data-aos="flip-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
@@ -44,7 +44,7 @@ function Section2Mobile(props) {
                             </div>
                         </div>
                         <div
-                            className="card-javas col-xs-10 col-sm-10 col-md-10 mt-5"
+                            className="card-javas col-xs-10 col-sm-10 col-md-9 mt-5"
                             data-aos="zoom-in"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
@@ -92,7 +92,7 @@ function Section2Mobile(props) {
                         </div>
 
                         <div
-                            className="card-javas col-xs-10 col-sm-10 col-md-10 mt-5"
+                            className="card-javas col-xs-10 col-sm-10 col-md-8 mt-5"
                             data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
@@ -116,7 +116,7 @@ function Section2Mobile(props) {
                         </div>
 
                         <div
-                            className="card-javas col-xs-10 col-sm-10 col-md-10 mt-5"
+                            className="card-javas col-xs-10 col-sm-10 col-md-9 mt-5"
                             data-aos="flip-up"
                             data-aos-easing="linear"
                             data-aos-duration="1500"

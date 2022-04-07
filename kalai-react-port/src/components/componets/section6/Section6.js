@@ -35,7 +35,7 @@ function Section6(props) {
     return (
         <>
             <div className="section6">
-                <h1 className="latest mt-5 mb-2">Latest Post</h1>
+                <h1 className="latest mb-2">Latest Post</h1>
                 <div className="person-work">
                     <img src={ap1} className="pa1" />
                 </div>

@@ -2,17 +2,27 @@ import React from "react";
 import "./styles/Section7.scss";
 import contact from "../../../assets/kalai-port/contact.png";
 import carousels from "../../../assets/kalai-port/carousels.png";
-function Section7(props) {
+import google from "../../../assets/kalai-port/google.png";
+import instagram from "../../../assets/kalai-port/instagram.png";
+import twitter from "../../../assets/kalai-port/twitter.png";
+import facebook from "../../../assets/kalai-port/facebook.png";
+function Section7() {
     return (
         <div className="section7" id="contact">
             <div className="inside-contant">
                 <div className="left-section7">
-                    <img src={contact} className="contactimage mb-5 mt-5" />
+                    <img src={contact} className="contactimage mb-5" />
+                    <div className="cotact-list mt-3">
+                        <img src={google} className="google" />
+                        <img src={facebook} className="google" />
+                        <img src={instagram} className="google" />
+                        <img src={twitter} className="google" />
+                    </div>
                 </div>
                 <div className="right-section7 my-auto">
                     <img src={carousels} className="carousels" />
-                    <h1 className="mb-5">Contact</h1>
-                    <form className="col-lg-6 mt-5">
+                    <h1 className="mt-5">Contact</h1>
+                    <form className="col-lg-6 mt-5 mb-5">
                         <div class="mb-3">
                             <label
                                 for="exampleInputUserName1"
@@ -27,7 +37,7 @@ function Section7(props) {
                                 aria-describedby="emailHelp"
                             />
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <label for="exampleInputEmail1" class="form-label">
                                 Email
                             </label>
@@ -51,7 +61,10 @@ function Section7(props) {
                             />
                         </div>
 
-                        <button type="submit" class="btn btn-primarys">
+                        <button
+                            type="submit"
+                            class="btn btn-primarys mb-5 mt-4"
+                        >
                             Submit
                         </button>
                     </form>

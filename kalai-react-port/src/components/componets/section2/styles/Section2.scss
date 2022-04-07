@@ -5,6 +5,9 @@
     height: auto;
     padding-bottom: 30px;
     position: relative;
+    // @include themed() {
+    //     background: t($background-color-section1);
+    // }
     .section2-inside {
         display: flex;
         width: 100%;
@@ -52,7 +55,7 @@
             .left-off {
                 position: absolute;
                 left: 0;
-                width: 10%;
+                width: 6%;
                 top: 0;
                 z-index: 0;
             }
@@ -70,9 +73,11 @@
                     font-weight: 500;
                 }
                 .service {
-                    color: $back_export_color-black;
                     font-size: 4.2rem;
                     font-weight: 600;
+                    @include themed() {
+                        color: t($service-text-colors);
+                    }
                 }
                 .loreams {
                     width: 80%;
@@ -86,7 +91,6 @@
                     width: 30%;
                     padding: 15px;
                     background-color: $back_export_color-black;
-                    color: white;
                     font-size: 1.2rem;
                     font-weight: 700;
                     display: flex;
@@ -94,25 +98,29 @@
                     justify-content: center;
                     border-radius: 20px;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-                    @include lgBreakPoint
-                    {
-                        width:25%;
+                    @include themed() {
+                        color: t($button-white-text);
                     }
-                    @include xlBreakPoint
-                    {
-                        width:20%;
+
+                    @include lgBreakPoint {
+                        width: 25%;
+                    }
+                    @include xlBreakPoint {
+                        width: 20%;
                     }
                 }
             }
             .cards {
                 display: flex;
                 .card-java {
-                    background-color: #fef795;
                     height: 450px;
                     border-radius: 30px;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                     padding: 20px;
                     position: relative;
+                    @include themed() {
+                        background: t($card-background);
+                    }
                     .empty-image {
                         width: 200px;
                         height: 200px;
@@ -134,30 +142,49 @@
                         width: 100px;
                         height: 100px;
                         border-radius: 50%;
-                        background-color: #74dbee;
+                        background-color: #aaaffb;
                         position: absolute;
                         top: -9%;
                         right: -7%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @include lgBreakPoint {
+                            width: 60px;
+                            height: 60px;
+                            top: -5%;
+                            right: -5%;
+                        }
+                        @include xlBreakPoint {
+                            width: 70px;
+                            height: 70px;
+                            top: -5%;
+                            right: -5%;
+                        }
+                        @include xxlBreakPoint {
+                            width: 70px;
+                            height: 70px;
+                            top: -4%;
+                        }
                     }
                     .stars {
                         position: relative;
                         width: 50%;
-                        animation: star 2s ease-in-out infinite;
+                        animation: star 8s ease-in-out infinite;
                     }
                     .readmore {
-                        width: 50%;
+                        width: 40%;
                         border: none;
                         outline: none;
                         padding: 10px;
                         border-radius: 20px;
                         font-size: 1rem;
-                        font-weight: 500;
-                        background-color: #102449;
-                        color: white;
+                        font-weight: 600;
+                        background-color: orange;
                         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                        @include themed() {
+                            color: t($button-white-text);
+                        }
                     }
                 }
             }
@@ -208,7 +235,7 @@
             .rtr-rounds {
                 position: absolute;
                 left: 0;
-                width: 10%;
+                width: 6%;
                 // top:0;
                 z-index: 0;
                 bottom: 0;
@@ -257,15 +284,21 @@
                     width: 50%;
                     right: 0;
                 }
+                @include xlBreakPoint {
+                    width: 40%;
+                    right: 0;
+                }
             }
             .cards {
                 .card-java {
-                    background-color: #fef795;
                     height: 450px;
                     border-radius: 30px;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                     padding: 20px;
                     position: relative;
+                    @include themed() {
+                        background: t($card-background);
+                    }
                     .empty-image {
                         width: 200px;
                         height: 200px;
@@ -287,18 +320,35 @@
                         width: 100px;
                         height: 100px;
                         border-radius: 50%;
-                        background-color: #74dbee;
+                        background-color: #aaaffb;
                         position: absolute;
                         top: -9%;
                         right: -7%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @include lgBreakPoint {
+                            width: 60px;
+                            height: 60px;
+                            top: -5%;
+                            right: -5%;
+                        }
+                        @include xlBreakPoint {
+                            width: 70px;
+                            height: 70px;
+                            top: -5%;
+                            right: -5%;
+                        }
+                        @include xxlBreakPoint {
+                            width: 70px;
+                            height: 70px;
+                            top: -4%;
+                        }
                     }
                     .stars {
                         position: relative;
                         width: 50%;
-                        animation: star 2s ease-in-out infinite;
+                        animation: star 7s ease-in-out infinite;
                     }
                     .readmore {
                         width: 50%;
@@ -347,6 +397,7 @@
         }
     }
 }
+
 .set-projects {
     display: flex;
     gap: 20px;

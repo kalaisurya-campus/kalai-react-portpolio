@@ -8,7 +8,7 @@ function Section5(props) {
     const [index, SetIndex] = useState(0);
     return (
         <div className="section5">
-            <h1 className="port mt-4 mb-5">Portfolio</h1>
+            <h1 className="port mb-5">Portfolio</h1>
             <div className="container tabs">
                 <div className="tablist">
                     <div

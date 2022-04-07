@@ -35,7 +35,7 @@ function Footer(props) {
                         <a href="#aboutus">AboutUs</a>
                     </div>
                     <div className="button-servicess">
-                        <a href="#services">Services</a>
+                        <a href="#service">Services</a>
                     </div>
                     <div className="button-contacts">
                         <a href="#contact">Contact</a>

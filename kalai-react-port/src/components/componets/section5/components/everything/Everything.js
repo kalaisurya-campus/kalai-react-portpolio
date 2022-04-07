@@ -34,7 +34,7 @@ function Everything(props) {
         <>
             <div className="main-ever">
                 <div className="container mt-5">
-                    <div className="row justify-content-center gap-5">
+                    <div className="row justify-content-center gap-5 mb-1">
                         {imagedata.images.map((items, index) => {
                             return (
                                 <div

@@ -3,14 +3,20 @@
 .section4 {
     width: 100%;
     height: 100vh;
-    // overflow: hidden;
+    overflow: hidden;
     position: relative;
+    @include xsBreakPoint {
+        height: 100vh;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
     .off-sets {
         position: absolute;
         right: 0;
         width: 10%;
         @include xsBreakPoint {
-            width: 20%;
+            width: 18%;
         }
         @include smBreakPoint {
             width: 20%;
@@ -51,7 +57,7 @@
         width: 10%;
         bottom: 0;
         @include xsBreakPoint {
-            width: 30%;
+            width: 18%;
         }
         @include smBreakPoint {
             width: 15%;
@@ -69,7 +75,13 @@
     .slik-sliders {
         background-color: transparent;
         padding: 30px;
-        // height: 100vh;
+        padding-top: 5rem;
+        @include xsBreakPoint {
+            padding-top: 6rem;
+        }
+        @include mdBreakPoint {
+            padding-top: 8rem;
+        }
 
         .card {
             width: 70%;
@@ -80,12 +92,14 @@
             border-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
             background: #fdb510;
-            padding-bottom: 20px;
+            // padding-bottom: 20px;
             margin: 0 auto;
             cursor: pointer;
+
             @include xsBreakPoint {
                 width: 90%;
-                height: auto;
+                height: 400px;
+                padding: 20px;
             }
             @include smBreakPoint {
                 width: 80%;
@@ -93,8 +107,8 @@
                 z-index: 9000000000000;
             }
             @include mdBreakPoint {
-                width: 70%;
-                height: auto;
+                width: 60%;
+                height: 400px;
             }
             @include lgBreakPoint {
                 width: 90%;
@@ -110,9 +124,12 @@
                 height: 230px;
                 // border: 2px solid red;
                 @include xsBreakPoint {
-                    width: 35%;
-                    // height:230px;
-                    // border: 2px solid red;
+                    width: 30%;
+                    padding-top: 20px;
+                }
+                @include mdBreakPoint {
+                    width: 40%;
+                    padding-top: 20px;
                 }
             }
             .card-body {
@@ -166,9 +183,8 @@
     }
 }
 
-.san
-{
+.san {
     width: 100%;
-    border: 2px solid #04A9F3;
+    border: 2px solid #04a9f3;
     border-radius: 30px;
 }

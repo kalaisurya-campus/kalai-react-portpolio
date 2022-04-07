@@ -18,6 +18,11 @@ import s2 from "../../../assets/kalai-port/s2.png";
 import s3 from "../../../assets/kalai-port/s3.png";
 import s4 from "../../../assets/kalai-port/s4.png";
 import Section2Mobile from "./component/Section2Mobile";
+
+import react from "../../../assets/kalai-port/react.png";
+import javascript from "../../../assets/kalai-port/javascript.png";
+import html from "../../../assets/kalai-port/html.png";
+import bootstrap from "../../../assets/kalai-port/bootstrap.png";
 function Section2(props) {
     useEffect(() => {
         AOS.init();
@@ -130,10 +135,10 @@ function Section2(props) {
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-11 mt-5 ms-5">
+                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-12 mt-5 ms-5">
                                         <div className="empty-image">
                                             <img
-                                                src={rock2}
+                                                src={html}
                                                 className="empty-rocket"
                                             />
                                         </div>
@@ -189,7 +194,7 @@ function Section2(props) {
                                     <div className="card-java col-lg-9 col-xl-7 col-xxl-12 mt-5">
                                         <div className="empty-image">
                                             <img
-                                                src={rock2}
+                                                src={react}
                                                 className="empty-rocket"
                                             />
                                         </div>
@@ -238,7 +243,7 @@ function Section2(props) {
                                     <div className="card-java col-lg-7 col-xxl-8 mt-5">
                                         <div className="empty-image">
                                             <img
-                                                src={rock2}
+                                                src={bootstrap}
                                                 className="empty-rocket"
                                             />
                                         </div>
@@ -303,24 +308,24 @@ function Section2(props) {
                     </div>
                 </div>
             </div>
-            <div className="containers d-none d-lg-block">
+            <div className="containers d-none d-lg-block py-2">
                 <div className="set-projects">
-                    <div className="car1 mb-5 mt-3">
+                    <div className="car1 mt-3">
                         <img src={s1} className="cars1" />
                     </div>
-                    <div className="car1 mb-5 mt-3">
+                    <div className="car1  mt-3">
                         <img src={s2} className="cars1" />
                     </div>
-                    <div className="car1 mb-5 mt-3">
+                    <div className="car1 mt-3">
                         <img src={s3} className="cars1" />
                     </div>
-                    <div className="car1 mb-5 mt-3">
+                    <div className="car1 mt-3">
                         <img src={s4} className="cars1" />
                     </div>
                 </div>
             </div>
             <div>
-                <Section2Mobile/>
+                <Section2Mobile />
             </div>
         </>
     );

@@ -1,0 +1,48 @@
+@use "../../../../../../scss/abstract/" as *;
+
+.text {
+    width: 100%;
+    position: relative;
+    // overflow: hidden;
+    .inside-texts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        flex-direction: column;
+    }
+    .loreams-text {
+        font-size: 1.5rem;
+        width: 80%;
+        @include lgBreakPoint {
+            width: 70%;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 2;
+        }
+    }
+    .text-sizes {
+        font-size: 3rem;
+    }
+    .bottom-imageds {
+        width: 40%;
+        position: absolute;
+        @include lgBreakPoint {
+            width: 50%;
+        }
+    }
+    .reads {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 14px;
+        border-radius: 20px;
+        background-color: orange;
+        font-size: 1.2rem;
+        font-weight: 500;
+        @include lgBreakPoint {
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+}

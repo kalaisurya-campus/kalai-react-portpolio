@@ -13,7 +13,6 @@ $text-grey: "text-grey";
 $input-focused: "input-focused";
 
 $inverter: "inverter";
-
 $text: "text";
 $nav-text: "nav-text";
 $shadow-lg: "shadow-lg";
@@ -23,10 +22,14 @@ $button-config: "button-config";
 $text-hover: "text-hover";
 $frosted: "frosted";
 $orange: "lightorange";
-
 $text-blue-darks: "textbluedark";
 $text-black-color: "textblack";
 $text-rose: "textrose";
+$background-liner-sets: "background-liner-colors-set";
+$background-color-section1: "backgroundcolor-section";
+$card-background: "card-background-color";
+$service-text-colors: "services-text-color";
+$button-white-text: "kalai-text-button-black";
 $themes: (
     light: (
         primary: $primary--light,
@@ -49,6 +52,11 @@ $themes: (
         lightorange: $back_export_color-white,
         textblack: $text-color-black,
         textrose: $text-blur-color,
+        background-liner-colors-set: $background-color-set,
+        backgroundcolor-section: $background-color-setioc1,
+        card-background-color: $background-card-color,
+        services-text-color: $services-text,
+        kalai-text-button-black: $kalai-text-black,
     ),
     dark: (
         primary: $primary--dark,
@@ -73,5 +81,10 @@ $themes: (
         // new
         textblack: $text-color-black,
         textrose: $text-blur-color,
+        background-liner-colors-set: $text-color-black,
+        backgroundcolor-section: $text-color-black,
+        card-background-color: $primary--light,
+        services-text-color: $services-text,
+        kalai-text-button-black: $tetx-kalai-button-white,
     ),
 );

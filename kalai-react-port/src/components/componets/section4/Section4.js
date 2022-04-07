@@ -92,7 +92,7 @@ function Section4(props) {
     return (
         <>
             <div className="section4">
-                <h1 className="mb-5 projects mb-5">Projects</h1>
+                <h1 className="mb-5 projects">Projects</h1>
                 <img src={offsetslefts} className="off-sets" />
                 <div className="container slik-sliders my-auto mt-5">
                     <Slider {...settings}>
