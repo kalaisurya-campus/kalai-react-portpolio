@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import { Modal } from "bootstrap";
+import React, { useState, useRef, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/Section2.scss";
@@ -28,6 +29,24 @@ function Section2(props) {
         AOS.init();
         AOS.refresh();
     }, []);
+    const [Artemptyimage, SetIMagesArt] = useState([]);
+
+    const useref = useRef(null);
+    const showModal = () => {
+        const modalEle = useref.current;
+        const bsModal = new Modal(modalEle, {
+            backdrop: "static",
+            keyboard: false,
+        });
+        bsModal.show();
+    };
+
+    const hideModal = () => {
+        const modalEle = useref.current;
+        const bsModal = Modal.getInstance(modalEle);
+        bsModal.hide();
+    };
+
     return (
         <>
             <div className="section2 d-none d-lg-block" id="aboutus">
@@ -102,9 +121,17 @@ function Section2(props) {
                                                 useually are print and website
                                                 Dummy Content
                                             </p>
-                                            <button className="readmore mt-2">
+                                            {/* <button className="readmore mt-2">
                                                 Read More...
-                                            </button>
+                                            </button> */}
+                                            <p
+                                                type="button"
+                                                class="readmore"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                            >
+                                                Read More...
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,9 +184,17 @@ function Section2(props) {
                                                 useually are print and website
                                                 Dummy Content
                                             </p>
-                                            <button className="readmore mt-2">
+                                            {/* <button className="readmore mt-2">
                                                 Read More...
-                                            </button>
+                                            </button> */}
+                                            <p
+                                                type="button"
+                                                class="readmore"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal1"
+                                            >
+                                                Read More...
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -327,6 +362,166 @@ function Section2(props) {
             <div>
                 <Section2Mobile />
             </div>
+            {/* JAVASCRIPT modal */}
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+                style={{
+                    zIndex: "9000000",
+                }}
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1
+                                class="modal-title"
+                                id="exampleModalLabel"
+                                style={{
+                                    margin: "0 auto",
+                                }}
+                            >
+                                javascript
+                            </h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div
+                            class="modal-body"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <div className="image-set-model">
+                                <img
+                                    src={javascript}
+                                    className="empty-rocket w-50"
+                                    style={{
+                                        margin: "0 auto",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                />
+                            </div>
+
+                            <p
+                                className="loreams-texts mt-4 mb-4"
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textAlign: "center",
+                                }}
+                            >
+                                Loream ipsum dummy text are useually are print
+                                and website Dummy Content
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* javascript end */}
+
+            {/* html and css start */}
+
+            <div
+                class="modal fade"
+                id="exampleModal1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+                style={{
+                    zIndex: "9000000",
+                }}
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1
+                                class="modal-title"
+                                id="exampleModalLabel"
+                                style={{
+                                    margin: "0 auto",
+                                }}
+                            >
+                                HTML And CSS
+                            </h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div
+                            class="modal-body"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <div className="image-set-model">
+                                <img
+                                    src={html}
+                                    className="empty-rocket w-50"
+                                    style={{
+                                        margin: "0 auto",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                />
+                            </div>
+
+                            <p
+                                className="loreams-texts mt-4 mb-4"
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    textAlign: "center",
+                                }}
+                            >
+                                Loream ipsum dummy text are useually are print
+                                and website Dummy Content
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* html and css end */}
         </>
     );
 }

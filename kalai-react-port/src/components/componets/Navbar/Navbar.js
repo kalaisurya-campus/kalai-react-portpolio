@@ -1,13 +1,15 @@
 import React from "react";
 import NavbarMobile from "./component/navbarmobile/NavbarMobile";
+import { NavLink, useHistory } from "react-router-dom";
 import "./styles/Navbar.scss";
 function Navbar({ dark, setdark }) {
+    const usehistory = useHistory();
     return (
         <>
-            <div className="">
+            <div className="d-none">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand">Kalaisurya</a>
+                        <a class="navbar-brand">Hi Kalaisurya!</a>
                         <button
                             class="navbar-toggler"
                             type="button"
@@ -47,6 +49,12 @@ function Navbar({ dark, setdark }) {
                             </ul>
                             <div class="d-flex gap-2">
                                 <span className="mt-2">Login</span>
+                                {/* <button
+                                    onClick={() => usehistory.push("/chat")}
+                                >
+                                    chat
+                                </button> */}
+
                                 <button
                                     className="darks"
                                     onClick={() => setdark(!dark)}
@@ -63,7 +71,7 @@ function Navbar({ dark, setdark }) {
                 </nav>
             </div>
             {/* <div>
-                <NavbarMobile />
+                <NavbarMobile dark={dark} setdark={setdark} />
             </div> */}
         </>
     );

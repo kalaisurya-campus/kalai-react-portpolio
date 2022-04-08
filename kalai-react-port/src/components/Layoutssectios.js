@@ -1,4 +1,5 @@
 import React from "react";
+import Homepagechat from "./componets/chatapp/hompagechat/Homepagechat";
 
 import Footer from "./componets/footer/Footer";
 import Navbar from "./componets/Navbar/Navbar";
@@ -24,9 +25,9 @@ function Layoutssectios({ dark, setdark }) {
             <Section6 />
             <Testimonials />
             <Section7 />
+            <Homepagechat />
             <Footer />
             <TopButton />
-          
         </div>
     );
 }

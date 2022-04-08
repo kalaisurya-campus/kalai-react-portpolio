@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.scss";
-import Section1 from "./components/componets/section1/Section1";
+
 import Layoutssectios from "./components/Layoutssectios";
 
 function App() {

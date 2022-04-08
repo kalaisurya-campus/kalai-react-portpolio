@@ -108,15 +108,19 @@
             }
             @include mdBreakPoint {
                 width: 60%;
-                height: 400px;
+                height: 440px;
             }
             @include lgBreakPoint {
                 width: 90%;
-                height: auto;
+                height: 450px;
             }
             @include xlBreakPoint {
-                width: 80%;
-                height: auto;
+                width: 70%;
+                height: 500px;
+            }
+            @include xxlBreakPoint {
+                width: 70%;
+                height: 500px;
             }
 
             .card-img-tops {
@@ -130,6 +134,10 @@
                 @include mdBreakPoint {
                     width: 40%;
                     padding-top: 20px;
+                }
+                @include lgBreakPoint {
+                    width: 40%;
+                    padding-top: 10px;
                 }
             }
             .card-body {

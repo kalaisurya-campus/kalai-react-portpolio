@@ -13,7 +13,6 @@ import offsetleft from "../../../assets/kalai-port/offset-left.png";
 import purush from "../../../assets/kalai-port/purush.png";
 import Mobilesection1 from "./components/mobilesection1/Mobilesection1";
 import circles from "../../../assets/kalai-port/topcirles.png";
-import kalai from '../../../assets/kalai-port/kalai-image.png';
 
 function Section1(props) {
     return (
@@ -46,7 +45,7 @@ function Section1(props) {
                             <img src={offsetleft} className="right-oofsets" />
                         </div>
                         <div className="purush">
-                            <img src={kalai} className="purushed" />
+                            <img src={purush} className="purushed" />
                         </div>
                         <div className="image-rounds">
                             <img src={circles} className="round1" />
