@@ -73,27 +73,32 @@ export default class Testimonials extends Component {
 
     render() {
         return (
-            <div className="slideshow-container">
-                <h1 className="ms-5 mt-5 my">My Activities</h1>
-                <div className="inside-box">
-                    <div className="left">
-                        <div className="box my-auto">
-                            <img
-                                src={this.state.images[this.state.currentImage]}
-                                alt="cleaning images"
-                                className="image-persons"
-                            />
+            <>
+                <div className="slideshow-container">
+                    <h1 className="ms-5 my">My Activities</h1>
+                    <div className="inside-box">
+                        <div className="left">
+                            <div className="box my-auto">
+                                <img
+                                    src={
+                                        this.state.images[
+                                            this.state.currentImage
+                                        ]
+                                    }
+                                    alt="cleaning images"
+                                    className="image-persons"
+                                />
+                            </div>
+                            <div className="rocks">
+                                <img src={rockets} className="per-rockets" />
+                            </div>
                         </div>
-                        <div className="rocks">
-                            <img src={rockets} className="per-rockets" />
+                        <div className="right-contents">
+                            <TextPage />
                         </div>
-                    </div>
-                    <div className="right-contents">
-                        <TextPage />
-                      
                     </div>
                 </div>
-            </div>
+            </>
         );
     }
 }

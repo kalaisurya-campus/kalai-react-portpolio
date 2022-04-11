@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Modal } from "bootstrap";
 import DesignsImages from "./Designimages";
 import star from "../../../../../assets/kalai-port/star.png";
-import './styles/Designs.scss';
+import "./styles/Designs.scss";
 function Designs(props) {
     const [Designemptyimage, SetIMagesDesigns] = useState([]);
 
@@ -33,25 +33,25 @@ function Designs(props) {
     return (
         <>
             <div className="main-designs">
-            <div className="container mt-5">
-                <div className="row justify-content-center gap-5 mb-1">
-                    {DesignsImages.designimage.map((items, index) => {
-                        return (
-                            <div
-                                class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
-                                key={index}
-                            >
-                                <img
-                                    src={items.image}
-                                    class="card-img-top"
-                                    alt="No Images...."
-                                    onClick={() => handleimage(items.id)}
-                                />
-                            </div>
-                        );
-                    })}
+                <div className="container mt-5 ">
+                    <div className="row justify-content-center gap-5 mb-1 h-100">
+                        {DesignsImages.designimage.map((items, index) => {
+                            return (
+                                <div
+                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
+                                    key={index}
+                                >
+                                    <img
+                                        src={items.image}
+                                        class="card-img-top"
+                                        alt="No Images...."
+                                        onClick={() => handleimage(items.id)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
             </div>
             <p
                 type="button"

@@ -6,7 +6,7 @@ function Navbar({ dark, setdark }) {
     const usehistory = useHistory();
     return (
         <>
-            <div className="d-none">
+            <div className="">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <a class="navbar-brand">Hi Kalaisurya!</a>
@@ -48,7 +48,7 @@ function Navbar({ dark, setdark }) {
                                 </li>
                             </ul>
                             <div class="d-flex gap-2">
-                                <span className="mt-2">Login</span>
+                                {/* <span className="mt-2">Login</span> */}
                                 {/* <button
                                     onClick={() => usehistory.push("/chat")}
                                 >

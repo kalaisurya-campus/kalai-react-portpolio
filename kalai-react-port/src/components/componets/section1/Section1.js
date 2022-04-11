@@ -48,7 +48,7 @@ function Section1(props) {
                             <img src={purush} className="purushed" />
                         </div>
                         <div className="image-rounds">
-                            <img src={circles} className="round1" />
+                            {/* <img src={circles} className="round1" /> */}
                         </div>
                         <div className="smile1">
                             <img src={sm1} className="smiles" />

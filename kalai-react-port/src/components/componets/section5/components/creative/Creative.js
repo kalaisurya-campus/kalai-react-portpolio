@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Modal } from "bootstrap";
 import createimag from "./Creativeimages";
 import star from "../../../../../assets/kalai-port/star.png";
-import './styles/Creative.scss';
+import "./styles/Creative.scss";
 function Creative(props) {
     const [Creativeemptyimage, SetIMagesCreative] = useState([]);
 
@@ -33,25 +33,25 @@ function Creative(props) {
     return (
         <>
             <div className="cretive-main">
-            <div className="container mt-5">
-                <div className="row justify-content-center gap-5 mb-1">
-                    {createimag.crateimagedata.map((items, index) => {
-                        return (
-                            <div
-                                class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
-                                key={index}
-                            >
-                                <img
-                                    src={items.image}
-                                    class="card-img-top"
-                                    alt="No Images...."
-                                    onClick={() => handleimage(items.id)}
-                                />
-                            </div>
-                        );
-                    })}
+                <div className="container mt-5">
+                    <div className="row justify-content-center gap-5 mb-1 h-100">
+                        {createimag.crateimagedata.map((items, index) => {
+                            return (
+                                <div
+                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
+                                    key={index}
+                                >
+                                    <img
+                                        src={items.image}
+                                        class="card-img-top"
+                                        alt="No Images...."
+                                        onClick={() => handleimage(items.id)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
             </div>
             <p
                 type="button"

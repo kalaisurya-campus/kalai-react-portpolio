@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    @include xsBreakPoint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
     .card-img-top {
         border-radius: 30px !important;
         height: 100%;

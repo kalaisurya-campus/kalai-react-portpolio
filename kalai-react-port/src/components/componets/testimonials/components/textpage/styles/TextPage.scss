@@ -16,15 +16,19 @@
     }
     .loreams-text {
         font-size: 1.5rem;
-        width: 80%;
+        width: 70%;
+        text-align: center;
         @include xsBreakPoint {
             font-size: 1.1rem;
             width: 90%;
             padding-left: 10px;
             padding-right: 10px;
         }
+        @include mdBreakPoint {
+            font-size: 1rem;
+        }
         @include lgBreakPoint {
-            width: 70%;
+            width: 80%;
             font-size: 1.2rem;
             text-align: center;
             line-height: 2;
@@ -44,18 +48,34 @@
             right: 15%;
             top: 100%;
         }
+        @include mdBreakPoint {
+            width: 35%;
+            right: 35%;
+            top: 100%;
+        }
         @include lgBreakPoint {
-            width: 50%;
+            width: 55%;
+            top: 90%;
+            right: 20%;
+        }
+        @include xlBreakPoint {
+            width: 65%;
+            right: 15%;
+            top: 85%;
+        }
+        @include xxlBreakPoint {
+            width: 55%;
+            right: 15%;
+            top: 95%;
         }
     }
     .reads {
         border: none;
         outline: none;
-        width: 100%;
-        padding: 14px;
+        padding: 10px 30px;
         border-radius: 20px;
         background-color: orange;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 500;
         @include xsBreakPoint {
             padding: 10px;
@@ -64,7 +84,7 @@
         }
         @include lgBreakPoint {
             font-size: 1rem;
-            padding: 10px;
+            padding: 10px 30px;
         }
     }
 }

@@ -6,6 +6,9 @@ import g2 from "../../../assets/kalai-port/exper2.png";
 import g3 from "../../../assets/kalai-port/g2.png";
 import g4 from "../../../assets/kalai-port/g3.png";
 import personthink from "../../../assets/kalai-port/personthink.png";
+import exp1 from "../../../assets/kalai-port/exp1.png";
+import box1 from "../../../assets/kalai-port/box.png";
+import box2 from "../../../assets/kalai-port/box2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Section3(props) {
@@ -13,7 +16,7 @@ function Section3(props) {
         AOS.init();
         AOS.refresh();
     }, []);
-    
+
     return (
         <>
             <div className="section3" id="service">

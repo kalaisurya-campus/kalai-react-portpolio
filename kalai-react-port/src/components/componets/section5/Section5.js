@@ -9,7 +9,7 @@ function Section5(props) {
     return (
         <div className="section5">
             <h1 className="port mb-5">Portfolio</h1>
-            <div className="container tabs">
+            <div className="container tabs ">
                 <div className="tablist">
                     <div
                         className={`tabHead ${index == 0 ? "active" : "null"}`}

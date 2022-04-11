@@ -2,7 +2,7 @@ import { Modal } from "bootstrap";
 import React, { useState, useRef } from "react";
 import artimage from "./ArtDatas";
 import star from "../../../../../assets/kalai-port/star.png";
-import './styles/Art.scss';
+import "./styles/Art.scss";
 function Art(props) {
     const [Artemptyimage, SetIMagesArt] = useState([]);
 
@@ -32,28 +32,27 @@ function Art(props) {
     };
     return (
         <>
-           <div className="art-main">
-           <div className="container mt-5">
-                <div className="row justify-content-center gap-5 mb-3">
-                    {artimage.SetImage.map((items, index) => {
-                        return (
-                            <div
-                                class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
-                                key={index}
-                            >
-                                <img
-                                    src={items.image}
-                                    class="card-img-top"
-                                    alt="No Images...."
-                                    onClick={() => handleimage(items.id)}
-                                />
-                            </div>
-                        );
-                    })}
+            <div className="art-main">
+                <div className="container mt-5">
+                    <div className="row justify-content-center gap-5 mb-3  h-100">
+                        {artimage.SetImage.map((items, index) => {
+                            return (
+                                <div
+                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2 ms-2"
+                                    key={index}
+                                >
+                                    <img
+                                        src={items.image}
+                                        class="card-img-top"
+                                        alt="No Images...."
+                                        onClick={() => handleimage(items.id)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
-
-           </div>
             <p
                 type="button"
                 class="btn btn-primar"

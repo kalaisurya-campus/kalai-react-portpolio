@@ -2,7 +2,8 @@
 
 .section5 {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
 
     @include xsBreakPoint {
         height: auto !important;
@@ -65,6 +66,8 @@
             align-items: center;
             font-size: 1.2rem;
             font-weight: 600;
+            height: 10%;
+            // border: 2px solid red;
             justify-content: space-around;
             @include xsBreakPoint {
                 font-size: 0.897rem;
@@ -74,6 +77,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 90%;
+            // border: 2px solid blue;
+            overflow-y: auto;
         }
     }
     .active {

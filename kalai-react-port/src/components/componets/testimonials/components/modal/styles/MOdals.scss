@@ -1,0 +1,21 @@
+@use "../../../../../../scss/abstract/" as *;
+
+.reads {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: orange;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    @include xsBreakPoint {
+        padding: 10px;
+        width: 100%;
+        font-size: 1rem;
+    }
+    @include lgBreakPoint {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+}

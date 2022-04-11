@@ -10,6 +10,7 @@ import Section4 from "./componets/section4/Section4";
 import Section5 from "./componets/section5/Section5";
 import Section6 from "./componets/section6/Section6";
 import Section7 from "./componets/section7/Section7";
+import Section8about from "./componets/section78about/Section8about";
 import Testimonials from "./componets/testimonials/Testimonials";
 import TopButton from "./componets/topbutton/TopButton";
 
@@ -19,13 +20,14 @@ function Layoutssectios({ dark, setdark }) {
             <Navbar dark={dark} setdark={setdark} />
             <Section1 />
             <Section2 />
+            {/* <Section8about /> */}
             <Section3 />
             <Section4 />
             <Section5 />
             <Section6 />
             <Testimonials />
             <Section7 />
-            <Homepagechat />
+            {/* <Homepagechat /> */}
             <Footer />
             <TopButton />
         </div>

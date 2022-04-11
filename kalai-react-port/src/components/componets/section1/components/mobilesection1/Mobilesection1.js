@@ -31,11 +31,11 @@ function Mobilesection1(props) {
                     <button className="hire mt-4 mb-3">Hire Me</button>
                 </div>
                 <div className="right-mobile mt-5">
-                <div className="offset-rights">
-                            <img src={offsetleft} className="last-oofets" />
-                        </div>
+                    <div className="offset-rights">
+                        <img src={offsetleft} className="last-oofets" />
+                    </div>
                     <div className="circles">
-                        <img src={circles} className="circles" />
+                        {/* <img src={circles} className="circles" /> */}
                         <div className="pur">
                             <img src={purush} className="pru" />
                         </div>
@@ -54,7 +54,6 @@ function Mobilesection1(props) {
                         <div className="smiles5">
                             <img src={sm5} className="smile4" />
                         </div>
-                       
                     </div>
                 </div>
             </div>

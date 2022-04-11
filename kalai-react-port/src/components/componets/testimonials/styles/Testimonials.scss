@@ -3,13 +3,33 @@
 .slideshow-container {
     width: 100%;
     height: 100vh;
-    // border: 2px solid red;
     overflow: hidden;
     position: relative;
     @include xsBreakPoint {
         height: 100vh;
-        // overflow-y: scroll;
+        overflow-y: auto;
     }
+    @include smBreakPoint {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    @include lgBreakPoint {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    @include xlBreakPoint {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    @include xxlBreakPoint {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
     .my {
         font-size: 3rem;
         @include xsBreakPoint {
@@ -24,6 +44,15 @@
             flex-direction: column;
             height: 100%;
         }
+        @include smBreakPoint {
+            flex-direction: column;
+            height: 100%;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+            height: 100%;
+        }
+
         .left {
             width: 50%;
             // border: 2px solid blue;
@@ -33,6 +62,12 @@
             display: flex;
             text-align: center;
             @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
                 width: 100%;
             }
             @include lgBreakPoint {
@@ -45,8 +80,8 @@
                 width: 100%;
             }
             .box {
-                width: 50%;
-                height: 70%;
+                width: 80%;
+                // height: 70%;
                 // background-color: #74dbee;
                 border-radius: 20px;
                 display: flex;
@@ -54,17 +89,19 @@
                 justify-content: center;
                 margin: 0 auto;
                 position: relative;
-                @include xsBreakPoint {
-                    height: 100%;
-                }
+                padding: 10px;
+
                 .image-persons {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin: auto;
+                    // border: 2px solid blue;
                     @include xsBreakPoint {
                         width: 100%;
+                    }
+                    @include mdBreakPoint {
+                        width: 40% !important;
                     }
                     @include lgBreakPoint {
                         width: 100%;
@@ -77,7 +114,14 @@
                 bottom: 0;
                 @include xsBreakPoint {
                     width: 50%;
-                    display: none;
+                    top: 15% !important;
+                    // display: none;
+                    // bottom: -10px;
+                }
+                @include mdBreakPoint {
+                    width: 30%;
+                    right: 0;
+                    // display: none;
                     // bottom: -10px;
                 }
                 @include lgBreakPoint {
@@ -95,11 +139,18 @@
             @include xsBreakPoint {
                 width: 100%;
             }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
             @include lgBreakPoint {
                 width: 100%;
             }
             @include xlBreakPoint {
                 width: 100%;
+                padding-bottom: 30px;
             }
             @include xxlBreakPoint {
                 width: 100%;

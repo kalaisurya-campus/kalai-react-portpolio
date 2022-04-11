@@ -4,7 +4,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 30px;
-   
+
     .inside-section3 {
         display: flex;
         width: 100%;
@@ -33,6 +33,29 @@
             }
             @include lgBreakPoint {
                 width: 100%;
+            }
+            .experiance-box {
+                border: 2px solid blue;
+                width: 100%;
+                height: 100%;
+                .inside-box {
+                    display: flex;
+                    .left-images-box {
+                        width: 50%;
+                        height: 100%;
+                        overflow-x: hidden;
+                      
+                    }
+                    .right-images-box {
+                        width: 50%;
+                        .empty-box
+                        {
+                            width:100px;
+                            height:300px;
+                            border: 2px solid blue;
+                        }
+                    }
+                }
             }
             .g1 {
                 @include xsBreakPoint {

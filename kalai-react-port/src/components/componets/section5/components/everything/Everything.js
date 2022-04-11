@@ -33,12 +33,12 @@ function Everything(props) {
     return (
         <>
             <div className="main-ever">
-                <div className="container mt-5">
-                    <div className="row justify-content-center gap-5 mb-1">
+                <div className="container mt-5 ">
+                    <div className="row justify-content-center gap-5 mb-5 h-100">
                         {imagedata.images.map((items, index) => {
                             return (
                                 <div
-                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mt-2 mb-4"
+                                    class="card col-lg-3 col-md-10 col-sm-11 col-xs-12 gap-5 mb-4"
                                     key={index}
                                 >
                                     <img
