@@ -1,19 +1,10 @@
 @use "../../../../../../scss/abstract/" as *;
 
 .main-designs {
-    width: 100%;
-    height: 100vh;
-
     .card {
         display: flex;
         align-items: center;
         justify-content: center;
-        @include xsBreakPoint {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            width: 100%;
-        }
+        height: 250px;
     }
 }

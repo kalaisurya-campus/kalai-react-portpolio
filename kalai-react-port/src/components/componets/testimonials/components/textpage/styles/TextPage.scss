@@ -10,6 +10,7 @@
         justify-content: center;
         height: 80%;
         flex-direction: column;
+        position: relative;
         @include xsBreakPoint {
             height: 100%;
         }
@@ -42,7 +43,7 @@
     }
     .bottom-imageds {
         width: 40%;
-        position: absolute;
+        // position: absolute;
         @include xsBreakPoint {
             width: 65%;
             right: 15%;

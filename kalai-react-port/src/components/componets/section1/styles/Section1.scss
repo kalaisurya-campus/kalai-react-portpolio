@@ -5,10 +5,12 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    @include xlBreakPoint {
-        padding: 10px;
+    @include lgBreakPoint {
+        overflow-y: auto;
     }
-
+    @include xlBreakPoint {
+        overflow-y: auto;
+    }
     .secion1-inside {
         width: 100%;
         height: 100%;
@@ -94,7 +96,7 @@
                     width: 60%;
                 }
                 @include xxlBreakPoint {
-                    width: 60%;
+                    width: 50%;
                 }
             }
             .hire {
@@ -136,7 +138,7 @@
                     // animation: rocket 3s ease-in-out infinite;
                     @include lgBreakPoint {
                         width: 100%;
-                        height: 270px;
+                        height: 250px;
                     }
                     @include xlBreakPoint {
                         width: 100%;
@@ -172,16 +174,18 @@
                     right: 0%;
                     top: 10%;
                     @include lgBreakPoint {
-                        width: 40%;
+                        width: 50%;
                         top: 35%;
+                        right: -4%;
                     }
                     @include xlBreakPoint {
-                        width: 40%;
+                        width: 47%;
                         top: 15%;
+                        right: -3%;
                     }
                     @include xxlBreakPoint {
                         width: 40%;
-                        top: 15%;
+                        top: 25%;
                     }
                 }
             }

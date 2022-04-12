@@ -8,8 +8,8 @@ function Section5(props) {
     const [index, SetIndex] = useState(0);
     return (
         <div className="section5">
-            <h1 className="port mb-5">Portfolio</h1>
-            <div className="container tabs ">
+            <h1 className="port mt-4 mb-2">Portfolio</h1>
+            <div className="tabs">
                 <div className="tablist">
                     <div
                         className={`tabHead ${index == 0 ? "active" : "null"}`}
@@ -44,19 +44,21 @@ function Section5(props) {
                         Design
                     </div>
                 </div>
-                <div className="tabContent" hidden={index != 0}>
-                    <Everything />
-                </div>
-                <div className="tabContent" hidden={index != 1}>
-                    {" "}
-                    <Art />
-                </div>
-                <div className="tabContent" hidden={index != 2}>
-                    {" "}
-                    <Creative />
-                </div>
-                <div className="tabContent" hidden={index != 3}>
-                    <Designs />
+                <div className="inside-tabcontent">
+                    <div className="tabContent" hidden={index != 0}>
+                        <Everything />
+                    </div>
+                    <div className="tabContent" hidden={index != 1}>
+                        {" "}
+                        <Art />
+                    </div>
+                    <div className="tabContent" hidden={index != 2}>
+                        {" "}
+                        <Creative />
+                    </div>
+                    <div className="tabContent" hidden={index != 3}>
+                        <Designs />
+                    </div>
                 </div>
             </div>
         </div>

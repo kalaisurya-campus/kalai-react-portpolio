@@ -8,7 +8,8 @@
 
     // background-color: red;
     @include xsBreakPoint {
-        height: auto !important;
+        height: auto;
+        padding-bottom: 30px;
     }
     @include smBreakPoint {
         height: auto !important;
@@ -96,6 +97,10 @@
                 font-weight: 700;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                 margin: 0 auto;
+                @include xsBreakPoint {
+                    padding: 10px !important;
+                    width: 50%;
+                }
                 @include smBreakPoint {
                     width: 40%;
                 }
@@ -113,7 +118,7 @@
             .circles {
                 position: relative;
                 @include xsBreakPoint {
-                    width: 100%;
+                    width: 400px;
                     margin: 0 auto;
                 }
                 @include smBreakPoint {
@@ -154,13 +159,14 @@
                     left: 5%;
                     animation: smile 5s ease-in-out infinite;
                     @include xsBreakPoint {
-                        width: 20%;
+                        width: 16%;
                     }
                     @include smBreakPoint {
                         width: 18%;
                     }
                     @include mdBreakPoint {
-                        width: 20%;
+                        width: 16%;
+                        left: 30%;
                     }
                 }
                 .smile1 {
@@ -168,7 +174,7 @@
                     top: 0;
                     animation: smile1 5s ease-in-out infinite;
                     @include xsBreakPoint {
-                        width: 20%;
+                        width: 16%;
                         top: 40%;
                     }
                     @include smBreakPoint {
@@ -176,8 +182,9 @@
                         top: 70%;
                     }
                     @include mdBreakPoint {
-                        width: 20%;
+                        width: 16%;
                         top: 80%;
+                        left: -8%;
                     }
                 }
                 .smile2 {
@@ -185,17 +192,17 @@
                     top: 0;
                     animation: smile2 5s ease-in-out infinite;
                     @include xsBreakPoint {
-                        width: 20%;
-                        top: 85%;
+                        width: 16%;
+                        top: 95%;
                     }
                     @include smBreakPoint {
                         width: 18%;
                         // top: 50%;
                     }
                     @include mdBreakPoint {
-                        width: 20%;
+                        width: 14%;
                         top: 35%;
-                        left: 0;
+                        left: -17%;
                     }
                 }
                 .smile3 {
@@ -204,15 +211,16 @@
                     right: 0;
                     animation: smile3 5s ease-in-out infinite;
                     @include xsBreakPoint {
-                        width: 20%;
+                        width: 16%;
                         top: 3%;
+                        right: 15%;
                     }
                     @include smBreakPoint {
                         width: 18%;
                         top: 5%;
                     }
                     @include mdBreakPoint {
-                        width: 20%;
+                        width: 16%;
                         top: 66%;
                     }
                 }
@@ -222,15 +230,16 @@
                     right: 0;
                     animation: smile4 5s ease-in-out infinite;
                     @include xsBreakPoint {
-                        width: 20%;
-                        top: 65%;
+                        width: 16%;
+                        top: 90%;
+                        right: 10%;
                     }
                     @include smBreakPoint {
                         width: 18%;
                         top: 70%;
                     }
                     @include mdBreakPoint {
-                        width: 20%;
+                        width: 16%;
                         top: 0%;
                     }
                 }

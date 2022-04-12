@@ -38,7 +38,7 @@ function Creative(props) {
                         {createimag.crateimagedata.map((items, index) => {
                             return (
                                 <div
-                                    class="card col-lg-3 col-md-10 col-sm-11 gap-5 mb-2"
+                                    class="card col-lg-3 col-md-6 col-sm-11 gap-5 mb-2 ms-3"
                                     key={index}
                                 >
                                     <img

@@ -8,6 +8,7 @@ import sm3 from "../../../../../assets/kalai-port/sm3.png";
 import sm4 from "../../../../../assets/kalai-port/sm4.png";
 import sm5 from "../../../../../assets/kalai-port/sm5.png";
 import offsetleft from "../../../../../assets/kalai-port/offset-left.png";
+// import purush from "../../../../../assets/kalai-port/purush.png";
 import purush from "../../../../../assets/kalai-port/purush.png";
 import circles from "../../../../../assets/kalai-port/topcirles.png";
 import "./styles/Mobilesection1.scss";
@@ -35,9 +36,9 @@ function Mobilesection1(props) {
                         <img src={offsetleft} className="last-oofets" />
                     </div>
                     <div className="circles">
-                        {/* <img src={circles} className="circles" /> */}
+                        <img src={purush} className="circles" />
                         <div className="pur">
-                            <img src={purush} className="pru" />
+                            {/* <img src={purush} className="pru" /> */}
                         </div>
                         <div className="smiles1">
                             <img src={sm1} className="smile" />

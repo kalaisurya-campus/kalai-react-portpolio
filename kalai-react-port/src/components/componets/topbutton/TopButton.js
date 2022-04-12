@@ -5,7 +5,7 @@ function TopButton(props) {
     const [backbutton, SetBackButton] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 7800) {
+            if (window.scrollY > 10200) {
                 SetBackButton(true);
             } else {
                 SetBackButton(false);
@@ -20,7 +20,7 @@ function TopButton(props) {
     };
     return (
         <>
-            <div className="scrolls-buttons">
+            <div className="scrolls-buttons d-none d-lg-block d-sm-none">
                 {backbutton && (
                     <div onClick={scrollup}>
                         <img src={rotes} className="toprotest" />

@@ -30,12 +30,7 @@
         }
         .left-section7 {
             width: 50%;
-            justify-content: center;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            display: flex;
+            // border: 2px solid red;
             @include xsBreakPoint {
                 width: 100%;
             }
@@ -54,6 +49,37 @@
             @include xxlBreakPoint {
                 width: 100%;
             }
+            .boxes {
+                .cardt {
+                    width: 32%;
+                    // border: 2px solid red;
+                    height: 150px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    border-radius: 20px;
+                    color: black;
+                    @include xsBreakPoint {
+                        width: 37%;
+                    }
+                }
+                .cardt:hover {
+                    background-color: orange;
+                    color: white;
+                    cursor: pointer;
+                }
+                .locate {
+                    font-size: 2rem !important;
+                }
+                .mails {
+                    word-break: break-all;
+                }
+            }
+
             .cotact-list {
                 display: flex;
                 justify-content: center;
@@ -79,6 +105,11 @@
                 }
             }
             .contactimage {
+                width: 50%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 @include xsBreakPoint {
                     width: 60%;
                     display: flex;
@@ -100,7 +131,7 @@
                     margin: 0 auto;
                 }
                 @include xlBreakPoint {
-                    width: 80%;
+                    width: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;

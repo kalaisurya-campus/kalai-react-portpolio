@@ -174,7 +174,7 @@ function SignOut() {
 function ChatRoom() {
     const dummy = useRef();
     const messagesRef = firestore.collection("messages");
-    const query = messagesRef.orderBy("createdAt").limit(25);
+    const query = messagesRef.orderBy("createdAt");
 
     const [messages] = useCollectionData(query, { idField: "id" });
 
@@ -193,44 +193,48 @@ function ChatRoom() {
         });
 
         setFormValue("");
-        dummy.current.scrollIntoView({ behavior: "smooth" });
+        // dummy.current.scrollIntoView({ behavior: "smooth" });
     };
 
     return (
         <>
             <div className="chat-room-main">
-                <div className="signout-headers">
-                    <SignOut />
-                </div>
-                <div className="main-message-chat">
-                    <main>
-                        {messages &&
-                            messages.map((msg) => (
-                                <ChatMessage key={msg.id} message={msg} />
-                            ))}
+                <div className="inside-main-kalai-chat">
+                    <div className="signout-headers px-3">
+                        <SignOut />
+                    </div>
+                    <div className="main-message-chat">
+                        <main>
+                            {messages &&
+                                messages.map((msg) => (
+                                    <ChatMessage key={msg.id} message={msg} />
+                                ))}
 
-                        <span ref={dummy}></span>
-                    </main>
-                </div>
+                            <span ref={dummy}></span>
+                        </main>
+                    </div>
 
-                <div className="bottom-chats mb-5">
-                    <form onSubmit={sendMessage}>
-                        <div className="input-flex">
-                            <input
-                                value={formValue}
-                                onChange={(e) => setFormValue(e.target.value)}
-                                placeholder="Enter The Message"
-                            />
+                    <div className="bottom-chats mb-5">
+                        <form onSubmit={sendMessage}>
+                            <div className="input-flex">
+                                <input
+                                    value={formValue}
+                                    onChange={(e) =>
+                                        setFormValue(e.target.value)
+                                    }
+                                    placeholder="Enter The Message"
+                                />
 
-                            <button
-                                type="submit"
-                                className="inputs"
-                                disabled={!formValue}
-                            >
-                                Send
-                            </button>
-                        </div>
-                    </form>
+                                <button
+                                    type="submit"
+                                    className="inputs"
+                                    disabled={!formValue}
+                                >
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </>
@@ -246,7 +250,7 @@ function ChatMessage(props) {
                 {/* <img src={photoURL} /> */}
                 <img
                     src={
-                        "https://images.squarespace-cdn.com/content/v1/5eb48d3fef49df153d320521/1618067560787-84GC43ROIAG167WVTNWV/Amrit+Toy+Face.png?format=1500w"
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37yG5-QaQTIf0RqanFGmCl-7fl1-J-YEalw&usqp=CAU"
                     }
                 />
                 <p>{text}</p>

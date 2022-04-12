@@ -54,17 +54,21 @@ export default class TextPage extends Component {
                     <p className="text-sizes mb-5">
                         {this.state.images[this.state.currentImage]}
                     </p>
+                   
                     <p className="loreams-text mt-5 mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Vulputate diam molestie pellentesque pulvinar sapien,
                         sed viverra.
                     </p>
-                    <div className="images">
-                        <img src={groups} className="bottom-imageds" />
-                    </div>
+                    
+                    
                     <div className="buttons">
                         <MOdalPopup />
                     </div>
+                    <div className="images">
+                        <img src={groups} className="bottom-imageds" />
+                    </div>
+                   
                 </div>
             </div>
         );

@@ -181,10 +181,8 @@
                         font-size: 1rem;
                         font-weight: 600;
                         background-color: orange;
+                        color: black;
                         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-                        @include themed() {
-                            color: t($button-white-text);
-                        }
                     }
                 }
             }
@@ -357,9 +355,9 @@
                         padding: 10px;
                         border-radius: 20px;
                         font-size: 1rem;
-                        font-weight: 500;
-                        background-color: #102449;
-                        color: white;
+                        font-weight: 600;
+                        background-color: orange;
+                        color: black;
                         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
                     }
                 }

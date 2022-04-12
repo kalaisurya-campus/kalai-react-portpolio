@@ -91,7 +91,6 @@
                 border-radius: 50%;
                 background-color: #04a9f3;
                 animation: home 5s ease-in-out infinite;
-
                 @include smBreakPoint {
                     right: 30%;
                 }
@@ -125,7 +124,7 @@
             }
             .button-contact {
                 position: absolute;
-                bottom: 0;
+                bottom: 20%;
                 left: 5%;
                 width: 80px;
                 height: 80px;
@@ -137,7 +136,7 @@
                 background-color: #04a9f3;
                 animation: contact 5s ease-in-out infinite;
 
-                @include smBreakPoint {
+                @include smBreakPoint { 
                     left: 20%;
                 }
                 @include mdBreakPoint {

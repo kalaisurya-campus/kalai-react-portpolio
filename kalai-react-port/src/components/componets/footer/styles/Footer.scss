@@ -57,7 +57,7 @@
     .pers {
         position: absolute;
         left: 10%;
-        animation: pers 5s ease-in-out infinite;
+        // animation: pers 5s ease-in-out infinite;
         transition: 0s;
         width: 25%;
         @include lgBreakPoint {

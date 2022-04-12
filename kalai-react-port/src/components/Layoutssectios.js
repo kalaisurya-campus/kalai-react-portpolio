@@ -20,14 +20,14 @@ function Layoutssectios({ dark, setdark }) {
             <Navbar dark={dark} setdark={setdark} />
             <Section1 />
             <Section2 />
-            {/* <Section8about /> */}
+            <Section8about />
             <Section3 />
             <Section4 />
             <Section5 />
             <Section6 />
             <Testimonials />
             <Section7 />
-            {/* <Homepagechat /> */}
+            <Homepagechat />
             <Footer />
             <TopButton />
         </div>

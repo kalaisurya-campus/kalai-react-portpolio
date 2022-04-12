@@ -5,20 +5,43 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    // border: 2px solid red;
     @include xsBreakPoint {
+        // overflow-y: scroll;
+        height: auto;
+        // overflow: hidden;
+    }
+    @include smBreakPoint {
+        overflow-y: scroll;
+    }
+    @include mdBreakPoint {
+        overflow-y: scroll;
+    }
+    @include lgBreakPoint {
+        overflow-y: scroll;
+    }
+    @include xlBreakPoint {
         overflow-y: scroll;
     }
     .inside-abouts {
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // border: 2px solid green;
+        height: 100%;
         @include xsBreakPoint {
             flex-direction: column;
         }
-        .left-about {
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left-about-first {
             width: 50%;
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
             @include xsBreakPoint {
                 width: 100%;
             }
@@ -28,15 +51,66 @@
             @include mdBreakPoint {
                 width: 100%;
             }
-            .persons {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-                @include xsBreakPoint {
-                    width: 70%;
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            .back {
+                position: relative;
+                .persons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    position: absolute;
+                    width: 100%;
+                    @include xsBreakPoint {
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                        left: 15%;
+                        top: 18%;
+                    }
+                    @include mdBreakPoint {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                        left: 8%;
+                        top: 12%;
+                    }
+                    @include lgBreakPoint {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                        left: 8%;
+                        top: 12%;
+                    }
+                }
+                .rotates {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    animation: rotatesdata 7s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 100%;
+                        top: 5%;
+                    }
+                    @include mdBreakPoint {
+                        width: 100%;
+                        top: 5%;
+                    }
                 }
             }
+
             .empty-round {
                 width: 200px;
                 height: 200px;
@@ -45,6 +119,8 @@
                 border-radius: 50%;
                 animation: cts 5s ease-in-out infinite;
                 position: absolute;
+                top: 0;
+                left: 0;
                 @include xsBreakPoint {
                     width: 100px;
                     height: 100px;
@@ -65,9 +141,8 @@
                 }
             }
         }
-        .right-about {
+        .right-about-second {
             width: 50%;
-            height: 100%;
             @include xsBreakPoint {
                 width: 100%;
             }
@@ -77,11 +152,23 @@
             @include mdBreakPoint {
                 width: 100%;
             }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
             .content-about {
                 // border: 2px solid blue;
-                // height: 50vh;
+                height: 35%;
                 @include xsBreakPoint {
                     padding: 10px;
+                }
+                @include lgBreakPoint {
+                    height: 35%;
+                }
+                @include xlBreakPoint {
+                    height: 45%;
                 }
                 .p-split {
                     display: flex;
@@ -107,15 +194,158 @@
                     font-size: 3rem;
                     color: orange;
                     font-weight: 500;
+                    @include lgBreakPoint {
+                        font-size: 2.3rem;
+                    }
                 }
                 .is {
                     font-size: 1.2rem;
-                    // text-align: center;
                     line-height: 1.7;
                     @include xsBreakPoint {
                         font-size: 0.809rem;
+                        text-align: center;
+                    }
+                    @include mdBreakPoint {
+                        text-align: center;
+                    }
+                    @include lgBreakPoint {
+                        font-size: 1rem;
                     }
                 }
+            }
+            .another-content-section {
+                width: 100%;
+                height: 65%;
+                @include xsBreakPoint {
+                    height: 55%;
+                }
+                @include lgBreakPoint {
+                    // height: 100%;
+                }
+                .box1 {
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    @include xsBreakPoint {
+                        flex-direction: column-reverse;
+                    }
+                    .left-box1 {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 auto;
+                        justify-content: center;
+                        @include xsBreakPoint {
+                            width: 100%;
+                        }
+                        @include lgBreakPoint {
+                            width: 100%;
+                        }
+                        @include xlBreakPoint {
+                            width: 100%;
+                        }
+                    }
+                    .right-box1 {
+                        width: 50%;
+                        @include xsBreakPoint {
+                            width: 100%;
+                        }
+                        @include lgBreakPoint {
+                            width: 100%;
+                        }
+                        @include xlBreakPoint {
+                            width: 100%;
+                        }
+                        .like1 {
+                            width: 83%;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            @include xsBreakPoint {
+                                width: 80%;
+                            }
+                            @include lgBreakPoint {
+                                width: 100%;
+                            }
+                            @include xlBreakPoint {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .box2 {
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    @include xsBreakPoint {
+                        flex-direction: column;
+                    }
+                    .left-box2 {
+                        width: 50%;
+                        @include xsBreakPoint {
+                            width: 100%;
+                        }
+                        @include lgBreakPoint {
+                            width: 100%;
+                        }
+                        @include xlBreakPoint {
+                            width: 100%;
+                        }
+                        .like1 {
+                            width: 80%;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            @include xsBreakPoint {
+                                width: 80%;
+                                padding-top: 3%;
+                                padding-bottom: 20px;
+                            }
+                            @include lgBreakPoint {
+                                width: 100%;
+                            }
+                            @include xlBreakPoint {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .right-box2 {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 auto;
+                        justify-content: center;
+                        @include xsBreakPoint {
+                            width: 100%;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        @include lgBreakPoint {
+                            width: 100%;
+                            margin: 0 auto;
+                            padding-right: 20px;
+                        }
+                        @include xlBreakPoint {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .cardss {
+                border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 100%;
+                float: right;
+                text-align: right;
+                padding-right: 5%;
             }
 
             .age-text {
@@ -125,12 +355,24 @@
                 @include xsBreakPoint {
                     font-size: 1.2rem;
                 }
+                @include lgBreakPoint {
+                    font-size: 1.3rem;
+                }
+                @include xlBreakPoint {
+                    font-size: 1.5rem;
+                }
             }
             .age-texts {
                 font-size: 1.6rem;
                 font-weight: 500;
                 @include xsBreakPoint {
                     font-size: 1rem;
+                }
+                @include lgBreakPoint {
+                    font-size: 1rem;
+                }
+                @include xlBreakPoint {
+                    font-size: 1.15rem;
                 }
             }
         }
@@ -160,5 +402,18 @@
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes rotatesdata {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
