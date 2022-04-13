@@ -74,7 +74,7 @@ export default class MOdalPopup extends Component {
             <>
                 <button
                     type="button"
-                    class="reads ms-3"
+                    class="reads-btn ms-3"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop1"
                 >

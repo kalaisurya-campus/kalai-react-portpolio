@@ -10,7 +10,7 @@ function Section5(props) {
         <div className="section5">
             <h1 className="port mt-4 mb-2">Portfolio</h1>
             <div className="tabs">
-                <div className="tablist">
+                <div className="tablists ms-1">
                     <div
                         className={`tabHead ${index == 0 ? "active" : "null"}`}
                         onClick={() => {

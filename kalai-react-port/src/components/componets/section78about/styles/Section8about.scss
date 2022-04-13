@@ -7,21 +7,19 @@
     position: relative;
     // border: 2px solid red;
     @include xsBreakPoint {
-        // overflow-y: scroll;
         height: auto;
-        // overflow: hidden;
     }
     @include smBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include mdBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include lgBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include xlBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     .inside-abouts {
         width: 100%;
@@ -44,6 +42,7 @@
             justify-content: center;
             @include xsBreakPoint {
                 width: 100%;
+                padding-top: 20%;
             }
             @include smBreakPoint {
                 width: 100%;

@@ -51,24 +51,22 @@ export default class TextPage extends Component {
         return (
             <div className="text">
                 <div className="inside-texts">
-                    <p className="text-sizes mb-5">
+                    <p className="text-sizes mb-3 mt-5">
                         {this.state.images[this.state.currentImage]}
                     </p>
-                   
-                    <p className="loreams-text mt-5 mb-4">
+
+                    <p className="loreams-text mt-3 mb-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Vulputate diam molestie pellentesque pulvinar sapien,
                         sed viverra.
                     </p>
-                    
-                    
+
                     <div className="buttons">
                         <MOdalPopup />
                     </div>
                     <div className="images">
                         <img src={groups} className="bottom-imageds" />
                     </div>
-                   
                 </div>
             </div>
         );

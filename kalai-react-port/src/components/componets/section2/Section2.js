@@ -99,7 +99,7 @@ function Section2(props) {
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-12 mt-5 mb-5">
+                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-11 mt-5 mb-5">
                                         <div className="empty-image">
                                             <img
                                                 src={rock2}
@@ -162,7 +162,7 @@ function Section2(props) {
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-12 mt-5 ms-5">
+                                    <div className="card-java col-lg-10 col-xl-8 col-xxl-11 mt-5 ms-5">
                                         <div className="empty-image">
                                             <img
                                                 src={html}
@@ -226,7 +226,7 @@ function Section2(props) {
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-9 col-xl-7 col-xxl-12 mt-5">
+                                    <div className="card-java col-lg-9 col-xl-7 col-xxl-11 mt-5">
                                         <div className="empty-image">
                                             <img
                                                 src={react}
@@ -367,7 +367,7 @@ function Section2(props) {
                     </div>
                 </div>
             </div>
-            <div className="containers d-none d-lg-block py-2">
+            <div className="containers d-none d-lg-block py-2 mb-5">
                 <div className="set-projects">
                     <div className="car1 mt-3">
                         <img src={s1} className="cars1" />

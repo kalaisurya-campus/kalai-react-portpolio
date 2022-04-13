@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import rotes from "../../../assets/kalai-port/btomboot.png";
+import ScrollToTop from "react-scroll-to-top";
 import "./styles/TopButton.scss";
 function TopButton(props) {
     const [backbutton, SetBackButton] = useState(false);
@@ -20,12 +21,22 @@ function TopButton(props) {
     };
     return (
         <>
-            <div className="scrolls-buttons d-none d-lg-block d-sm-none">
+            <div className="scrolls-buttons d-none d-lg-block">
                 {backbutton && (
                     <div onClick={scrollup}>
                         <img src={rotes} className="toprotest" />
                     </div>
                 )}
+            </div>
+            <div className="mobile d-block d-lg-none">
+                <ScrollToTop
+                    smooth
+                    component={
+                        <p style={{ color: "#24273F", fontSize: "1.5rem" }}>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </p>
+                    }
+                />
             </div>
         </>
     );

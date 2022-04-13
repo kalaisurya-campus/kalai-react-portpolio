@@ -14,6 +14,9 @@ function Section7() {
     return (
         <>
             <div className="section7" id="contact">
+                <h1 className="ms-4 mt-2 mb-2">
+                    Contact <span className="me-colors">ME</span>
+                </h1>
                 <div className="inside-contant">
                     <div className="left-section7">
                         {/* <img src={contact} className="contactimage mb-5" /> */}
@@ -25,7 +28,7 @@ function Section7() {
                                         data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop"
                                     >
-                                        <div className="location">
+                                        <div className="location mt-3">
                                             <ion-icon
                                                 name="location-outline"
                                                 style={{
@@ -34,7 +37,7 @@ function Section7() {
                                                 }}
                                             ></ion-icon>
                                         </div>
-                                        <div className="texts">
+                                        <div className="texts mb-2">
                                             <h5>Address</h5>
                                             <p className="mails">
                                                 Address,City,Street
@@ -44,9 +47,9 @@ function Section7() {
                                     <div
                                         className="cardt"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop1"
+                                        data-bs-target="#staticBackdrop12"
                                     >
-                                        <div className="phone">
+                                        <div className="phone mt-3">
                                             <ion-icon
                                                 name="call-outline"
                                                 style={{
@@ -55,7 +58,7 @@ function Section7() {
                                                 }}
                                             ></ion-icon>
                                         </div>
-                                        <div className="texts">
+                                        <div className="texts mb-2">
                                             <h5>Phone</h5>
                                             <p>+91 8778377119</p>
                                         </div>
@@ -65,7 +68,7 @@ function Section7() {
                                         data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop2"
                                     >
-                                        <div className="mail">
+                                        <div className="mail mt-3">
                                             <ion-icon
                                                 name="mail-outline"
                                                 style={{
@@ -74,7 +77,7 @@ function Section7() {
                                                 }}
                                             ></ion-icon>
                                         </div>
-                                        <div className="texts">
+                                        <div className="texts mb-2">
                                             <h5>Mail</h5>
                                             <p className="mails">
                                                 kalaimca685@gmail.com
@@ -86,7 +89,7 @@ function Section7() {
                                         data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop3"
                                     >
-                                        <div className="browser">
+                                        <div className="browser mt-3">
                                             <ion-icon
                                                 name="logo-xbox"
                                                 style={{
@@ -95,7 +98,7 @@ function Section7() {
                                                 }}
                                             ></ion-icon>
                                         </div>
-                                        <div className="texts">
+                                        <div className="texts mb-2">
                                             <h5>Website</h5>
                                             <p>kalai-portpolio</p>
                                         </div>
@@ -195,9 +198,12 @@ function Section7() {
                         </div>
                         <div class="modal-body">
                             <h1>Address</h1>
-                            <img src={address} style={{
-                                width:"100%"
-                            }} />
+                            <img
+                                src={address}
+                                style={{
+                                    width: "100%",
+                                }}
+                            />
                         </div>
                         <div class="modal-footer">
                             <button
@@ -217,7 +223,7 @@ function Section7() {
             {/* phone apge */}
             <div
                 class="modal fade"
-                id="staticBackdrop1"
+                id="staticBackdrop12"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"
@@ -239,9 +245,12 @@ function Section7() {
                         </div>
                         <div class="modal-body">
                             <h1>Phone</h1>
-                            <img src={phone} style={{
-                                width:"100%"
-                            }}  />
+                            <img
+                                src={phone}
+                                style={{
+                                    width: "100%",
+                                }}
+                            />
                         </div>
                         <div class="modal-footer">
                             <button
@@ -284,9 +293,12 @@ function Section7() {
                         </div>
                         <div class="modal-body">
                             <h1>Mail</h1>
-                            <img src={email}  style={{
-                                width:"100%"
-                            }} />
+                            <img
+                                src={email}
+                                style={{
+                                    width: "100%",
+                                }}
+                            />
                         </div>
                         <div class="modal-footer">
                             <button
@@ -328,9 +340,12 @@ function Section7() {
                         </div>
                         <div class="modal-body">
                             <h1>Website</h1>
-                            <img src={website}  style={{
-                                width:"100%"
-                            }} />
+                            <img
+                                src={website}
+                                style={{
+                                    width: "100%",
+                                }}
+                            />
                         </div>
                         <div class="modal-footer">
                             <button

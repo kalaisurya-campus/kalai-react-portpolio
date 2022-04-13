@@ -38,7 +38,7 @@ function Designs(props) {
                         {DesignsImages.designimage.map((items, index) => {
                             return (
                                 <div
-                                    class="card col-lg-3 col-md-6 col-sm-11 gap-5 mb-4"
+                                    class="card col-lg-3 col-md-6 col-sm-11 gap-5 mb-4 ms-4"
                                     key={index}
                                 >
                                     <img

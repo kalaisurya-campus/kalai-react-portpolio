@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./styles/Homepagechat.scss";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
@@ -8,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { GoogleLogin } from "react-google-login";
 import chats from "../../../../assets/kalai-port/chat1.png";
 firebase.initializeApp({
     apiKey: "AIzaSyBulhG9GPcAeAUgop8J5ts4NdXvHNrYWG4",
@@ -74,6 +75,24 @@ function Signup() {
             }
         }
     };
+    const responseGoogle = (response) => {
+        console.log(response);
+        console.log("tokensr", response.accessToken);
+        // AcessToken(response.accessToken);
+        console.log(response.Du.tf);
+        // SetName(response.Du.tf);
+        console.log(response.profileObj.imageUrl);
+        // SetEmptyImage(response.profileObj.imageUrl);
+
+        // const parseJwt = (token,response) => {
+        //     try {
+        //         return JSON.parse((response.split(".")[1]));
+        //     } catch (e) {
+        //         return null;
+        //     }
+        // };
+        // return parseJwt;
+    };
     return (
         <div className="login-main">
             <div className="top-inside-main">
@@ -136,6 +155,13 @@ function Signup() {
                                     Forget Password
                                 </p>
                             </div>
+                            {/* <GoogleLogin
+                                clientId="1088280318673-bqvvomok82p2d8srattr74qocq2c9u6o.apps.googleusercontent.com"
+                                buttonText="Google Login"
+                                onSuccess={responseGoogle}
+                                onFailure={responseGoogle}
+                                cookiePolicy={"single_host_origin"}
+                            /> */}
                             <button className="sub mt-1">Signin</button>
                             <div className="logos">
                                 <div></div>
@@ -195,7 +221,7 @@ function ChatRoom() {
         setFormValue("");
         // dummy.current.scrollIntoView({ behavior: "smooth" });
     };
-
+    // console.log("received messages", messages);
     return (
         <>
             <div className="chat-room-main">
@@ -242,8 +268,18 @@ function ChatRoom() {
 }
 
 function ChatMessage(props) {
-    const { text, uid, photoURL } = props.message;
+    const { text, uid, photoURL, createdAt } = props.message;
     const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
+    let creates = createdAt;
+    let date = new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+    }).format(creates);
+    console.log("receiveds", date);
     return (
         <>
             <div className={`message ${messageClass}`}>
@@ -254,6 +290,7 @@ function ChatMessage(props) {
                     }
                 />
                 <p>{text}</p>
+                {/* <p>{date}</p> */}
             </div>
         </>
     );

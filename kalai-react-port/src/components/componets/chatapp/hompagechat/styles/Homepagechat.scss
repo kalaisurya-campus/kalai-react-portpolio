@@ -153,21 +153,24 @@
     height: 100vh;
     overflow: hidden;
     @include xsBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include smBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include mdBreakPoint {
-        overflow-y: scroll;
+        height: auto;
+        padding-bottom: 10px;
     }
     @include lgBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include xlBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
-
+    @include xxlBreakPoint {
+        height: auto;
+     }
     .inside-chats {
         display: flex;
         width: 100%;
@@ -287,9 +290,11 @@
                         background-repeat: no-repeat;
                         background-size: 70%;
                         object-fit: cover;
-                        border-radius: 40px;
+                        border-radius: 20px;
                     }
-
+                    ::-webkit-scrollbar {
+                        display: none;
+                    }
                     .message {
                         display: flex;
                         align-items: center;

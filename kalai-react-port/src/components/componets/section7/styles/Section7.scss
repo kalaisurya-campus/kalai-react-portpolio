@@ -9,13 +9,30 @@
     }
     @include smBreakPoint {
         height: auto;
-        padding-bottom: 20px;
     }
     @include mdBreakPoint {
         height: auto;
-        // padding-bottom: 20px;
     }
-
+    @include lgBreakPoint {
+        height: auto;
+    }
+    @include xlBreakPoint {
+        height: auto;
+    }
+    @include xxlBreakPoint {
+        height: auto;
+    }
+    .me-colors {
+        color: green;
+        font-size: 3rem;
+        font-weight: 700;
+        @include xsBreakPoint {
+            font-size: 2rem;
+        }
+        @include mdBreakPoint {
+            font-size: 2.2rem;
+        }
+    }
     .inside-contant {
         display: flex;
         height: 100%;
@@ -63,6 +80,7 @@
                     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
                     border-radius: 20px;
                     color: black;
+                    cursor: pointer;
                     @include xsBreakPoint {
                         width: 37%;
                     }
@@ -234,6 +252,11 @@
                     width: 40%;
                     font-size: 1rem;
                 }
+            }
+            .btn:hover {
+                cursor: pointer;
+                background-color: $back_export_color-black;
+                color: black;
             }
         }
     }

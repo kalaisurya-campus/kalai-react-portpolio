@@ -5,6 +5,24 @@
     height: 100vh;
     overflow: hidden;
     // border: 2px solid red;
+    @include xsBreakPoint {
+        height: auto;
+    }
+    @include smBreakPoint {
+        height: auto;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
+    @include lgBreakPoint {
+        height: auto;
+    }
+    @include xlBreakPoint {
+        height: auto;
+    }
+    @include xxlBreakPoint {
+        height: auto;
+    }
     .port {
         padding-left: 5rem;
         font-size: 2.8rem;
@@ -16,13 +34,12 @@
         flex-direction: column;
         cursor: pointer;
         height: 100%;
-        .tablist {
+        .tablists {
             display: flex;
             align-items: center;
             font-size: 1.2rem;
             font-weight: 600;
             height: 10%;
-            // border: 2px solid red;
             justify-content: space-around;
             @include xsBreakPoint {
                 font-size: 0.897rem;
@@ -32,32 +49,7 @@
         .inside-tabcontent {
             // border: 4px solid orange;
             height: 90%;
-            overflow: hidden;
-            @include xsBreakPoint {
-                overflow-y: auto;
-                padding-bottom: 90px;
-                margin: 0 auto;
-            }
-            @include smBreakPoint {
-                overflow-y: auto;
-                padding-bottom: 90px;
-                margin: 0 auto;
-            }
-            @include mdBreakPoint {
-                overflow-y: auto;
-                padding-bottom: 90px;
-                margin: 0 auto;
-            }
-            @include lgBreakPoint {
-                overflow-y: auto;
-                padding-bottom: 70px;
-                margin: 0 auto;
-            }
-            @include xlBreakPoint {
-                overflow-y: auto;
-                padding-bottom: 70px;
-                margin: 0 auto;
-            }
+
             .tabContent {
                 display: flex;
                 align-items: center;
@@ -67,9 +59,31 @@
     }
     .active {
         background-color: $back_export_color-white;
-        padding: 10px 30px;
+        padding: 10px;
         border-radius: 10% 30% 50% 70%;
         cursor: pointer;
         color: black;
+        width: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include xsBreakPoint {
+            width: 30%;
+        }
+        @include smBreakPoint {
+            width: 30%;
+        }
+        @include mdBreakPoint {
+            width: 35%;
+        }
+        @include lgBreakPoint {
+            width: 20%;
+        }
+        @include xlBreakPoint {
+            width: 10%;
+        }
+        @include xxlBreakPoint {
+            width: 15%;
+        }
     }
 }

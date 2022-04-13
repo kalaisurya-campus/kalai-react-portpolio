@@ -13,10 +13,15 @@ import Section7 from "./componets/section7/Section7";
 import Section8about from "./componets/section78about/Section8about";
 import Testimonials from "./componets/testimonials/Testimonials";
 import TopButton from "./componets/topbutton/TopButton";
-
+import "./Layoutsection.scss";
 function Layoutssectios({ dark, setdark }) {
     return (
-        <div>
+        <div
+            style={{
+                height: "100%",
+                width: "100%",
+            }}
+        >
             <Navbar dark={dark} setdark={setdark} />
             <Section1 />
             <Section2 />

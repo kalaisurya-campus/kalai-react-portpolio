@@ -7,38 +7,21 @@
     position: relative;
     // border: 2px solid red;
     @include xsBreakPoint {
-        overflow-y: scroll;
-        // border: 2px solid blue;  
+        height: auto;
     }
-    // @include xsBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-    // @include smBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-    // @include mdBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-    // @include lgBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-    // @include xlBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-    // @include xxlBreakPoint {
-    //     height: 100vh;
-    //     overflow-y: auto;
-    // }
-
+    @include smBreakPoint {
+        height: auto;
+    }
+    @include mdBreakPoint {
+        height: auto;
+    }
     .my {
         font-size: 3rem;
         @include xsBreakPoint {
             font-size: 1.3rem;
+        }
+        @include mdBreakPoint {
+            font-size: 2rem;
         }
     }
     .inside-box {

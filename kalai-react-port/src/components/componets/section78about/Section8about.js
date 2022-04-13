@@ -9,7 +9,7 @@ function Section8about(props) {
         <div className="abouts">
             <div className="inside-abouts">
                 <div className="left-about-first">
-                    <div className="empty-round"></div>
+                    {/* <div className="empty-round"></div> */}
                     <div className="back">
                         <div className="image1">
                             <img src={name} className="persons" />
@@ -23,7 +23,7 @@ function Section8about(props) {
                 <div className="right-about-second">
                     <div className="content-about">
                         <h1 className="mt-1">
-                            ABOUT <span className="me">ME</span>
+                            ABOUT ME
                         </h1>
                         <p className="p-split mt-2">
                             <span className="myname">My Name Is</span>

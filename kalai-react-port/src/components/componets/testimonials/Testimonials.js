@@ -75,7 +75,7 @@ export default class Testimonials extends Component {
         return (
             <>
                 <div className="slideshow-container">
-                    <h1 className="ms-5 my">My Activities</h1>
+                    <h1 className="ms-5 mt-3 my">My Activities</h1>
                     <div className="inside-box">
                         <div className="left">
                             <div className="box my-auto">

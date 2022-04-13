@@ -99,6 +99,11 @@
                 width: 30%;
             }
         }
+        .demo:hover {
+            background-color: orange;
+            cursor: pointer;
+            color: black;
+        }
 
         .card-img-top {
             height: 250px;
