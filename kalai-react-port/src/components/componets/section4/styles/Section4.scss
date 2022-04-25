@@ -6,19 +6,19 @@
     overflow: hidden;
     position: relative;
     @include xsBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include smBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include mdBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include lgBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include xlBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     .off-sets {
         position: absolute;

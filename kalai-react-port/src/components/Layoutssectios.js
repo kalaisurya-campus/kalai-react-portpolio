@@ -14,7 +14,7 @@ import Section8about from "./componets/section78about/Section8about";
 import Testimonials from "./componets/testimonials/Testimonials";
 import TopButton from "./componets/topbutton/TopButton";
 import "./Layoutsection.scss";
-function Layoutssectios({ dark, setdark }) {
+function Layoutssectios({ dark, setdark, color }) {
     return (
         <div
             style={{
@@ -22,19 +22,19 @@ function Layoutssectios({ dark, setdark }) {
                 width: "100%",
             }}
         >
-            <Navbar dark={dark} setdark={setdark} />
-            <Section1 />
-            <Section2 />
-            <Section8about />
-            <Section3 />
-            <Section4 />
-            <Section5 />
-            <Section6 />
-            <Testimonials />
-            <Section7 />
-            <Homepagechat />
-            <Footer />
-            <TopButton />
+            <Navbar dark={dark} setdark={setdark} color={color} />
+            <Section1 color={color} />
+            <Section2 color={color} />
+            <Section8about color={color} />
+            <Section3 color={color} />
+            <Section4 color={color} />
+            <Section5 color={color} />
+            <Section6 color={color} />
+            <Testimonials color={color} />
+            <Section7 color={color} />
+            <Homepagechat color={color} />
+            <Footer color={color} />
+            <TopButton color={color} />
         </div>
     );
 }

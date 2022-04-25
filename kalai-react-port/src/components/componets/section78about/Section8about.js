@@ -6,7 +6,7 @@ import like1 from "../../../assets/kalai-port/like1.png";
 import like2 from "../../../assets/kalai-port/like2.png";
 function Section8about(props) {
     return (
-        <div className="abouts">
+        <div className="abouts" id="about">
             <div className="inside-abouts">
                 <div className="left-about-first">
                     {/* <div className="empty-round"></div> */}
@@ -22,20 +22,24 @@ function Section8about(props) {
                 </div>
                 <div className="right-about-second">
                     <div className="content-about">
-                        <h1 className="mt-1">
-                            ABOUT ME
-                        </h1>
+                        <h1 className="mt-3">ABOUT ME</h1>
                         <p className="p-split mt-2">
                             <span className="myname">My Name Is</span>
                             <span className="surya">Kalaisurya</span>
                         </p>
-                        <p className="is mt-2">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text. It has survived not
-                            only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially
-                            unchanged.
+                        <p
+                            className="is mt-2"
+                            style={{
+                                paddingLeft: "40px",
+                                paddingRight: "40px",
+                                textAlign: "center",
+                            }}
+                        >
+                            Lorem ipsum dlor sit amet consectetur adipising
+                            alit.Eaque eos volptatem eius dolorem maiores nihil
+                            ducimus at rem ullam reprehenderit quidem quia
+                            deserut,molestiae,eligendi amet repellat molestias
+                            quos totam.
                         </p>
                     </div>
                     <div className="another-content-section">

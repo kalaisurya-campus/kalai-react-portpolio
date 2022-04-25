@@ -4,14 +4,19 @@ import { NavLink, useHistory } from "react-router-dom";
 import "./styles/Navbar.scss";
 import darkmode from "../../../assets/kalai-port/darkmode.png";
 import lightmode from "../../../assets/kalai-port/lightmode.png";
-function Navbar({ dark, setdark }) {
+
+import { Link } from "react-scroll";
+
+function Navbar({ dark, setdark, color }) {
     const usehistory = useHistory();
     return (
         <>
             <div className="d-none d-lg-block">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand">Hi Kalaisurya!</a>
+                        <h1 style={{ color: color, fontWeight: 700 }}>
+                            Hi Kalaisurya!
+                        </h1>
                         <button
                             class="navbar-toggler"
                             type="button"
@@ -29,24 +34,29 @@ function Navbar({ dark, setdark }) {
                         >
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#home">
+                                    <Link class="nav-link" to="home">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#aboutus">
-                                        Aboutus
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#service">
+                                    <Link class="nav-link" to="service">
                                         Services
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">
+                                    <Link class="nav-link" to="about">
+                                        Aboutus
+                                    </Link>
+                                </li>
+                                <li class="nav-item">
+                                    <Link class="nav-link" to="chat">
+                                        Chat
+                                    </Link>
+                                </li>
+                                <li class="nav-item">
+                                    <Link class="nav-link" to="contact">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                             <div class="d-flexs">
@@ -58,22 +68,22 @@ function Navbar({ dark, setdark }) {
                                 </button> */}
 
                                 <div className="d-flex">
-                                    <span
-                                        className="dar"
-                                        onClick={() => setdark(!dark)}
-                                    >
-                                        {dark ? (
-                                            <img
-                                                src={darkmode}
-                                                className="darkst"
-                                            />
-                                        ) : (
-                                            <img
-                                                src={lightmode}
-                                                className="darkst"
-                                            />
-                                        )}
-                                    </span>
+                                    {/* <span
+                                            className="dar"
+                                            onClick={() => setdark(!dark)}
+                                        >
+                                            {dark ? (
+                                                <img
+                                                    src={darkmode}
+                                                    className="darkst"
+                                                />
+                                            ) : (
+                                                <img
+                                                    src={lightmode}
+                                                    className="darkst"
+                                                />
+                                            )}
+                                        </span> */}
                                     <div className="mt-2">
                                         <input
                                             type="checkbox"

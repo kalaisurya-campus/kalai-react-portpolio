@@ -9,14 +9,22 @@
             color: t($text-blue-darks) !important;
         }
     }
-    .nav-item .nav-link {
+    .nav-item {
         font-size: 1.3rem;
         color: black !important;
         font-weight: 500;
+        cursor: pointer;
         @include themed() {
             color: t($text-blue-darks) !important;
         }
     }
+    .nav-link {
+        color: black !important;
+        @include themed() {
+            color: t($text-blue-darks) !important;
+        }
+    }
+
     .darks {
         width: 50px;
         height: 50px;

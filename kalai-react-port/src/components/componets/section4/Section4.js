@@ -8,7 +8,7 @@ import Pre from "./pre/Pre";
 import offsetslefts from "../../../assets/kalai-port/offset-left.png";
 import rightoffset from "../../../assets/kalai-port/offset.png";
 import star from "../../../assets/kalai-port/star.png";
-import persan from '../../../assets/kalai-port/san.png';
+import persan from "../../../assets/kalai-port/san.png";
 function Section4(props) {
     const settings = {
         dots: false,

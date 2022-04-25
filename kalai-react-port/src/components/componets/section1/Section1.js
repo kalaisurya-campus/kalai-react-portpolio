@@ -14,7 +14,7 @@ import purush from "../../../assets/kalai-port/purush.png";
 import Mobilesection1 from "./components/mobilesection1/Mobilesection1";
 import circles from "../../../assets/kalai-port/topcirles.png";
 
-function Section1(props) {
+function Section1({ color }) {
     return (
         <>
             <div className="section1 d-none d-lg-block" id="home">
@@ -28,11 +28,15 @@ function Section1(props) {
                             <img src={sectios1} className="section-image" />
                         </div>
                         <div className="content-section1 my-auto">
-                            <h1 className="hy mb-1">Hy! I Am</h1>
+                            <h1 className="hy mb-1" style={{ color: color }}>
+                                Hy! I Am
+                            </h1>
                             <h1 className="kalai mt-4">Kalaisurya</h1>
                             <span className="loream mt-4">
                                 Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Massa sed nisl tellus amet.
+                                adipisicing elit. Qui laborum quasi, incidunt
+                                dolore iste nostrum cupiditate voluptas?
+                                Laborum, voluptas natus?
                             </span>
                             <button className="hire mt-5">Hire Me</button>
                         </div>

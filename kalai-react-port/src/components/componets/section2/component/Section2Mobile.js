@@ -39,8 +39,9 @@ function Section2Mobile(props) {
                                     React Developer
                                 </h1>
                                 <p className="loreams mt-2">
-                                    Loream ipsum dummy text are useually are
-                                    print and website Dummy Content
+                                    React is a declarative, efficient, and
+                                    flexible JavaScript library for building
+                                    user interfaces.
                                 </p>
                                 {/* <button className="readmore mt-2 mb-4">
                                     Read More...
@@ -69,9 +70,11 @@ function Section2Mobile(props) {
                             </div>
                             <div className="button-content">
                                 <h1 className="javascript mt-2">javascript</h1>
-                                <p className="loreams mt-2">
-                                    Loream ipsum dummy text are useually are
-                                    print and website Dummy Content
+                                <p className="loreams mt-2 ">
+                                    JavaScript is a dynamic programming language
+                                    that's used for web development, in web
+                                    applications, for game development, and lots
+                                    more HTML and CSS.
                                 </p>
                                 {/* <button className="readmore mt-2 mb-4">
                                     Read More...
@@ -102,8 +105,9 @@ function Section2Mobile(props) {
                             <div className="button-content">
                                 <h1 className="javascript mt-2">HTML & CSS</h1>
                                 <p className="loreams mt-2">
-                                    Loream ipsum dummy text are useually are
-                                    print and website Dummy Content
+                                    HTML (the Hypertext Markup Language) and CSS
+                                    (Cascading Style Sheets) are two of the core
+                                    technologies for building Web pages.
                                 </p>
                                 {/* <button className="readmore mt-2 mb-4">
                                     Read More...
@@ -134,8 +138,9 @@ function Section2Mobile(props) {
                             <div className="button-content">
                                 <h1 className="javascript mt-2">Bootstrap</h1>
                                 <p className="loreams mt-2">
-                                    Loream ipsum dummy text are useually are
-                                    print and website Dummy Content
+                                    Bootstrap is a free and open source front
+                                    end development framework for the creation
+                                    of websites and web apps.
                                 </p>
                                 {/* <button className="readmore mt-2 mb-4">
                                     Read More...
@@ -166,8 +171,10 @@ function Section2Mobile(props) {
                             <div className="button-content">
                                 <h1 className="javascript mt-2">UI & UX</h1>
                                 <p className="loreams mt-2">
-                                    Loream ipsum dummy text are useually are
-                                    print and website Dummy Content
+                                    The user experience is the result of their
+                                    interaction with a product or service, which
+                                    means that user experience includes, but is
+                                    not limited to, a user interface.
                                 </p>
                                 {/* <button className="readmore mt-2 mb-4">
                                     Read More...
@@ -282,8 +289,10 @@ function Section2Mobile(props) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                JavaScript is a dynamic programming language
+                                that's used for web development, in web
+                                applications, for game development, and lots
+                                more HTML and CSS.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -363,8 +372,9 @@ function Section2Mobile(props) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                HTML (the Hypertext Markup Language) and CSS
+                                (Cascading Style Sheets) are two of the core
+                                technologies for building Web pages.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -444,8 +454,8 @@ function Section2Mobile(props) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                React is a declarative, efficient, and flexible
+                                JavaScript library for building user interfaces.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -525,8 +535,9 @@ function Section2Mobile(props) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                Bootstrap is a free and open source front end
+                                development framework for the creation of
+                                websites and web apps.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -606,8 +617,12 @@ function Section2Mobile(props) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                he user experience is the result of
+                                <br />
+                                their interaction with a product or service,{" "}
+                                <br />
+                                which means that user experience includes, but
+                                is not limited to, a user interface.
                             </p>
                         </div>
                         <div class="modal-footer">

@@ -26,7 +26,7 @@ function Homepagechat() {
     const [user] = useAuthState(auth);
 
     return (
-        <div className="chathome">
+        <div className="chathome" id="chat">
             <div className="inside-chats">
                 <h1 className="ms-5">Chat</h1>
                 <div className="left-chat ">

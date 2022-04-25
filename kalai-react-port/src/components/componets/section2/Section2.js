@@ -24,7 +24,7 @@ import react from "../../../assets/kalai-port/react.png";
 import javascript from "../../../assets/kalai-port/javascript.png";
 import html from "../../../assets/kalai-port/html.png";
 import bootstrap from "../../../assets/kalai-port/bootstrap.png";
-function Section2(props) {
+function Section2({ color }) {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -61,7 +61,10 @@ function Section2(props) {
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
                             >
-                                <span className="aw">My Aw</span>esome{" "}
+                                <span className="aw" style={{ color: color }}>
+                                    My Aw
+                                </span>
+                                esome{" "}
                             </h1>
                             <h1
                                 className="service"
@@ -117,9 +120,12 @@ function Section2(props) {
                                                 javascript
                                             </h1>
                                             <p className="loreams mt-2">
-                                                Loream ipsum dummy text are
-                                                useually are print and website
-                                                Dummy Content
+                                                JavaScript is a dynamic
+                                                programming language that's used
+                                                for web development, in web
+                                                applications, for game
+                                                development, and lots more HTML
+                                                and CSS.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -157,10 +163,13 @@ function Section2(props) {
 
                             <div className="right-split-cards mt-5">
                                 <div
-                                    className="cards"
+                                    className="cards mt-5"
                                     data-aos="flip-up"
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
+                                    style={{
+                                        paddingTop: "40px",
+                                    }}
                                 >
                                     <div className="card-java col-lg-10 col-xl-8 col-xxl-11 mt-5 ms-5">
                                         <div className="empty-image">
@@ -180,9 +189,11 @@ function Section2(props) {
                                                 HTML & CSS
                                             </h1>
                                             <p className="loreams mt-2">
-                                                Loream ipsum dummy text are
-                                                useually are print and website
-                                                Dummy Content
+                                                HTML (the Hypertext Markup
+                                                Language) and CSS (Cascading
+                                                Style Sheets) are two of the
+                                                core technologies for building
+                                                Web pages.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -221,7 +232,7 @@ function Section2(props) {
                         <div className="split-right-section">
                             <div className="left">
                                 <div
-                                    className="cards mt-5"
+                                    className="cards mt-3 mb-5"
                                     data-aos="fade-up-left"
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
@@ -244,9 +255,10 @@ function Section2(props) {
                                                 React Developer
                                             </h1>
                                             <p className="loreams mt-2">
-                                                Loream ipsum dummy text are
-                                                useually are print and website
-                                                Dummy Content
+                                                React is a declarative,
+                                                efficient, and flexible
+                                                JavaScript library for building
+                                                user interfaces.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -275,15 +287,15 @@ function Section2(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="another-split-data">
+                        <div className="another-split-data ms-5">
                             <div className="right-move">
                                 <div
-                                    className="cards mt-5"
+                                    className="cards mt-5 mb-5"
                                     data-aos="fade-up-right"
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-7 col-xxl-8 mt-5">
+                                    <div className="card-java col-lg-7 col-xl-6 mt-5">
                                         <div className="empty-image">
                                             <img
                                                 src={bootstrap}
@@ -301,9 +313,10 @@ function Section2(props) {
                                                 Bootstrap
                                             </h1>
                                             <p className="loreams mt-2">
-                                                Loream ipsum dummy text are
-                                                useually are print and website
-                                                Dummy Content
+                                                Bootstrap is a free and open
+                                                source front end development
+                                                framework for the creation of
+                                                websites and web apps.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -346,8 +359,13 @@ function Section2(props) {
                                             UI & UX
                                         </h1>
                                         <p className="loreams mt-2">
-                                            Loream ipsum dummy text are useually
-                                            are print and website Dummy Content
+                                            he user experience is the result of
+                                            <br />
+                                            their interaction with a product or
+                                            service, <br />
+                                            which means that user experience
+                                            includes, but is not limited to, a
+                                            user interface.
                                         </p>
                                         {/* <button className="readmore mt-2">
                                             Read More...
