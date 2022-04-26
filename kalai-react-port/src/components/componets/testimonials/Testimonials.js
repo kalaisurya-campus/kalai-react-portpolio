@@ -28,6 +28,7 @@ export default class Testimonials extends Component {
     constructor(props) {
         super(props);
         this.switchImage = this.switchImage.bind(this);
+
         this.state = {
             currentImage: 0,
             images: [
@@ -74,8 +75,10 @@ export default class Testimonials extends Component {
     render() {
         return (
             <>
-                <div className="slideshow-container">
-                    <h1 className="ms-5 mt-3 my">My Activities</h1>
+                <div className="slideshow-container" id="acitivities">
+                    <h1 className="ms-5 mt-3 my">
+                        My <span style={{ color: this.color }}>Activities</span>
+                    </h1>
                     <div className="inside-box">
                         <div className="left">
                             <div className="box my-auto">

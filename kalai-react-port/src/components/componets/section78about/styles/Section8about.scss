@@ -21,6 +21,9 @@
     @include xlBreakPoint {
         height: auto;
     }
+    @include xxlBreakPoint {
+        height: auto;
+    }
     .inside-abouts {
         width: 100%;
         display: flex;
@@ -166,9 +169,7 @@
                 @include lgBreakPoint {
                     height: 35%;
                 }
-                @include xlBreakPoint {
-                    height: 45%;
-                }
+
                 .p-split {
                     display: flex;
                     align-items: center;

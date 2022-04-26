@@ -2,13 +2,12 @@ import React from "react";
 import NavbarMobile from "./component/navbarmobile/NavbarMobile";
 import { NavLink, useHistory } from "react-router-dom";
 import "./styles/Navbar.scss";
-import darkmode from "../../../assets/kalai-port/darkmode.png";
-import lightmode from "../../../assets/kalai-port/lightmode.png";
+import darkmode from "../../../assets/kalai-port/m2 dark.png";
+import lightmode from "../../../assets/kalai-port/m1 light.png";
 
 import { Link } from "react-scroll";
 
 function Navbar({ dark, setdark, color }) {
-    const usehistory = useHistory();
     return (
         <>
             <div className="d-none d-lg-block">
@@ -60,41 +59,22 @@ function Navbar({ dark, setdark, color }) {
                                 </li>
                             </ul>
                             <div class="d-flexs">
-                                {/* <span className="mt-2">Login</span> */}
-                                {/* <button
-                                    onClick={() => usehistory.push("/chat")}
-                                >
-                                    chat
-                                </button> */}
-
-                                <div className="d-flex">
-                                    {/* <span
-                                            className="dar"
-                                            onClick={() => setdark(!dark)}
-                                        >
-                                            {dark ? (
-                                                <img
-                                                    src={darkmode}
-                                                    className="darkst"
-                                                />
-                                            ) : (
-                                                <img
-                                                    src={lightmode}
-                                                    className="darkst"
-                                                />
-                                            )}
-                                        </span> */}
-                                    <div className="mt-2">
-                                        <input
-                                            type="checkbox"
-                                            hidden="hidden"
-                                            id="username"
-                                            onClick={() => setdark(!dark)}
-                                        />
-                                        <label
-                                            class="switch"
-                                            for="username"
-                                        ></label>
+                                <div className="">
+                                    <div
+                                        className="dar"
+                                        onClick={() => setdark(!dark)}
+                                    >
+                                        {dark ? (
+                                            <img
+                                                src={darkmode}
+                                                className="darkst"
+                                            />
+                                        ) : (
+                                            <img
+                                                src={lightmode}
+                                                className="darkst"
+                                            />
+                                        )}
                                     </div>
                                 </div>
                             </div>

@@ -195,9 +195,9 @@
                 .javascript {
                     font-size: 2rem;
                     font-weight: 600;
-                    @include themed() {
-                        color: t($text-black-color);
-                    }
+                    // @include themed() {
+                    //     color: t($text-black-color);
+                    // }
                 }
                 .loreams {
                     @include themed() {

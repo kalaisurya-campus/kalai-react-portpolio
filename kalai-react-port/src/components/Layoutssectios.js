@@ -26,7 +26,7 @@ function Layoutssectios({ dark, setdark, color }) {
             <Section1 color={color} />
             <Section2 color={color} />
             <Section8about color={color} />
-            <Section3 color={color} />
+            {/* <Section3 color={color} /> */}
             <Section4 color={color} />
             <Section5 color={color} />
             <Section6 color={color} />
@@ -34,7 +34,7 @@ function Layoutssectios({ dark, setdark, color }) {
             <Section7 color={color} />
             <Homepagechat color={color} />
             <Footer color={color} />
-            <TopButton color={color} />
+            <TopButton />
         </div>
     );
 }

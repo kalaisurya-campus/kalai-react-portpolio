@@ -16,26 +16,33 @@
     }
 }
 
-// .box12 {
-//     position: fixed;
-//     right: 20%;
-//     // top: 10%;
-//     .settings {
-//         width: 80px;
-//         height: 80px;
-//         animation: rotates 5s ease-in-out infinite;
-//     }
-// }
-
 .box-app {
     position: fixed;
-    right: 0;
-    top: 6%;
+    right: 10px;
+    top: 10%;
     z-index: 1000000000000000;
-    .settings {
-        width: 90px;
-        height: 90px;
-        animation: rotates 5s ease-in-out infinite;
+    background-color: orange !important;
+    border-radius: 100%;
+    cursor: pointer;
+    @include xsBreakPoint {
+        border: 2px solid red;
+       
+        z-index: 1000000000000000000000000;
+    }
+    .imag-box {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        .settings {
+            width: 70px;
+            position: absolute;
+            background-clip: content-box;
+            height: 70px;
+            animation: rotates 5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -45,7 +52,7 @@
         transform: rotate(0deg);
     }
     50% {
-        transform: rotate(180deg);
+        transform: rotate(250deg);
     }
     100% {
         transform: rotate(360deg);

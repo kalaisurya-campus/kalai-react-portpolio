@@ -6,7 +6,7 @@ function TopButton(props) {
     const [backbutton, SetBackButton] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 10200) {
+            if (window.scrollY > 9300) {
                 SetBackButton(true);
             } else {
                 SetBackButton(false);
@@ -17,6 +17,7 @@ function TopButton(props) {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
+            cursor: "pointor",
         });
     };
     return (

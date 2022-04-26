@@ -13,13 +13,11 @@ import personround from "../../../assets/kalai-port//jumpe.png";
 import laptops from "../../../assets/kalai-port/laptop.png";
 import offsetleft from "../../../assets/kalai-port/offset-left.png";
 import gripup from "../../../assets/kalai-port/grup1.png";
-
 import s1 from "../../../assets/kalai-port/s1.png";
 import s2 from "../../../assets/kalai-port/s2.png";
 import s3 from "../../../assets/kalai-port/s3.png";
 import s4 from "../../../assets/kalai-port/s4.png";
 import Section2Mobile from "./component/Section2Mobile";
-
 import react from "../../../assets/kalai-port/react.png";
 import javascript from "../../../assets/kalai-port/javascript.png";
 import html from "../../../assets/kalai-port/html.png";
@@ -51,7 +49,7 @@ function Section2({ color }) {
         <>
             <div className="section2 d-none d-lg-block" id="aboutus">
                 <div className="section2-inside">
-                    <div className="section2-left">
+                    <div className="section2-left ">
                         <img src={rightoffset} className="left-off" />
 
                         <div className="content-section2 mb-5">
@@ -64,7 +62,7 @@ function Section2({ color }) {
                                 <span className="aw" style={{ color: color }}>
                                     My Aw
                                 </span>
-                                esome{" "}
+                                <span>esome</span>
                             </h1>
                             <h1
                                 className="service"
@@ -81,8 +79,11 @@ function Section2({ color }) {
                                 data-aos-duration="1500"
                             >
                                 <span className="aw">Loream</span> ipsum dummy
-                                text are useually are print and website industry
-                                so i used their also.
+                                text are useually are print and website{" "}
+                                <span style={{ color: color, fontWeight: 600 }}>
+                                    industry so{" "}
+                                </span>
+                                i used their also.
                             </p>
                             <button
                                 className="download"
@@ -94,7 +95,7 @@ function Section2({ color }) {
                             </button>
                         </div>
 
-                        <div className="split-cards">
+                        <div className="split-cards ">
                             <div className="left-split-cards">
                                 <div
                                     className="cards"
@@ -116,16 +117,26 @@ function Section2({ color }) {
                                             />
                                         </div>
                                         <div className="button-content">
-                                            <h1 className="javascript mt-2">
+                                            <h1
+                                                className="javascript mt-2"
+                                                style={{ color: color }}
+                                            >
                                                 javascript
                                             </h1>
                                             <p className="loreams mt-2">
                                                 JavaScript is a dynamic
                                                 programming language that's used
-                                                for web development, in web
-                                                applications, for game
-                                                development, and lots more HTML
-                                                and CSS.
+                                                for web development,{" "}
+                                                <span
+                                                    style={{
+                                                        color: color,
+                                                        fontWeight: 600,
+                                                    }}
+                                                >
+                                                    in web applications, for
+                                                    game development,
+                                                </span>{" "}
+                                                and lots more HTML and CSS.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -185,15 +196,25 @@ function Section2({ color }) {
                                             />
                                         </div>
                                         <div className="button-content">
-                                            <h1 className="javascript mt-2">
+                                            <h1
+                                                className="javascript mt-2"
+                                                style={{ color: color }}
+                                            >
                                                 HTML & CSS
                                             </h1>
                                             <p className="loreams mt-2">
                                                 HTML (the Hypertext Markup
-                                                Language) and CSS (Cascading
-                                                Style Sheets) are two of the
-                                                core technologies for building
-                                                Web pages.
+                                                Language) and{" "}
+                                                <span
+                                                    style={{
+                                                        color: color,
+                                                        fontWeight: 600,
+                                                    }}
+                                                >
+                                                    CSS (Cascading Style Sheets)
+                                                </span>{" "}
+                                                are two of the core technologies
+                                                for building Web pages.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -251,13 +272,24 @@ function Section2({ color }) {
                                             />
                                         </div>
                                         <div className="button-content">
-                                            <h1 className="javascript mt-2">
+                                            <h1
+                                                className="javascript mt-2"
+                                                style={{ color: color }}
+                                            >
                                                 React Developer
                                             </h1>
                                             <p className="loreams mt-2">
                                                 React is a declarative,
                                                 efficient, and flexible
-                                                JavaScript library for building
+                                                JavaScript{" "}
+                                                <span
+                                                    style={{
+                                                        color: color,
+                                                        fontWeight: 600,
+                                                    }}
+                                                >
+                                                    library for building
+                                                </span>
                                                 user interfaces.
                                             </p>
                                             {/* <button className="readmore mt-2">
@@ -295,7 +327,7 @@ function Section2({ color }) {
                                     data-aos-easing="linear"
                                     data-aos-duration="1500"
                                 >
-                                    <div className="card-java col-lg-7 col-xl-6 mt-5">
+                                    <div className="card-java col-lg-5 col-xl-6 mt-5">
                                         <div className="empty-image">
                                             <img
                                                 src={bootstrap}
@@ -309,14 +341,26 @@ function Section2({ color }) {
                                             />
                                         </div>
                                         <div className="button-content">
-                                            <h1 className="javascript mt-2">
+                                            <h1
+                                                className="javascript mt-2"
+                                                style={{ color: color }}
+                                            >
                                                 Bootstrap
                                             </h1>
                                             <p className="loreams mt-2">
-                                                Bootstrap is a free and open
-                                                source front end development
-                                                framework for the creation of
-                                                websites and web apps.
+                                                Bootstrap is a{" "}
+                                                <span
+                                                    style={{
+                                                        color: color,
+                                                        fontWeight: 600,
+                                                    }}
+                                                >
+                                                    free and open source front
+                                                    end
+                                                </span>{" "}
+                                                development framework for the
+                                                creation of websites and web
+                                                apps.
                                             </p>
                                             {/* <button className="readmore mt-2">
                                                 Read More...
@@ -355,7 +399,10 @@ function Section2({ color }) {
                                         />
                                     </div>
                                     <div className="button-content">
-                                        <h1 className="javascript mt-2">
+                                        <h1
+                                            className="javascript mt-2"
+                                            style={{ color: color }}
+                                        >
                                             UI & UX
                                         </h1>
                                         <p className="loreams mt-2">
@@ -363,9 +410,17 @@ function Section2({ color }) {
                                             <br />
                                             their interaction with a product or
                                             service, <br />
-                                            which means that user experience
-                                            includes, but is not limited to, a
-                                            user interface.
+                                            which means that{" "}
+                                            <span
+                                                style={{
+                                                    color: color,
+                                                    fontWeight: 600,
+                                                }}
+                                            >
+                                                user experience includes,
+                                            </span>{" "}
+                                            but is not limited to, a user
+                                            interface.
                                         </p>
                                         {/* <button className="readmore mt-2">
                                             Read More...
@@ -465,8 +520,17 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                JavaScript is a dynamic programming language
+                                that's used for web development,{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 600,
+                                    }}
+                                >
+                                    in web applications, for game development,
+                                </span>{" "}
+                                and lots more HTML and CSS.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -546,8 +610,17 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                HTML (the Hypertext Markup Language) and{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 600,
+                                    }}
+                                >
+                                    CSS (Cascading Style Sheets)
+                                </span>{" "}
+                                are two of the core technologies for building
+                                Web pages.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -627,8 +700,17 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                React is a declarative, efficient, and flexible
+                                JavaScript{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 600,
+                                    }}
+                                >
+                                    library for building
+                                </span>
+                                user interfaces.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -708,8 +790,17 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                Bootstrap is a{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 600,
+                                    }}
+                                >
+                                    free and open source front end
+                                </span>{" "}
+                                development framework for the creation of
+                                websites and web apps.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -789,8 +880,20 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                Loream ipsum dummy text are useually are print
-                                and website Dummy Content
+                                he user experience is the result of
+                                <br />
+                                their interaction with a product or service,{" "}
+                                <br />
+                                which means that{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 600,
+                                    }}
+                                >
+                                    user experience includes,
+                                </span>{" "}
+                                but is not limited to, a user interface.
                             </p>
                         </div>
                         <div class="modal-footer">

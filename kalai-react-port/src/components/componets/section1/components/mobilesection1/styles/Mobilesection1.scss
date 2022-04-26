@@ -115,6 +115,7 @@
             height: 100%;
             // background-color: red;
             padding: 10px;
+            position: relative;
             .circles {
                 position: relative;
                 @include xsBreakPoint {
@@ -151,6 +152,74 @@
                         width: 45%;
                         top: 20%;
                         left: 18%;
+                    }
+                }
+                .kalai-purush {
+                    width: 100%;
+                }
+                .profiles-kalais {
+                    // width: 10%;
+                    transition: all 1s ease-in;
+                    // border: 2px solid red;
+                    // overflow: hidden;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .settings-kalais {
+                    // width: 10%;
+                    transition: all 1s ease-in;
+                    // border: 2px solid red;
+                    // overflow: hidden;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 15%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .Aboutus-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 60%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .chatss-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 78%;
+                        left: 10%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .developers-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 42%;
+                        left: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .profiles-kalais:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                    @include xsBreakPoint {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        transition: all 2s ease;
                     }
                 }
                 .smile {

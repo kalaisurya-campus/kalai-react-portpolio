@@ -204,6 +204,37 @@
                     display: none;
                 }
             }
+            .cotact-list {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                gap: 50px;
+                @include xsBreakPoint {
+                    gap: 10px;
+                }
+                .google {
+                    width: 7%;
+                    @include xsBreakPoint {
+                        width: 10%;
+                    }
+                    @include lgBreakPoint {
+                        width: 11%;
+                    }
+                    @include xlBreakPoint {
+                        width: 10%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 11%;
+                    }
+                }
+                .google:hover
+                {
+                    background-color: red;
+                    z-index:200000000000;
+                    cursor: pointer;
+                    border-radius: 50%;
+                }
+            }
             input {
                 border: none !important;
                 outline: none !important;

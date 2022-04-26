@@ -12,13 +12,53 @@ import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
 import "./styles/Section2Mobile.scss";
-function Section2Mobile(props) {
+function Section2Mobile({ color }) {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
     return (
         <>
+            <div className="content-section2 mb-5 d-xs-block d-lg-none">
+                <h1
+                    className="my ms-3"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
+                    <span className="aw" style={{ color: color }}>
+                        My Aw
+                    </span>
+                    <span>esome</span>
+                </h1>
+                <h1
+                    className="service ms-3"
+                    data-aos="fade-down-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
+                    Services
+                </h1>
+                <p
+                    className="loreams"
+                    data-aos="fade-up-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
+                    <span className="aw">Loream</span> ipsum dummy text are
+                    useually are print and website{" "}
+                    <span style={{ color: color }}>industry so </span> i used
+                    their also.
+                </p>
+                <button
+                    className="download"
+                    data-aos="flip-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
+                    Download CV
+                </button>
+            </div>
             <div className="mobilesection2 d-block d-lg-none">
                 <div className="conatiner mx-auto">
                     <div className="row p-4 mx-auto">
@@ -35,7 +75,10 @@ function Section2Mobile(props) {
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color }}
+                                >
                                     React Developer
                                 </h1>
                                 <p className="loreams mt-2">

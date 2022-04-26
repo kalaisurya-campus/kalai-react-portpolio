@@ -1,20 +1,15 @@
 @use "../../../../../../scss/abstract/" as *;
 
 .offcanvas {
+    z-index: 300000000000000000000000;
+    overflow: hidden;
     @include themed() {
         background: t($background-liner-sets) !important;
     }
-    .darkst {
+    .darkt {
         width: 70px;
         height: 70px;
-        border-radius: 50%;
-        // border: 2px solid red;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: lightsalmon;
-        cursor: pointer;
-        animation: dars 4s ease-in-out infinite;
+        object-fit: cover;
     }
 }
 

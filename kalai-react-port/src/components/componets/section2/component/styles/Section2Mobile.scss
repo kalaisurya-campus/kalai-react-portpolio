@@ -100,6 +100,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: -1;
     @include smBreakPoint {
         margin: 0 auto;
         width: 80%;
@@ -130,5 +131,76 @@
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+.content-section2 {
+    z-index: 100000;
+    position: relative;
+    .aw {
+        @include themed() {
+            color: t($text-blue-darks) !important;
+        }
+    }
+    .my {
+        font-size: 4rem;
+        font-weight: 500;
+        @include xsBreakPoint {
+            font-size: 2.5rem;
+        }
+    }
+    .service {
+        font-size: 4.2rem;
+        font-weight: 600;
+        @include themed() {
+            color: t($service-text-colors);
+        }
+        @include xsBreakPoint {
+            font-size: 3rem;
+        }
+    }
+    .loreams {
+        width: 80%;
+        font-size: 2.2rem;
+        line-height: 1.4;
+        font-weight: 400;
+        @include xsBreakPoint {
+            font-size: 1.2rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .download {
+        border: none;
+        outline: none;
+        width: 30%;
+        padding: 15px;
+        background-color: $back_export_color-black;
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        @include themed() {
+            color: t($button-white-text);
+        }
+        @include xsBreakPoint {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        @include lgBreakPoint {
+            width: 25%;
+        }
+        @include xlBreakPoint {
+            width: 20%;
+        }
+    }
+    .download:hover {
+        background-color: orange !important;
     }
 }

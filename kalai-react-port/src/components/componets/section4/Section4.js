@@ -9,7 +9,7 @@ import offsetslefts from "../../../assets/kalai-port/offset-left.png";
 import rightoffset from "../../../assets/kalai-port/offset.png";
 import star from "../../../assets/kalai-port/star.png";
 import persan from "../../../assets/kalai-port/san.png";
-function Section4(props) {
+function Section4({ color }) {
     const settings = {
         dots: false,
         infinite: true,
@@ -91,8 +91,10 @@ function Section4(props) {
 
     return (
         <>
-            <div className="section4">
-                <h1 className="mb-5 projects">Projects</h1>
+            <div className="section4" id="projects">
+                <h1 className="mb-5 projects" style={{ color: color }}>
+                    Projects
+                </h1>
                 <img src={offsetslefts} className="off-sets" />
                 <div className="container slik-sliders my-auto mt-5">
                     <Slider {...settings}>

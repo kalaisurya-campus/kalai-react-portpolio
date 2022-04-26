@@ -4,11 +4,13 @@ import Creative from "./components/creative/Creative";
 import Designs from "./components/design/Designs";
 import Everything from "./components/everything/Everything";
 import "./styles/Section5.scss";
-function Section5(props) {
+function Section5({ color }) {
     const [index, SetIndex] = useState(0);
     return (
         <div className="section5">
-            <h1 className="port mt-4 mb-2">Portfolio</h1>
+            <h1 className="port mt-4 mb-2">
+                Port<span style={{ color: color }}>folio</span>
+            </h1>
             <div className="tabs">
                 <div className="tablists ms-1">
                     <div

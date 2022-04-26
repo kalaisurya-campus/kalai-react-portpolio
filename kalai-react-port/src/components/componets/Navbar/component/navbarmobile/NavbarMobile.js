@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/NavbarMobile.scss";
-import darkmode from "../../../../../assets/kalai-port/darkmode.png";
-import lightmode from "../../../../../assets/kalai-port/lightmode.png";
+import darkmode from "../../../../../assets/kalai-port/m2 dark.png";
+import lightmode from "../../../../../assets/kalai-port/m1 light.png";
 function NavbarMobile({ dark, setdark }) {
     return (
         <div className="mobile navbar d-block d-lg-none">
@@ -68,25 +68,22 @@ function NavbarMobile({ dark, setdark }) {
                                 </a>
                             </li>
                         </ul>
-                        <div class="d-flexs gap-2">
-                            <div className="d-flexs">
-                                <span
-                                    className="dar"
+                        <div class="d-flexs gap-5">
+                            <div className="">
+                                <div
+                                    className="dars mb-4 mt-4"
                                     onClick={() => setdark(!dark)}
                                 >
                                     {dark ? (
-                                        <img
-                                            src={darkmode}
-                                            className="darkst"
-                                        />
+                                        <img src={darkmode} className="darkt" />
                                     ) : (
                                         <img
                                             src={lightmode}
-                                            className="darkst"
+                                            className="darkt"
                                         />
                                     )}
-                                </span>
-                                <span>
+                                </div>
+                                <span className="mt-5">
                                     {dark ? (
                                         <p>Dark Mode</p>
                                     ) : (

@@ -5,7 +5,7 @@ import ap1 from "../../../assets/kalai-port/pa1.png";
 import ap2 from "../../../assets/kalai-port/pa2.png";
 import bikeline from "../../../assets/kalai-port/bike.gif";
 import "./styles/Section6.scss";
-function Section6(props) {
+function Section6({ color }) {
     const [Artemptyimage, SetIMagesArt] = useState([]);
 
     const useref = useRef(null);
@@ -35,7 +35,9 @@ function Section6(props) {
     return (
         <>
             <div className="section6">
-                <h1 className="latest mb-2">Latest Post</h1>
+                <h1 className="latest mb-2">
+                    <span style={{ color: color }}>Latest</span> Post
+                </h1>
                 <div className="person-work">
                     <img src={ap1} className="pa1" />
                 </div>

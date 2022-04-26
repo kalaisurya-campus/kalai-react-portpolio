@@ -74,7 +74,19 @@
     input:checked + .switch:active::before {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
     }
-    .darkst {
-        width: 20%;
+
+    .dar {
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        .darkst {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
     }
 }

@@ -7,6 +7,7 @@ import ft1 from "../../../assets/kalai-port/ft1.png";
 import per from "../../../assets/kalai-port/per.png";
 import "./styles/Footer.scss";
 import Mobilefooter from "./components/mobilefooter/Mobilefooter";
+import { Link } from "react-scroll";
 function Footer(props) {
     return (
         <>
@@ -29,16 +30,24 @@ function Footer(props) {
                 </div>
                 <div className="box-footers">
                     <div className="button-homes">
-                        <a href="#home">Home</a>
+                        <Link class="nav-link" to="home">
+                            Home
+                        </Link>
                     </div>
                     <div className="button-aboutuss">
-                        <a href="#aboutus">AboutUs</a>
+                        <Link class="nav-link" to="aboutus">
+                            AboutUs
+                        </Link>
                     </div>
                     <div className="button-servicess">
-                        <a href="#service">Services</a>
+                        <Link class="nav-link" to="service">
+                            Services
+                        </Link>
                     </div>
                     <div className="button-contacts">
-                        <a href="#contact">Contact</a>
+                        <Link class="nav-link" to="contact">
+                            Contact
+                        </Link>
                     </div>
                 </div>
             </div>

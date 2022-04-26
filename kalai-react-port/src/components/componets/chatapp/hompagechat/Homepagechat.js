@@ -22,25 +22,29 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-function Homepagechat() {
+function Homepagechat({ color }) {
     const [user] = useAuthState(auth);
 
     return (
         <div className="chathome" id="chat">
             <div className="inside-chats">
-                <h1 className="ms-5">Chat</h1>
+                <h1 className="ms-5" style={{ color: color }}>
+                    Chat
+                </h1>
                 <div className="left-chat ">
                     <img src={chats} className="main-chat-image" />
                 </div>
                 <div className="right-chat-section">
-                    <section>{user ? <ChatRoom /> : <Signup />}</section>
+                    <section>
+                        {user ? <ChatRoom /> : <Signup color={color} />}
+                    </section>
                 </div>
             </div>
         </div>
     );
 }
 
-function Signup() {
+function Signup({ color }) {
     const {
         register,
         handleSubmit,
@@ -99,10 +103,12 @@ function Signup() {
                 <div className="right-login">
                     <div className="forms">
                         <form onSubmit={handleSubmit(submits)}>
-                            <h1 className="text-center mb-5">Signup</h1>
+                            <h1 className="text-center mb-5">
+                                Si<span style={{ color: color }}>gnup</span>
+                            </h1>
 
                             <div className="ms mt-3">
-                                <label>Email:</label>
+                                <label style={{ color: color }}>Email:</label>
                                 <input
                                     {...register("email", {
                                         required: "no records",
@@ -121,7 +127,12 @@ function Signup() {
                                 )}
                             </div>
                             <div className="ms">
-                                <label className="mt-4">Password:</label>
+                                <label
+                                    className="mt-4"
+                                    style={{ color: color }}
+                                >
+                                    Password:
+                                </label>
                                 <input
                                     {...register("password", {
                                         required: true,
@@ -152,7 +163,7 @@ function Signup() {
                                     className="text-end mt-2 "
                                     style={{ color: "blue", fontSize: "16px" }}
                                 >
-                                    Forget Password
+                                    {/* Forget Password */}
                                 </p>
                             </div>
                             {/* <GoogleLogin
@@ -162,7 +173,7 @@ function Signup() {
                                 onFailure={responseGoogle}
                                 cookiePolicy={"single_host_origin"}
                             /> */}
-                            <button className="sub mt-1">Signin</button>
+                            <button className="sub mt-4">Signin</button>
                             <div className="logos">
                                 <div></div>
 

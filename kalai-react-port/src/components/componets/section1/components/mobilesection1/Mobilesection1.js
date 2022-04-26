@@ -8,9 +8,15 @@ import sm3 from "../../../../../assets/kalai-port/sm3.png";
 import sm4 from "../../../../../assets/kalai-port/sm4.png";
 import sm5 from "../../../../../assets/kalai-port/sm5.png";
 import offsetleft from "../../../../../assets/kalai-port/offset-left.png";
-// import purush from "../../../../../assets/kalai-port/purush.png";
-import purush from "../../../../../assets/kalai-port/purush.png";
-import circles from "../../../../../assets/kalai-port/topcirles.png";
+
+import purush from "../../../../../assets/kalai-port/kal-imag1.png";
+import profile from "../../../../../assets/kalai-port/profile.png";
+import settings from "../../../../../assets/kalai-port/settings -kalai.png";
+import Aboutus from "../../../../../assets/kalai-port/abouts.png";
+import chats from "../../../../../assets/kalai-port/chats.png";
+import developers from "../../../../../assets/kalai-port/developer.png";
+import services from "../../../../../assets/kalai-port/services.png";
+
 import "./styles/Mobilesection1.scss";
 function Mobilesection1(props) {
     return (
@@ -36,9 +42,43 @@ function Mobilesection1(props) {
                         <img src={offsetleft} className="last-oofets" />
                     </div>
                     <div className="circles">
-                        <img src={purush} className="circles" />
-                        <div className="pur">
-                            {/* <img src={purush} className="pru" /> */}
+                        {/* <img src={purush} className="circles" /> */}
+                        <img src={purush} className="kalai-purush" />
+                        <div className="profiles-kalais">
+                            <img
+                                src={profile}
+                                alt="no"
+                                className="profiles-kalais"
+                            />
+                        </div>
+                        <div className="settings-kalais">
+                            <img
+                                src={settings}
+                                alt="no"
+                                className="settings-kalais"
+                            />
+                        </div>
+
+                        <div className="Aboutus-kalais">
+                            <img
+                                src={Aboutus}
+                                alt="no"
+                                className="Aboutus-kalais"
+                            />
+                        </div>
+                        <div className="chatss-kalais">
+                            <img
+                                src={chats}
+                                alt="no"
+                                className="chatss-kalais"
+                            />
+                        </div>
+                        <div className="developers-kalais">
+                            <img
+                                src={developers}
+                                alt="no"
+                                className="developers-kalais"
+                            />
                         </div>
                         <div className="smiles1">
                             <img src={sm1} className="smile" />

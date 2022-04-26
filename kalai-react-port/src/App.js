@@ -19,7 +19,7 @@ function App() {
 
     return (
         <div className={dark ? "theme--dark" : "theme--light"}>
-            <div className="box-app">
+            <div className="box-app d-lg-block d-none">
                 <Tippy
                     interactive={true}
                     content={
@@ -29,14 +29,14 @@ function App() {
                         />
                     }
                 >
-                    <div>
+                    <div className="imag-box">
                         <img src={settings} className="settings" />
                     </div>
                 </Tippy>
             </div>
             <div className="port-polio">
                 {/* <button onClick={() => SetDark(!dark)}>Cick</button> */}
-                <Layoutssectios dark={dark} setdark={SetDark} color={colors}/>
+                <Layoutssectios dark={dark} setdark={SetDark} color={colors} />
             </div>
         </div>
     );

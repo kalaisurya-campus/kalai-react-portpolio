@@ -4,7 +4,7 @@ import name from "../../../assets/kalai-port/juice.png";
 import circle from "../../../assets/kalai-port/rotates.png";
 import like1 from "../../../assets/kalai-port/like1.png";
 import like2 from "../../../assets/kalai-port/like2.png";
-function Section8about(props) {
+function Section8about({ color }) {
     return (
         <div className="abouts" id="about">
             <div className="inside-abouts">
@@ -22,9 +22,19 @@ function Section8about(props) {
                 </div>
                 <div className="right-about-second">
                     <div className="content-about">
-                        <h1 className="mt-3">ABOUT ME</h1>
+                        <h1 className="mt-3">
+                            ABOUT{" "}
+                            <span style={{ color: color, fontWeight: 600 }}>
+                                ME
+                            </span>
+                        </h1>
                         <p className="p-split mt-2">
-                            <span className="myname">My Name Is</span>
+                            <span className="myname">
+                                My{" "}
+                                <span style={{ color: color, fontWeight: 600 }}>
+                                    Name Is
+                                </span>
+                            </span>
                             <span className="surya">Kalaisurya</span>
                         </p>
                         <p
@@ -54,6 +64,15 @@ function Section8about(props) {
                                     <span className="age-texts">Male</span>
                                 </p>
                                 <p>
+                                    <span className="age-text">Developer</span>:
+                                    <span className="age-texts">
+                                        React{" "}
+                                        <span style={{ color: color }}>
+                                            Developer
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>
                                     <span className="age-text">Experience</span>
                                     :<span className="age-texts">1 Years</span>
                                 </p>
@@ -73,20 +92,30 @@ function Section8about(props) {
                             <div className="right-box2">
                                 <p>
                                     <span className="age-text">Language</span>:
-                                    <span className="age-texts">
+                                    <span
+                                        className="age-texts"
+                                        style={{ color: color }}
+                                    >
                                         Telugu/Tamil/English
                                     </span>
                                 </p>
                                 <p>
                                     <span className="age-text">Phone</span>:
                                     <span className="age-texts">
-                                        +91 877-837-7119
+                                        +91 877-
+                                        <span style={{ color: color }}>
+                                            837
+                                        </span>
+                                        -7119
                                     </span>
                                 </p>
                                 <p>
                                     <span className="age-text">Email</span>:
                                     <span className="age-texts">
-                                        kalaimca685@gmail.com
+                                        <span style={{ color: color }}>
+                                            kalaimca685@gmail
+                                        </span>
+                                        .com
                                     </span>
                                 </p>
                                 <p>

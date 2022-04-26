@@ -11,7 +11,7 @@ import box1 from "../../../assets/kalai-port/box.png";
 import box2 from "../../../assets/kalai-port/box2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-function Section3(props) {
+function Section3() {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -21,7 +21,14 @@ function Section3(props) {
         <>
             <div className="section3" id="service">
                 <h1 className="mb-5 ms-4">Experience</h1>
-                <div className="inside-section3">
+
+                <div className="inside-experience">
+                    <div className="box-scrolls">
+                        <h1>React Developer</h1>
+                        <h4>Experience:1 Year</h4>
+                    </div>
+                </div>
+                {/* <div className="inside-section3">
                     <div className="left-section3">
                         <div
                             className="mb-5"
@@ -59,7 +66,7 @@ function Section3(props) {
                             <img src={g2} className="g4 mt-5" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     );
