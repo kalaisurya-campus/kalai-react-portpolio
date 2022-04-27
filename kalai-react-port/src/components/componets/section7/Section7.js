@@ -168,12 +168,12 @@ function Section7() {
                                 Submit
                             </button>
                         </form>
-                        <div className="cotact-list mt-3">
+                        {/* <div className="cotact-list mt-3">
                             <img src={google} className="google" />
                             <img src={facebook} className="google" />
                             <img src={instagram} className="google" />
                             <img src={twitter} className="google" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

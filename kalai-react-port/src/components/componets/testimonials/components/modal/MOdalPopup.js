@@ -78,7 +78,8 @@ export default class MOdalPopup extends Component {
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop1"
                 >
-                    Read More...
+                    <span style={{ color: this.props.color }}> Read</span>{" "}
+                    More...
                 </button>
 
                 <div
@@ -96,6 +97,7 @@ export default class MOdalPopup extends Component {
                                 <h5
                                     class="modal-title"
                                     id="staticBackdropLabel"
+                                    style={{ color: this.props.color }}
                                 >
                                     Activities
                                 </h5>

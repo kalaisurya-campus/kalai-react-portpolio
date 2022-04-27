@@ -9,7 +9,7 @@ export default class TextPage extends Component {
         this.switchImage = this.switchImage.bind(this);
         this.state = {
             currentImage: 0,
-            images: [
+            texts: [
                 "MUSIC",
                 "SCOOTERING",
                 "MUSIC",
@@ -32,7 +32,7 @@ export default class TextPage extends Component {
         };
     }
     switchImage() {
-        if (this.state.currentImage < this.state.images.length - 1) {
+        if (this.state.currentImage < this.state.texts.length - 1) {
             this.setState({
                 currentImage: this.state.currentImage + 1,
             });
@@ -51,18 +51,24 @@ export default class TextPage extends Component {
         return (
             <div className="text">
                 <div className="inside-texts">
-                    <p className="text-sizes mb-3 mt-5">
-                        {this.state.images[this.state.currentImage]}
+                    <p
+                        className="text-sizes mb-3 mt-5"
+                        style={{ color: this.props.color }}
+                    >
+                        {this.state.texts[this.state.currentImage]}
                     </p>
 
                     <p className="loreams-text mt-3 mb-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vulputate diam molestie pellentesque pulvinar sapien,
+                        Lorem ipsum dolor sit amet,{" "}
+                        <span style={{ color: this.props.color }}>
+                            consectetur adipiscing elit
+                        </span>
+                        . Vulputate diam molestie pellentesque pulvinar sapien,
                         sed viverra.
                     </p>
 
                     <div className="buttons">
-                        <MOdalPopup />
+                        <MOdalPopup color={this.props.color} />
                     </div>
                     <div className="images">
                         <img src={groups} className="bottom-imageds" />

@@ -16,9 +16,9 @@ import Aboutus from "../../../../../assets/kalai-port/abouts.png";
 import chats from "../../../../../assets/kalai-port/chats.png";
 import developers from "../../../../../assets/kalai-port/developer.png";
 import services from "../../../../../assets/kalai-port/services.png";
-
+import { Link } from "react-scroll";
 import "./styles/Mobilesection1.scss";
-function Mobilesection1(props) {
+function Mobilesection1({ color }) {
     return (
         <div className="section1mobile d-block d-lg-none">
             <div className="inside-mobile">
@@ -29,13 +29,28 @@ function Mobilesection1(props) {
                     <div className="image1 mt-5 mb-3">
                         <img src={sectios1} className="section-image" />
                     </div>
-                    <h1 className="hy mb-1">Hy! I Am</h1>
-                    <h1 className="kalai mt-4 mb-3">Kalaisurya</h1>
+                    <h1 className="hy mb-1">
+                        Hy! <span style={{ color: color }}>I Am</span>
+                    </h1>
+                    <h1 className="kalai mt-4 mb-3">
+                        Kalai<span style={{ color: color }}>surya</span>
+                    </h1>
                     <span className="loream mt-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Massa sed nisl tellus amet.
+                        To obtain a position with a progressive{" "}
+                        <span style={{ color: color }}>web development</span>
+                        company with a{" "}
+                        <span style={{ color: color }}>strong focus</span> on
+                        creativity and{" "}
+                        <span style={{ color: color }}>problem solving.</span>{" "}
+                        To find a position that is{" "}
+                        <span style={{ color: color }}>challenging.</span>
                     </span>
-                    <button className="hire mt-4 mb-3">Hire Me</button>
+                    <button className="hire mt-4 mb-3">
+                        Contact{" "}
+                        <span style={{ color: color }} className="ms-2">
+                            Me
+                        </span>
+                    </button>
                 </div>
                 <div className="right-mobile mt-5">
                     <div className="offset-rights">
@@ -45,46 +60,56 @@ function Mobilesection1(props) {
                         {/* <img src={purush} className="circles" /> */}
                         <img src={purush} className="kalai-purush" />
                         <div className="profiles-kalais">
-                            <img
-                                src={profile}
-                                alt="no"
-                                className="profiles-kalais"
-                            />
+                            <Link to="acitivities">
+                                <img
+                                    src={profile}
+                                    alt="no"
+                                    className="profiles-kalais"
+                                />
+                            </Link>
                         </div>
                         <div className="settings-kalais">
-                            <img
-                                src={settings}
-                                alt="no"
-                                className="settings-kalais"
-                            />
+                            <Link to="">
+                                <img
+                                    src={settings}
+                                    alt="no"
+                                    className="settings-kalais"
+                                />
+                            </Link>
                         </div>
 
                         <div className="Aboutus-kalais">
-                            <img
-                                src={Aboutus}
-                                alt="no"
-                                className="Aboutus-kalais"
-                            />
+                            <Link to="abouts">
+                                <img
+                                    src={Aboutus}
+                                    alt="no"
+                                    className="Aboutus-kalais"
+                                />
+                            </Link>
                         </div>
                         <div className="chatss-kalais">
-                            <img
-                                src={chats}
-                                alt="no"
-                                className="chatss-kalais"
-                            />
+                            <Link to="chat">
+                                <img
+                                    src={chats}
+                                    alt="no"
+                                    className="chatss-kalais"
+                                />
+                            </Link>
                         </div>
                         <div className="developers-kalais">
-                            <img
-                                src={developers}
-                                alt="no"
-                                className="developers-kalais"
-                            />
+                            <Link to="projects">
+                                <img
+                                    src={developers}
+                                    alt="no"
+                                    className="developers-kalais"
+                                />
+                            </Link>
                         </div>
                         <div className="smiles1">
                             <img src={sm1} className="smile" />
                         </div>
                         <div className="smiles2">
-                            <img src={sm2} className="smile1" />
+                            {/* <img src={sm2} className="smile1" /> */}
                         </div>
                         <div className="smiles3">
                             <img src={sm3} className="smile2" />

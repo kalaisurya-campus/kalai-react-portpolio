@@ -42,12 +42,27 @@ function Section1({ color }) {
                             </h1>
                             <h1 className="kalai mt-4">Kalaisurya</h1>
                             <span className="loream mt-4">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Qui laborum quasi, incidunt
-                                dolore iste nostrum cupiditate voluptas?
-                                Laborum, voluptas natus?
+                                To obtain a position with a progressive web
+                                development company with a{" "}
+                                <span style={{ color: color }}>
+                                    strong focus
+                                </span>{" "}
+                                on
+                                <span style={{ color: color }}>
+                                    {" "}
+                                    creativity
+                                </span>{" "}
+                                and{" "}
+                                <span style={{ color: color }}>
+                                    problem solving
+                                </span>
+                                . To find a position that is{" "}
+                                <span style={{ color: color }}>
+                                    challenging
+                                </span>
+                                .
                             </span>
-                            <button className="hire mt-5">Hire Me</button>
+                            <button className="hire mt-5">Contact Me</button>
                         </div>
                         <div className="bottom-image">
                             <img src={section1rocket} className="rocket" />
@@ -132,7 +147,7 @@ function Section1({ color }) {
                 </div>
             </div>
             <div>
-                <Mobilesection1 />
+                <Mobilesection1 color={color} />
             </div>
         </>
     );

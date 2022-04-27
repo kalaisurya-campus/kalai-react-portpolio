@@ -34,27 +34,39 @@ function Navbar({ dark, setdark, color }) {
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
                                 <li class="nav-item">
                                     <Link class="nav-link" to="home">
-                                        Home
+                                        <span style={{ color: color }}>Ho</span>
+                                        me
                                     </Link>
                                 </li>
                                 <li class="nav-item">
                                     <Link class="nav-link" to="service">
-                                        Services
+                                        <span style={{ color: color }}>
+                                            Serv
+                                        </span>
+                                        ices
                                     </Link>
                                 </li>
                                 <li class="nav-item">
                                     <Link class="nav-link" to="about">
-                                        Aboutus
+                                        <span style={{ color: color }}>
+                                            About
+                                        </span>
+                                        us
                                     </Link>
                                 </li>
                                 <li class="nav-item">
                                     <Link class="nav-link" to="chat">
-                                        Chat
+                                        <span style={{ color: color }}>Ch</span>
+                                        at
                                     </Link>
                                 </li>
                                 <li class="nav-item">
                                     <Link class="nav-link" to="contact">
-                                        Contact
+                                        <span style={{ color: color }}>
+                                            {" "}
+                                            Cont
+                                        </span>
+                                        act
                                     </Link>
                                 </li>
                             </ul>
@@ -83,7 +95,7 @@ function Navbar({ dark, setdark, color }) {
                 </nav>
             </div>
             <div>
-                <NavbarMobile dark={dark} setdark={setdark} />
+                <NavbarMobile dark={dark} setdark={setdark} color={color} />
             </div>
         </>
     );

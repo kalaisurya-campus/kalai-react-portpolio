@@ -25,14 +25,17 @@
     border-radius: 100%;
     cursor: pointer;
     @include xsBreakPoint {
-        border: 2px solid red;
-       
+        // border: 2px solid red;
         z-index: 1000000000000000000000000;
     }
     .imag-box {
         width: 70px;
         height: 70px;
         position: relative;
+        @include xsBreakPoint {
+            width: 50px;
+            height: 50px;
+        }
         .settings {
             width: 70px;
             position: absolute;
@@ -42,6 +45,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @include xsBreakPoint {
+                width: 50px;
+                height: 50px;
+            }
         }
     }
 }

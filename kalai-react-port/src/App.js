@@ -19,7 +19,22 @@ function App() {
 
     return (
         <div className={dark ? "theme--dark" : "theme--light"}>
-            <div className="box-app d-lg-block d-none">
+            <div className="box-app d-none d-lg-block">
+                <Tippy
+                    interactive={true}
+                    content={
+                        <CirclePicker
+                            color={colors}
+                            onChangeComplete={(color) => SetColors(color.hex)}
+                        />
+                    }
+                >
+                    <div className="imag-box">
+                        <img src={settings} className="settings" />
+                    </div>
+                </Tippy>
+            </div>
+            <div className="box-app d-block d-lg-none">
                 <Tippy
                     interactive={true}
                     content={

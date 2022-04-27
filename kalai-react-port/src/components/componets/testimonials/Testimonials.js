@@ -77,7 +77,7 @@ export default class Testimonials extends Component {
             <>
                 <div className="slideshow-container" id="acitivities">
                     <h1 className="ms-5 mt-3 my">
-                        My <span style={{ color: this.color }}>Activities</span>
+                        My <span style={{ color: this.props.color }}>Activities</span>
                     </h1>
                     <div className="inside-box">
                         <div className="left">
@@ -97,7 +97,7 @@ export default class Testimonials extends Component {
                             </div>
                         </div>
                         <div className="right-contents">
-                            <TextPage />
+                            <TextPage color={this.props.color}/>
                         </div>
                     </div>
                 </div>

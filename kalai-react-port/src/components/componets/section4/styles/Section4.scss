@@ -101,12 +101,15 @@
             height: auto;
             border-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-            background: #fdb510;
+            // background: #fdb510;
             // padding-bottom: 20px;
             margin: 0 auto;
             cursor: pointer;
             z-index: 500000000000000000000;
             position: relative;
+            // border:3px solid red;
+
+            background: linear-gradient(180deg, #fff456 0%, rgba(253, 181, 16, 0.7) 100%);
 
             @include xsBreakPoint {
                 width: 90%;

@@ -63,7 +63,7 @@ function Section6({ color }) {
                                         <p className="day">{items.day}</p>
                                     </div>
                                     <div className="review">
-                                        <button className="demo">
+                                        <button className="demo" style={{backgroundColor:color}}>
                                             {items.description}
                                         </button>
                                     </div>

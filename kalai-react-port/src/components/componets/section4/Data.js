@@ -8,7 +8,7 @@ const data = {
             image: kalaidream,
             title: "Dream Your Jobs",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam molestie pellentesque pulvinar sapien, sed viverra.",
+                "Dream Your Jobs Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
@@ -16,7 +16,7 @@ const data = {
             image: kalaicart,
             title: "E-commerce",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam molestie pellentesque pulvinar sapien, sed viverra.",
+                " Ecommerce Website Demo Project Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
@@ -24,7 +24,7 @@ const data = {
             image: kalaidream,
             title: "Dream Your Jobs",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam molestie pellentesque pulvinar sapien, sed viverra.",
+                " Dream Your Jobs Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
@@ -32,7 +32,7 @@ const data = {
             image: kalaicart,
             title: "E-commerce",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate diam molestie pellentesque pulvinar sapien, sed viverra.",
+                " Ecommerce Website Demo Project Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
     ],

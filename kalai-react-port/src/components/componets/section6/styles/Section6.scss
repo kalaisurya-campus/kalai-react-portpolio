@@ -13,20 +13,24 @@
                 width: 10%;
                 top: 4%;
                 left: 12%;
+                display: none;
             }
             @include smBreakPoint {
                 width: 10%;
                 top: 4%;
                 left: 5%;
+                display: none;
             }
             @include mdBreakPoint {
                 width: 10%;
                 top: 4%;
+                display: none;
                 left: 5%;
             }
             @include lgBreakPoint {
                 width: 18%;
                 top: 6%;
+                display: none;
                 left: 1%;
             }
             @include xlBreakPoint {
@@ -47,18 +51,22 @@
             @include xsBreakPoint {
                 width: 8%;
                 bottom: -1%;
+                display: none;
             }
             @include smBreakPoint {
                 width: 8%;
+                display: none;
                 bottom: -1%;
             }
             @include mdBreakPoint {
                 width: 8%;
+                display: none;
                 bottom: -1%;
             }
             @include lgBreakPoint {
                 width: 30%;
                 bottom: -1%;
+                display: none;
             }
             @include xlBreakPoint {
                 width: 34%;

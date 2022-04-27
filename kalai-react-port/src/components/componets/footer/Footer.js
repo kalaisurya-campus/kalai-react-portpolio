@@ -35,7 +35,7 @@ function Footer(props) {
                         </Link>
                     </div>
                     <div className="button-aboutuss">
-                        <Link class="nav-link" to="aboutus">
+                        <Link class="nav-link" to="abouts">
                             AboutUs
                         </Link>
                     </div>

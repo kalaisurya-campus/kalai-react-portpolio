@@ -1,10 +1,12 @@
 import p1 from "../../../../../assets/kalai-port/p1.png";
 import p2 from "../../../../../assets/kalai-port/p2.png";
-import p3 from "../../../../../assets/kalai-port/p3.png";
+
 import p4 from "../../../../../assets/kalai-port/p4.png";
-import p5 from "../../../../../assets/kalai-port/p5.png";
+
 import p6 from "../../../../../assets/kalai-port/p6.png";
-import p7 from "../../../../../assets/kalai-port/p7.png";
+import ht1 from "../../../../../assets/kalai-port/ht1.png";
+import ht2 from "../../../../../assets/kalai-port/ht2.png";
+import ht3 from "../../../../../assets/kalai-port/ht3.png";
 
 const imagedata = {
     images: [
@@ -18,7 +20,7 @@ const imagedata = {
         },
         {
             id: 3,
-            image: p3,
+            image: ht2,
         },
         {
             id: 4,
@@ -26,7 +28,7 @@ const imagedata = {
         },
         {
             id: 5,
-            image: p5,
+            image: ht1,
         },
         {
             id: 6,

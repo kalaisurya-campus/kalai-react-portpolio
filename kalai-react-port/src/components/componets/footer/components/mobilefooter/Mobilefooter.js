@@ -5,6 +5,7 @@ import footer3 from "../../../../../assets/kalai-port/f3.svg";
 import persons from "../../../../../assets/kalai-port/paerson_layout.png";
 import ft1 from "../../../../../assets/kalai-port/ft1.png";
 import per from "../../../../../assets/kalai-port/per.png";
+import { Link } from "react-scroll";
 function Mobilefooter(props) {
     return (
         <div className="mobile-footer d-block d-lg-none">
@@ -26,16 +27,24 @@ function Mobilefooter(props) {
                 </div>
                 <div className="box-footer">
                     <div className="button-home">
-                        <a href="#home">Home</a>
+                        <Link class="nav-link" to="home">
+                            Home
+                        </Link>
                     </div>
                     <div className="button-aboutus">
-                        <a href="#aboutus">AboutUs</a>
+                        <Link class="nav-link" to="abouts">
+                            AboutUs
+                        </Link>
                     </div>
                     <div className="button-services">
-                        <a href="#services">Services</a>
+                        <Link class="nav-link" to="service">
+                            Services
+                        </Link>
                     </div>
                     <div className="button-contact">
-                        <a href="#contact">Contact</a>
+                        <Link class="nav-link" to="contact">
+                            Contact
+                        </Link>
                     </div>
                 </div>
             </div>

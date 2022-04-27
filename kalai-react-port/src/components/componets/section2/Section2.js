@@ -78,12 +78,19 @@ function Section2({ color }) {
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
                             >
-                                <span className="aw">Loream</span> ipsum dummy
-                                text are useually are print and website{" "}
-                                <span style={{ color: color, fontWeight: 600 }}>
-                                    industry so{" "}
+                                Ability to{" "}
+                                <span style={{ color: color }}>
+                                    quickly grasp technical
+                                </span>{" "}
+                                aspects and face new challenges.
+                                <span style={{ color: color }}>
+                                    {" "}
+                                    Very competitive
+                                </span>{" "}
+                                and adaptable to a{" "}
+                                <span style={{ color: color }}>
+                                    challenging environment.
                                 </span>
-                                i used their also.
                             </p>
                             <button
                                 className="download"
@@ -91,7 +98,16 @@ function Section2({ color }) {
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
                             >
-                                Download CV
+                                <a
+                                    download="file"
+                                    href="https://tinyjpg.com/images/social/website.jpg"
+                                    style={{
+                                        color: "black",
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    Download CV
+                                </a>
                             </button>
                         </div>
 
@@ -124,9 +140,12 @@ function Section2({ color }) {
                                                 javascript
                                             </h1>
                                             <p className="loreams mt-2">
-                                                JavaScript is a dynamic
-                                                programming language that's used
-                                                for web development,{" "}
+                                                <span style={{ color: color }}>
+                                                    JavaScript
+                                                </span>{" "}
+                                                is a dynamic programming
+                                                language that's used for web
+                                                development,{" "}
                                                 <span
                                                     style={{
                                                         color: color,
@@ -406,10 +425,13 @@ function Section2({ color }) {
                                             UI & UX
                                         </h1>
                                         <p className="loreams mt-2">
-                                            he user experience is the result of
+                                            the user experience is the result of
                                             <br />
-                                            their interaction with a product or
-                                            service, <br />
+                                            <span style={{ color: color }}>
+                                                {" "}
+                                                their interaction
+                                            </span>{" "}
+                                            with a product or service, <br />
                                             which means that{" "}
                                             <span
                                                 style={{
@@ -457,7 +479,7 @@ function Section2({ color }) {
                 </div>
             </div>
             <div>
-                <Section2Mobile />
+                <Section2Mobile color={color} />
             </div>
             {/* JAVASCRIPT modal */}
             <div
@@ -880,10 +902,13 @@ function Section2({ color }) {
                                     textAlign: "center",
                                 }}
                             >
-                                he user experience is the result of
+                                the user experience is the result of
                                 <br />
-                                their interaction with a product or service,{" "}
-                                <br />
+                                <span style={{ color: color }}>
+                                    {" "}
+                                    their interaction
+                                </span>{" "}
+                                with a product or service, <br />
                                 which means that{" "}
                                 <span
                                     style={{

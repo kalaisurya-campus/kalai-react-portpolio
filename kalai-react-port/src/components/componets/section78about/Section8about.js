@@ -40,16 +40,20 @@ function Section8about({ color }) {
                         <p
                             className="is mt-2"
                             style={{
-                                paddingLeft: "40px",
-                                paddingRight: "40px",
+                                paddingLeft: "25px",
+                                paddingRight: "25px",
                                 textAlign: "center",
                             }}
                         >
-                            Lorem ipsum dlor sit amet consectetur adipising
-                            alit.Eaque eos volptatem eius dolorem maiores nihil
-                            ducimus at rem ullam reprehenderit quidem quia
-                            deserut,molestiae,eligendi amet repellat molestias
-                            quos totam.
+                            To find a{" "}
+                            <span style={{ color: color }}>position</span> that
+                            is challenging, rewarding and provides an
+                            opportunity to expand{" "}
+                            <span style={{ color: color }}>
+                                my knowledge and abilities in creating client
+                                centric solutions
+                            </span>
+                            .
                         </p>
                     </div>
                     <div className="another-content-section">

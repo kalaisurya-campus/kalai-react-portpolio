@@ -2,11 +2,14 @@ import React from "react";
 import "./styles/NavbarMobile.scss";
 import darkmode from "../../../../../assets/kalai-port/m2 dark.png";
 import lightmode from "../../../../../assets/kalai-port/m1 light.png";
-function NavbarMobile({ dark, setdark }) {
+import { Link } from "react-scroll";
+function NavbarMobile({ dark, setdark, color }) {
     return (
         <div className="mobile navbar d-block d-lg-none">
             <div className="inside-navbars d-flex justify-content-between ms-3">
-                <h1 className="mt-2">Hi Guy's</h1>
+                <h1 className="mt-2">
+                    Hi <span style={{ color: color }}>Guy's</span>
+                </h1>
                 <span
                     class="btn"
                     type="button"
@@ -48,24 +51,34 @@ function NavbarMobile({ dark, setdark }) {
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home">
-                                    Home
-                                </a>
+                                <Link class="nav-link" to="home">
+                                    <span style={{ color: color }}>Ho</span>
+                                    me
+                                </Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#aboutus">
-                                    Aboutus
-                                </a>
+                                <Link class="nav-link" to="about">
+                                    <span style={{ color: color }}>About</span>
+                                    us
+                                </Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#service">
-                                    Services
-                                </a>
+                                <Link class="nav-link" to="service">
+                                    <span style={{ color: color }}>Serv</span>
+                                    ices
+                                </Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">
-                                    Contact
-                                </a>
+                                <Link class="nav-link" to="chat">
+                                    <span style={{ color: color }}>Ch</span>
+                                    at
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="contact">
+                                    <span style={{ color: color }}> Cont</span>
+                                    act
+                                </Link>
                             </li>
                         </ul>
                         <div class="d-flexs gap-5">
