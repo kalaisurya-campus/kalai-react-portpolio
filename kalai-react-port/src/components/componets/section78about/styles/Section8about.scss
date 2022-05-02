@@ -5,7 +5,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    // border: 2px solid red;
+
     @include xsBreakPoint {
         height: auto;
     }
@@ -27,7 +27,7 @@
     .inside-abouts {
         width: 100%;
         display: flex;
-        // border: 2px solid green;
+
         height: 100%;
         @include xsBreakPoint {
             flex-direction: column;
@@ -161,7 +161,6 @@
                 width: 100%;
             }
             .content-about {
-                // border: 2px solid blue;
                 height: 35%;
                 @include xsBreakPoint {
                     padding: 10px;
@@ -220,7 +219,6 @@
                     height: 55%;
                 }
                 @include lgBreakPoint {
-                    // height: 100%;
                 }
                 .box1 {
                     width: 100%;

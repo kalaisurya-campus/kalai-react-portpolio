@@ -19,7 +19,7 @@ function Section2Mobile({ color }) {
     }, []);
     return (
         <>
-            <div className="content-section2 mb-5 d-xs-block d-lg-none">
+            <div className="content-section2 mb-5 d-xs-block d-lg-none" id="seric">
                 <h1
                     className="my ms-3"
                     data-aos="fade-down"

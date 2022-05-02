@@ -7,8 +7,7 @@ import Next from "./next/Next";
 import Pre from "./pre/Pre";
 import offsetslefts from "../../../assets/kalai-port/offset-left.png";
 import rightoffset from "../../../assets/kalai-port/offset.png";
-import star from "../../../assets/kalai-port/star.png";
-import persan from "../../../assets/kalai-port/san.png";
+
 function Section4({ color }) {
     const settings = {
         dots: false,
@@ -104,7 +103,10 @@ function Section4({ color }) {
                                     className="slide-inside my-auto h-100"
                                     key={index}
                                 >
-                                    <div className="card col-lg-11 col-xs-12">
+                                    <div
+                                        className="card col-lg-11 col-xs-12"
+                                        style={{ backgroundColor: color }}
+                                    >
                                         <img
                                             src={items.image}
                                             class="card-img-tops"
@@ -172,16 +174,23 @@ function Section4({ color }) {
                                 flexDirection: "column",
                             }}
                         >
-                            <div className="sans mb-5">
-                                <img src={persan} className="san" />
-                            </div>
+                            <h1 style={{ color: color }}>
+                                {Artemptyimage.title}
+                            </h1>
                             <img src={Artemptyimage.image} className="w-50" />
+                            <p className="text-center" style={{ color: color }}>
+                                {Artemptyimage.description}
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button
                                 type="button"
-                                class="btn btn-danger"
+                                class="btn btn-"
                                 data-bs-dismiss="modal"
+                                style={{
+                                    backgroundColor: color,
+                                    color: "white",
+                                }}
                             >
                                 Close
                             </button>

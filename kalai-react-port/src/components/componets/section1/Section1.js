@@ -7,12 +7,10 @@ import sm3 from "../../../assets/kalai-port/sm3.png";
 import sm4 from "../../../assets/kalai-port/sm4.png";
 import sm5 from "../../../assets/kalai-port/sm5.png";
 import offsetleft from "../../../assets/kalai-port/offset-left.png";
-
 import purush from "../../../assets/kalai-port/kal-imag1.png";
 import Mobilesection1 from "./components/mobilesection1/Mobilesection1";
 import circles from "../../../assets/kalai-port/topcirles.png";
 import { Link } from "react-scroll";
-
 import profile from "../../../assets/kalai-port/profile.png";
 import settings from "../../../assets/kalai-port/settings -kalai.png";
 import Aboutus from "../../../assets/kalai-port/abouts.png";
@@ -20,7 +18,6 @@ import chats from "../../../assets/kalai-port/chats.png";
 import developers from "../../../assets/kalai-port/developer.png";
 import services from "../../../assets/kalai-port/services.png";
 import active from "../../../assets/kalai-port/activities.png";
-
 import React from "react";
 import "./styles/Section1.scss";
 function Section1({ color }) {
@@ -37,7 +34,10 @@ function Section1({ color }) {
                             <img src={sectios1} className="section-image" />
                         </div>
                         <div className="content-section1 my-auto">
-                            <h1 className="hy mb-1" style={{ color: color }}>
+                            <h1
+                                className="hy mb-1"
+                                style={{ color: color, fontWeight: 700 }}
+                            >
                                 Hy! I Am
                             </h1>
                             <h1 className="kalai mt-4">Kalaisurya</h1>
@@ -76,16 +76,18 @@ function Section1({ color }) {
                             <img src={purush} className="purushed" />
                         </div>
                         <div className="profile">
-                            <Link to="acitivities">
+                            <Link to="profile">
                                 <img src={profile} className="profiles" />
                             </Link>
                         </div>
                         <div className="settings-kalai">
-                            <img
-                                src={settings}
-                                alt="no"
-                                className="settings-kalais"
-                            />
+                            <Link to="acitivities">
+                                <img
+                                    src={active}
+                                    alt="no"
+                                    className="settings-kalais"
+                                />
+                            </Link>
                         </div>
                         <div className="about">
                             <Link to="abouts">
@@ -124,9 +126,6 @@ function Section1({ color }) {
                                 />
                             </Link>
                         </div>
-                        {/* <div className="actives">
-                        <img src={active} alt="no" className="actives-kalai" />
-                    </div> */}
 
                         <div className="smile1">
                             <img src={sm1} className="smiles" />

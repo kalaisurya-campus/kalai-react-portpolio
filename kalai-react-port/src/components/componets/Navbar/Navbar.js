@@ -55,6 +55,14 @@ function Navbar({ dark, setdark, color }) {
                                     </Link>
                                 </li>
                                 <li class="nav-item">
+                                    <Link class="nav-link" to="profile">
+                                        <span style={{ color: color }}>
+                                            Pro
+                                        </span>
+                                        file
+                                    </Link>
+                                </li>
+                                <li class="nav-item">
                                     <Link class="nav-link" to="chat">
                                         <span style={{ color: color }}>Ch</span>
                                         at

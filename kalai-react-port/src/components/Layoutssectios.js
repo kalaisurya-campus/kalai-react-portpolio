@@ -3,9 +3,9 @@ import Homepagechat from "./componets/chatapp/hompagechat/Homepagechat";
 
 import Footer from "./componets/footer/Footer";
 import Navbar from "./componets/Navbar/Navbar";
+import Profile from "./componets/profile/Profile";
 import Section1 from "./componets/section1/Section1";
 import Section2 from "./componets/section2/Section2";
-import Section3 from "./componets/section3/Section3";
 import Section4 from "./componets/section4/Section4";
 import Section5 from "./componets/section5/Section5";
 import Section6 from "./componets/section6/Section6";
@@ -26,7 +26,7 @@ function Layoutssectios({ dark, setdark, color }) {
             <Section1 color={color} />
             <Section2 color={color} />
             <Section8about color={color} />
-            {/* <Section3 color={color} /> */}
+            <Profile color={color} />
             <Section4 color={color} />
             <Section5 color={color} />
             <Section6 color={color} />
@@ -34,6 +34,7 @@ function Layoutssectios({ dark, setdark, color }) {
             <Section7 color={color} />
             <Homepagechat color={color} />
             <Footer color={color} />
+
             <TopButton />
         </div>
     );

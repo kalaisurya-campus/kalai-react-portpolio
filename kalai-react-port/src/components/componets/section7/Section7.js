@@ -1,16 +1,11 @@
 import React from "react";
 import "./styles/Section7.scss";
 import contact from "../../../assets/kalai-port/contact.png";
-import carousels from "../../../assets/kalai-port/carousels.png";
-import google from "../../../assets/kalai-port/google.png";
-import instagram from "../../../assets/kalai-port/instagram.png";
-import twitter from "../../../assets/kalai-port/twitter.png";
-import facebook from "../../../assets/kalai-port/facebook.png";
 import address from "../../../assets/kalai-port/address.gif";
 import phone from "../../../assets/kalai-port/phone.gif";
 import email from "../../../assets/kalai-port/mail.gif";
 import website from "../../../assets/kalai-port/website.gif";
-function Section7() {
+function Section7({ color }) {
     return (
         <>
             <div className="section7" id="contact">
@@ -19,7 +14,6 @@ function Section7() {
                 </h1>
                 <div className="inside-contant">
                     <div className="left-section7">
-                        {/* <img src={contact} className="contactimage mb-5" /> */}
                         <div className="boxes mt-3">
                             <div className="inside-boxes1">
                                 <div className="row gap-5 justify-content-center">
@@ -38,7 +32,14 @@ function Section7() {
                                             ></ion-icon>
                                         </div>
                                         <div className="texts mb-2">
-                                            <h5>Address</h5>
+                                            <h5
+                                                style={{
+                                                    color: color,
+                                                    fontWeight: 700,
+                                                }}
+                                            >
+                                                Address
+                                            </h5>
                                             <p className="mails">
                                                 Address,City,Street
                                             </p>
@@ -59,7 +60,14 @@ function Section7() {
                                             ></ion-icon>
                                         </div>
                                         <div className="texts mb-2">
-                                            <h5>Phone</h5>
+                                            <h5
+                                                style={{
+                                                    color: color,
+                                                    fontWeight: 700,
+                                                }}
+                                            >
+                                                Phone
+                                            </h5>
                                             <p>+91 8778377119</p>
                                         </div>
                                     </div>
@@ -78,7 +86,14 @@ function Section7() {
                                             ></ion-icon>
                                         </div>
                                         <div className="texts mb-2">
-                                            <h5>Mail</h5>
+                                            <h5
+                                                style={{
+                                                    color: color,
+                                                    fontWeight: 700,
+                                                }}
+                                            >
+                                                Mail
+                                            </h5>
                                             <p className="mails">
                                                 kalaimca685@gmail.com
                                             </p>
@@ -99,7 +114,14 @@ function Section7() {
                                             ></ion-icon>
                                         </div>
                                         <div className="texts mb-2">
-                                            <h5>Website</h5>
+                                            <h5
+                                                style={{
+                                                    color: color,
+                                                    fontWeight: 700,
+                                                }}
+                                            >
+                                                Website
+                                            </h5>
                                             <p>kalai-portpolio</p>
                                         </div>
                                     </div>
@@ -107,18 +129,14 @@ function Section7() {
                             </div>
                         </div>
 
-                        {/* <div className="cotact-list mt-3">
-                        <img src={google} className="google" />
-                        <img src={facebook} className="google" />
-                        <img src={instagram} className="google" />
-                        <img src={twitter} className="google" />
-                    </div> */}
                         <div>
                             <img src={contact} className="contactimage mt-5" />
                         </div>
                     </div>
                     <div className="right-section7 my-auto">
-                        <h1 className="mt-5">Contact</h1>
+                        <h1 className="mt-5" style={{ color: color }}>
+                            Contact
+                        </h1>
                         <form className="col-lg-6 mt-5 mb-5">
                             <div class="mb-3">
                                 <label
@@ -168,12 +186,6 @@ function Section7() {
                                 Submit
                             </button>
                         </form>
-                        {/* <div className="cotact-list mt-3">
-                            <img src={google} className="google" />
-                            <img src={facebook} className="google" />
-                            <img src={instagram} className="google" />
-                            <img src={twitter} className="google" />
-                        </div> */}
                     </div>
                 </div>
             </div>

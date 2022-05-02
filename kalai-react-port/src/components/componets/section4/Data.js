@@ -1,38 +1,48 @@
 import kalaidream from "../../../assets/kalai-port/kalaidream.png";
-import kalaicart from "../../../assets/kalai-port/kalaicart.png";
-
+import shop from "../../../assets/kalai-port/shop.png";
+import thought from "../../../assets/kalai-port/thought_play.png";
+import campusavenue from "../../../assets/kalai-port/campus.png";
+import eternosoft from "../../../assets/kalai-port/eternosotfs.png";
 const data = {
     project: [
         {
             id: 1,
-            image: kalaidream,
-            title: "Dream Your Jobs",
+            image: campusavenue,
+            title: "Campus Avenue",
             description:
-                "Dream Your Jobs Developed  web app for College management system that includes Maintaining.",
+                " Campus Avenue Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
             id: 2,
-            image: kalaicart,
-            title: "E-commerce",
+            image: kalaidream,
+            title: "Dream Your Jobs",
             description:
-                " Ecommerce Website Demo Project Developed  web app for College management system that includes Maintaining.",
+                "Dream YourJobs Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
             id: 3,
-            image: kalaidream,
-            title: "Dream Your Jobs",
+            image: shop,
+            title: "E-commerce",
             description:
-                " Dream Your Jobs Developed  web app for College management system that includes Maintaining.",
+                " Ecommerce Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
         {
             id: 4,
-            image: kalaicart,
-            title: "E-commerce",
+            image: eternosoft,
+            title: "Eternosoft Web",
             description:
-                " Ecommerce Website Demo Project Developed  web app for College management system that includes Maintaining.",
+                "Eternosoft Developed  web app for College management system that includes Maintaining.",
+            button: "Read More...",
+        },
+        {
+            id: 5,
+            image: thought,
+            title: "Thought Play",
+            description:
+                " ThoughtPlay Developed  web app for College management system that includes Maintaining.",
             button: "Read More...",
         },
     ],

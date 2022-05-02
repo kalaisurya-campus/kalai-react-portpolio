@@ -16,11 +16,12 @@ import Aboutus from "../../../../../assets/kalai-port/abouts.png";
 import chats from "../../../../../assets/kalai-port/chats.png";
 import developers from "../../../../../assets/kalai-port/developer.png";
 import services from "../../../../../assets/kalai-port/services.png";
+import active from '../../../../../assets/kalai-port/activities.png';
 import { Link } from "react-scroll";
 import "./styles/Mobilesection1.scss";
 function Mobilesection1({ color }) {
     return (
-        <div className="section1mobile d-block d-lg-none">
+        <div className="section1mobile d-block d-lg-none" id="homes">
             <div className="inside-mobile">
                 <div className="left-mobile">
                     <div className="offset-top">
@@ -60,7 +61,7 @@ function Mobilesection1({ color }) {
                         {/* <img src={purush} className="circles" /> */}
                         <img src={purush} className="kalai-purush" />
                         <div className="profiles-kalais">
-                            <Link to="acitivities">
+                            <Link to="profile">
                                 <img
                                     src={profile}
                                     alt="no"
@@ -69,9 +70,9 @@ function Mobilesection1({ color }) {
                             </Link>
                         </div>
                         <div className="settings-kalais">
-                            <Link to="">
+                            <Link to="acitivities">
                                 <img
-                                    src={settings}
+                                    src={active}
                                     alt="no"
                                     className="settings-kalais"
                                 />

@@ -111,7 +111,6 @@
             .cards {
                 display: flex;
                 .card-java {
-                    // height: 450px;
                     border-radius: 30px;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                     padding: 20px;
@@ -252,7 +251,6 @@
                     @include lgBreakPoint {
                         width: 100%;
                         padding-left: 20px;
-                        // border: 2px solid darkred;
                     }
                     @include xlBreakPoint {
                         width: 100%;
@@ -288,7 +286,6 @@
             }
             .cards {
                 .card-java {
-                    // height: 450px;
                     border-radius: 30px;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                     padding: 20px;

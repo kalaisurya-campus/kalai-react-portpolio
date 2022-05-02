@@ -67,7 +67,6 @@
         bottom: 0;
         @include xsBreakPoint {
             width: 13%;
-            // z-index:-1;
         }
         @include smBreakPoint {
             width: 15%;
@@ -101,20 +100,15 @@
             height: auto;
             border-radius: 30px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-            // background: #fdb510;
-            // padding-bottom: 20px;
             margin: 0 auto;
             cursor: pointer;
             z-index: 500000000000000000000;
             position: relative;
-            // border:3px solid red;
-
-            background: linear-gradient(180deg, #fff456 0%, rgba(253, 181, 16, 0.7) 100%);
-
+            background: radial-gradient(64.7% 74.81% at 33.77% 32.09%, #878df7 0%, #d2f8ff 98.1%) !important;
             @include xsBreakPoint {
                 width: 90%;
-                height: 400px;
-                padding: 20px;
+                height: 450px;
+                padding-top: 20px;
             }
             @include smBreakPoint {
                 width: 80%;
@@ -139,12 +133,10 @@
             }
 
             .card-img-tops {
-                width: 50%;
                 height: 230px;
-                // border: 2px solid red;
+
                 @include xsBreakPoint {
-                    width: 30%;
-                    padding-top: 20px;
+                    width: 90%;
                 }
                 @include mdBreakPoint {
                     width: 40%;
@@ -175,7 +167,7 @@
                 }
             }
             .buttonss {
-                background: linear-gradient(180deg, #74dbee 0%, rgba(116, 219, 238, 0.66) 100%);
+                background: orange;
                 border-radius: 20px;
                 font-size: 1rem;
                 font-weight: 600;

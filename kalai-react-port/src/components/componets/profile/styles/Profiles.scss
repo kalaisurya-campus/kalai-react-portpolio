@@ -1,0 +1,263 @@
+@use "../../../../scss/abstract/" as *;
+.profile-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        height: auto;
+        padding-bottom: 5%;
+    }
+    @include smBreakPoint {
+        height: auto;
+        padding-bottom: 5%;
+    }
+    @include mdBreakPoint {
+        height: auto;
+        padding-bottom: 5%;
+    }
+    @include lgBreakPoint {
+        overflow-y: scroll;
+        // border: 2px solid red;
+    }
+    @include xlBreakPoint {
+        overflow-y: scroll;
+    }
+    @include xxlBreakPoint {
+        overflow-y: scroll;
+    }
+    .insode-profile-page {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left-profile-page {
+            width: 40%;
+            // border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                widht: 100%;
+            }
+            @include xxlBreakPoint {
+                widht: 100%;
+            }
+            .top_content_title {
+                width: 100%;
+                // border: 2px solid green;
+                height: 10%;
+                @include xlBreakPoint {
+                    height: 10%;
+                }
+            }
+            .middle_content_image {
+                width: 100%;
+                // border: 2px solid red;
+                height: 60%;
+                padding: 30px;
+                @include xlBreakPoint {
+                    height: auto;
+                }
+                .no_images {
+                    width: 100%;
+                    object-fit: contain;
+                    @include mdBreakPoint {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                    }
+                    @include xlBreakPoint {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    @include xxlBreakPoint {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .bottom_contne_names {
+                width: 100%;
+                // border: 3px solid blue;
+                height: 30%;
+                padding: 40px 50px;
+                .inside_links {
+                    width: 100%;
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+                    @include xsBreakPoint {
+                        flex-direction: column;
+                    }
+                    .links_1 {
+                        border: 1px solid lightgray;
+                        box-shadow: 32px 30px 4px -11px rgba(0, 0, 0, 0.42);
+                        -webkit-box-shadow: 32px 30px 4px -11px rgba(0, 0, 0, 0.42);
+                        -moz-box-shadow: 32px 30px 4px -11px rgba(0, 0, 0, 0.42);
+                        text-align: center;
+                        border-radius: 30px;
+                        padding: 5px;
+                    }
+                    .lins {
+                        width: 80%;
+                        object-fit: cover;
+                        // border: 4px solid blue;
+                    }
+                    .faces {
+                        width: 65%;
+                    }
+                    .gits {
+                        width: 76%;
+                    }
+                    .links_1:hover {
+                        background-color: lightpink;
+                        cursor: pointer;
+                        color: white !important;
+                    }
+                }
+            }
+            @include xsBreakPoint {
+                width: 100%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+        }
+        .right-profile-page {
+            width: 60%;
+            height: 100%;
+            // border: 3px solid red;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                widht: 100%;
+            }
+            @include xxlBreakPoint {
+                widht: 100%;
+            }
+            .card-list {
+                display: flex;
+                gap: 35px;
+                padding: 0px 20px;
+                padding-top: 2%;
+                @include xsBreakPoint {
+                    flex-direction: column;
+                    padding-left: 30px;
+                }
+                .box1-cards {
+                    width: 100%;
+                    position: relative;
+                    border: 2px solid lightsalmon;
+                    border-radius: 20px;
+                    box-shadow: -28px -24px 0px -11px blue;
+                    -webkit-box-shadow: -28px -24px 0px -11px orange;
+                    -moz-box-shadow: -28px -24px 0px -11px lightgray;
+                    height: auto;
+                    .content_box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    .campus {
+                        width: 100%;
+                        @include xlBreakPoint {
+                            width: 100%;
+                        }
+
+                        // border: 2px solid red;
+                    }
+                    .campuss {
+                        width: 100%;
+                        //    border: 2px solid red;
+                        object-fit: contain;
+                        height: 265px;
+                        @include mdBreakPoint {
+                            width: 100%;
+                            height: 240px;
+                        }
+                        @include xlBreakPoint {
+                            width: 60%;
+                        }
+                    }
+                    .campused {
+                        width: 100%;
+                        //    border: 2px solid red;
+                        object-fit: contain;
+                        height: 265px;
+                        @include xlBreakPoint {
+                            widht: 50%;
+                        }
+                    }
+                    .another_box_content {
+                        position: absolute;
+                        display: none;
+                        transition: 5s ease-in;
+                        padding: 0px 30px;
+                        text-align: center;
+                    }
+                    .campus-thought {
+                        width: 60%;
+                        @include xlBreakPoint {
+                            // width: 93%;
+                        }
+                    }
+                    .thoughts {
+                        width: 60%;
+                        // border: 2px solid red;
+                        @include mdBreakPoint {
+                            width: 100%;
+                        }
+                    }
+                }
+                .box1-cards:hover .another_box_content {
+                    cursor: pointer;
+                    display: block;
+                    top: 0;
+                    width: 100%;
+                    border-radius: 30px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 20px;
+                    flex-direction: column;
+                    @include themed() {
+                        background: t($card-background);
+                    }
+                }
+            }
+        }
+    }
+}

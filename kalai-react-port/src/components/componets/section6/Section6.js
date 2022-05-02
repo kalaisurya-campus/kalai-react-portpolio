@@ -36,7 +36,10 @@ function Section6({ color }) {
         <>
             <div className="section6">
                 <h1 className="latest mb-2">
-                    <span style={{ color: color }}>Latest</span> Post
+                    <span style={{ color: color, fontWeight: 700 }}>
+                        Latest
+                    </span>{" "}
+                    Post
                 </h1>
                 <div className="person-work">
                     <img src={ap1} className="pa1" />
@@ -63,7 +66,10 @@ function Section6({ color }) {
                                         <p className="day">{items.day}</p>
                                     </div>
                                     <div className="review">
-                                        <button className="demo" style={{backgroundColor:color}}>
+                                        <button
+                                            className="demo"
+                                            style={{ backgroundColor: color }}
+                                        >
                                             {items.description}
                                         </button>
                                     </div>

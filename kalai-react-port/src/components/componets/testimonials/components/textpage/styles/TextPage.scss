@@ -3,7 +3,7 @@
 .text {
     width: 100%;
     position: relative;
-    // overflow: hidden;
+
     .inside-texts {
         display: flex;
         align-items: center;
@@ -43,7 +43,7 @@
     }
     .bottom-imageds {
         width: 40%;
-        // position: absolute;
+
         @include xsBreakPoint {
             width: 65%;
             right: 15%;
@@ -73,7 +73,7 @@
     .reads {
         border: none;
         outline: none;
-        // padding: 10px 30px;
+
         border-radius: 20px;
         background-color: orange;
         font-size: 1.1rem;
@@ -82,7 +82,6 @@
             padding: 10px;
             width: 100%;
             font-size: 1rem;
-            
         }
         @include lgBreakPoint {
             font-size: 1rem;

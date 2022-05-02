@@ -47,7 +47,7 @@
         }
         .left-section7 {
             width: 50%;
-            // border: 2px solid red;
+
             @include xsBreakPoint {
                 width: 100%;
             }
@@ -69,7 +69,7 @@
             .boxes {
                 .cardt {
                     width: 32%;
-                    // border: 2px solid red;
+
                     height: 150px;
                     display: flex;
                     align-items: center;
@@ -227,10 +227,9 @@
                         width: 11%;
                     }
                 }
-                .google:hover
-                {
+                .google:hover {
                     background-color: red;
-                    z-index:200000000000;
+                    z-index: 200000000000;
                     cursor: pointer;
                     border-radius: 50%;
                 }

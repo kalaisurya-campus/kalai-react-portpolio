@@ -22,6 +22,7 @@ import react from "../../../assets/kalai-port/react.png";
 import javascript from "../../../assets/kalai-port/javascript.png";
 import html from "../../../assets/kalai-port/html.png";
 import bootstrap from "../../../assets/kalai-port/bootstrap.png";
+import { Link } from "react-router-dom";
 function Section2({ color }) {
     useEffect(() => {
         AOS.init();
@@ -47,7 +48,7 @@ function Section2({ color }) {
 
     return (
         <>
-            <div className="section2 d-none d-lg-block" id="aboutus">
+            <div className="section2 d-none d-lg-block" id="service">
                 <div className="section2-inside">
                     <div className="section2-left ">
                         <img src={rightoffset} className="left-off" />
@@ -59,7 +60,10 @@ function Section2({ color }) {
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
                             >
-                                <span className="aw" style={{ color: color }}>
+                                <span
+                                    className="aw"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
                                     My Aw
                                 </span>
                                 <span>esome</span>
@@ -100,7 +104,7 @@ function Section2({ color }) {
                             >
                                 <a
                                     download="file"
-                                    href="https://tinyjpg.com/images/social/website.jpg"
+                                    href="https://novoresume.com/editor/resume/5f594520-c844-11ec-bd37-dd260f65f024"
                                     style={{
                                         color: "black",
                                         textDecoration: "none",
@@ -157,9 +161,7 @@ function Section2({ color }) {
                                                 </span>{" "}
                                                 and lots more HTML and CSS.
                                             </p>
-                                            {/* <button className="readmore mt-2">
-                                                Read More...
-                                            </button> */}
+
                                             <p
                                                 type="button"
                                                 class="readmore"
@@ -235,9 +237,7 @@ function Section2({ color }) {
                                                 are two of the core technologies
                                                 for building Web pages.
                                             </p>
-                                            {/* <button className="readmore mt-2">
-                                                Read More...
-                                            </button> */}
+
                                             <p
                                                 type="button"
                                                 class="readmore"
@@ -261,9 +261,7 @@ function Section2({ color }) {
                                 data-aos-duration="1500"
                             />
                         </div>
-                        {/* <div>
-                              <img src={gripup} className="w-50 mx-auto"/>
-                                </div> */}
+
                         <div className="left-rout">
                             <img src={rightoffset} className="rtr-rounds" />
                         </div>
@@ -311,9 +309,7 @@ function Section2({ color }) {
                                                 </span>
                                                 user interfaces.
                                             </p>
-                                            {/* <button className="readmore mt-2">
-                                                Read More...
-                                            </button> */}
+
                                             <p
                                                 type="button"
                                                 class="readmore"
@@ -381,9 +377,7 @@ function Section2({ color }) {
                                                 creation of websites and web
                                                 apps.
                                             </p>
-                                            {/* <button className="readmore mt-2">
-                                                Read More...
-                                            </button> */}
+
                                             <p
                                                 type="button"
                                                 class="readmore"
@@ -444,9 +438,7 @@ function Section2({ color }) {
                                             but is not limited to, a user
                                             interface.
                                         </p>
-                                        {/* <button className="readmore mt-2">
-                                            Read More...
-                                        </button> */}
+
                                         <p
                                             type="button"
                                             class="readmore"

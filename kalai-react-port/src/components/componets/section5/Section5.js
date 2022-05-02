@@ -9,7 +9,7 @@ function Section5({ color }) {
     return (
         <div className="section5">
             <h1 className="port mt-4 mb-2">
-                Port<span style={{ color: color }}>folio</span>
+                Port<span style={{ color: color, fontWeight: 700 }}>folio</span>
             </h1>
             <div className="tabs">
                 <div className="tablists ms-1">
