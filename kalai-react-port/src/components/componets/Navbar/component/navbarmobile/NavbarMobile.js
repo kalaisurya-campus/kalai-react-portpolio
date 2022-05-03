@@ -2,13 +2,28 @@ import React from "react";
 import "./styles/NavbarMobile.scss";
 import darkmode from "../../../../../assets/kalai-port/m2 dark.png";
 import lightmode from "../../../../../assets/kalai-port/m1 light.png";
+import sm5 from "../../../../../assets/kalai-port/sm5.png";
 import { Link } from "react-scroll";
 function NavbarMobile({ dark, setdark, color }) {
     return (
         <div className="mobile navbar d-block d-lg-none">
             <div className="inside-navbars d-flex justify-content-between ms-3">
                 <h1 className="mt-2">
-                    Hi <span style={{ color: color }}>Guy's</span>
+                    Hi{" "}
+                    <span style={{ color: color }}>
+                        Guy's{" "}
+                        <span>
+                            <img
+                                src={sm5}
+                                style={{
+                                    width: "50px",
+
+                                    transform: "rotate(-20deg)",
+                                    objectFit: "cover",
+                                }}
+                            />
+                        </span>
+                    </span>
                 </h1>
                 <span
                     class="btn"
