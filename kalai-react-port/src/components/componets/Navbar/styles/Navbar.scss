@@ -1,6 +1,12 @@
 @use "../../../../scss/abstract/" as *;
 
 .navbar {
+    position: sticky;
+    top:0;
+    .active
+    {
+        background-color: red !important;
+    }
     .navbar-brand {
         font-size: 1.8rem !important;
         color: black !important;
@@ -99,4 +105,5 @@
             padding: 10px;
         }
     }
+   
 }
