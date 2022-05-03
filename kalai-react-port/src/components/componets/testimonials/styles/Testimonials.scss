@@ -45,7 +45,6 @@
 
         .left {
             width: 50%;
-
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -87,14 +86,37 @@
                     justify-content: center;
 
                     @include xsBreakPoint {
-                        width: 100%;
+                        width: 80%;
+                        height: 200px;
+                        // border: 2px solid red;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     @include mdBreakPoint {
                         width: 40% !important;
+                        height: 220px;
+                        // border: 2px solid red;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     @include lgBreakPoint {
                         width: 100%;
                     }
+                }
+            }
+            .rocks {
+                @include xsBreakPoint {
+                    display: none;
+                }
+                @include smBreakPoint {
+                    display: none;
+                }
+                @include mdBreakPoint {
+                    display: none;
                 }
             }
             .per-rockets {

@@ -20,7 +20,11 @@ import services from "../../../assets/kalai-port/services.png";
 import active from "../../../assets/kalai-port/activities.png";
 import React from "react";
 import "./styles/Section1.scss";
+import Resume from "../resume/Resume";
+import vts2 from "../../../assets/kalai-port/vts2.gif";
+import { useHistory } from "react-router-dom";
 function Section1({ color }) {
+    const history = useHistory();
     return (
         <>
             <div className="section1 d-none d-lg-block" id="home">
@@ -31,12 +35,18 @@ function Section1({ color }) {
                         </div>
 
                         <div className="image1">
-                            <img src={sectios1} className="section-image" />
+                            {/* <img src={sectios1} className="section-image" /> */}
+                            <img src={vts2} className="section-image" />
                         </div>
                         <div className="content-section1 my-auto">
                             <h1
                                 className="hy mb-1"
-                                style={{ color: color, fontWeight: 700 }}
+                                style={{
+                                    color: color,
+                                    fontWeight: 700,
+                                    zIndex: 800000000000000000000000000000000000000000000000000000000000000,
+                                    position: "relative",
+                                }}
                             >
                                 Hy! I Am
                             </h1>
@@ -63,6 +73,9 @@ function Section1({ color }) {
                                 .
                             </span>
                             <button className="hire mt-5">Contact Me</button>
+                            {/* <button onClick={() => history.push("/resume")}>
+                                Resume
+                            </button> */}
                         </div>
                         <div className="bottom-image">
                             <img src={section1rocket} className="rocket" />
@@ -131,7 +144,7 @@ function Section1({ color }) {
                             <img src={sm1} className="smiles" />
                         </div>
                         <div className="smile2">
-                            <img src={sm2} className="smiles1" />
+                            {/* <img src={sm2} className="smiles1" /> */}
                         </div>
                         <div className="smile3">
                             <img src={sm3} className="smiles2" />

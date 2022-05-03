@@ -16,7 +16,8 @@ import Aboutus from "../../../../../assets/kalai-port/abouts.png";
 import chats from "../../../../../assets/kalai-port/chats.png";
 import developers from "../../../../../assets/kalai-port/developer.png";
 import services from "../../../../../assets/kalai-port/services.png";
-import active from '../../../../../assets/kalai-port/activities.png';
+import active from "../../../../../assets/kalai-port/activities.png";
+import vts from "../../../../../assets/kalai-port/vts.gif";
 import { Link } from "react-scroll";
 import "./styles/Mobilesection1.scss";
 function Mobilesection1({ color }) {
@@ -28,7 +29,8 @@ function Mobilesection1({ color }) {
                         <img src={offset} className="offs" />
                     </div>
                     <div className="image1 mt-5 mb-3">
-                        <img src={sectios1} className="section-image" />
+                        {/* <img src={sectios1} className="section-image" /> */}
+                        <img src={vts} className="section-image" />
                     </div>
                     <h1 className="hy mb-1">
                         Hy! <span style={{ color: color }}>I Am</span>

@@ -21,7 +21,7 @@
         .left-section1 {
             width: 50%;
             height: 100%;
-          
+
             @include lgBreakPoint {
                 width: 100%;
             }
@@ -68,9 +68,12 @@
                     top: 12% !important;
                 }
                 .section-image {
-                    height: 350px !important;
+                    width: 70%;
                     transform: translateY(0);
                     animation: bounces 5s ease-in-out infinite;
+                    background-color: orange !important;
+                    border-radius: 50%;
+                    border: 18px solid orangered;
                     @include lgBreakPoint {
                         height: 180px !important;
                     }

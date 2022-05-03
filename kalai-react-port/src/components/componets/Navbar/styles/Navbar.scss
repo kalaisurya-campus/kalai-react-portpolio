@@ -9,6 +9,11 @@
             color: t($text-blue-darks) !important;
         }
     }
+    .his:hover {
+        color: $back_export_color-black;
+        cursor: pointer;
+    }
+
     .nav-item {
         font-size: 1.3rem;
         color: black !important;
@@ -20,9 +25,14 @@
     }
     .nav-link {
         color: black !important;
+        font-weight: 500;
         @include themed() {
             color: t($text-blue-darks) !important;
         }
+    }
+    .nav-link:hover {
+        color: orange !important;
+        cursor: pointer;
     }
 
     .darks {

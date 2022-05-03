@@ -23,6 +23,9 @@ import javascript from "../../../assets/kalai-port/javascript.png";
 import html from "../../../assets/kalai-port/html.png";
 import bootstrap from "../../../assets/kalai-port/bootstrap.png";
 import { Link } from "react-router-dom";
+import dum5 from "../../../assets/kalai-port/dum5.png";
+import dum8 from "../../../assets/kalai-port/dum8.png";
+import rocketpersond from '../../../assets/kalai-port/rocketstart.png';
 function Section2({ color }) {
     useEffect(() => {
         AOS.init();
@@ -183,13 +186,14 @@ function Section2({ color }) {
                                     />
                                 </div>
                                 <div className="laptop mt-5">
-                                    <img
+                                    {/* <img
                                         src={personround}
                                         className="laptops"
                                         data-aos="fade-down-right"
                                         data-aos-easing="linear"
                                         data-aos-duration="1500"
-                                    />
+                                    /> */}
+                                    <img src={rocketpersond}/>
                                 </div>
                             </div>
 
@@ -278,7 +282,7 @@ function Section2({ color }) {
                                     <div className="card-java col-lg-9 col-xl-7 col-xxl-11 mt-5">
                                         <div className="empty-image">
                                             <img
-                                                src={react}
+                                                src={dum5}
                                                 className="empty-rocket"
                                             />
                                         </div>
@@ -345,7 +349,7 @@ function Section2({ color }) {
                                     <div className="card-java col-lg-5 col-xl-6 mt-5">
                                         <div className="empty-image">
                                             <img
-                                                src={bootstrap}
+                                                src={dum5}
                                                 className="empty-rocket"
                                             />
                                         </div>

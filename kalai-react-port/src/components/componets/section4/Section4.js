@@ -178,14 +178,14 @@ function Section4({ color }) {
                                 {Artemptyimage.title}
                             </h1>
                             <img src={Artemptyimage.image} className="w-50" />
-                            <p className="text-center" style={{ color: color }}>
+                            <p className="text-center">
                                 {Artemptyimage.description}
                             </p>
                         </div>
                         <div class="modal-footer">
                             <button
                                 type="button"
-                                class="btn btn-"
+                                class="btn btn-danger"
                                 data-bs-dismiss="modal"
                                 style={{
                                     backgroundColor: color,

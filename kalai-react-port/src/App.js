@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.scss";
 import { CirclePicker } from "react-color";
 import Tippy from "@tippyjs/react";
 
 import Layoutssectios from "./components/Layoutssectios";
 import settings from "./assets/kalai-port/settings.png";
+import Resume from "./components/componets/resume/Resume";
 
 function App() {
     const [colors, SetColors] = useState([]);
@@ -51,7 +52,17 @@ function App() {
             </div>
             <div className="port-polio">
                 {/* <button onClick={() => SetDark(!dark)}>Cick</button> */}
-                <Layoutssectios dark={dark} setdark={SetDark} color={colors} />
+
+                <Router>
+                    <Switch>
+                        <Route path="/resume" component={Resume} />
+                        <Layoutssectios
+                            dark={dark}
+                            setdark={SetDark}
+                            color={colors}
+                        />
+                    </Switch>
+                </Router>
             </div>
         </div>
     );

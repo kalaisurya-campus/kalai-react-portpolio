@@ -37,9 +37,12 @@
                 }
             }
             .section-image {
-                width: 70%;
+                width: 60%;
                 transform: translateY(0);
                 animation: bounce 3s ease-in-out infinite;
+                background-color: orange !important;
+                border-radius: 50%;
+                border: 12px solid orangered;
                 @include smBreakPoint {
                     width: 50%;
                 }

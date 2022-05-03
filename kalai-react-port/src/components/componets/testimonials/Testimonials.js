@@ -19,6 +19,13 @@ import wrok8 from "../../../assets/kalai-port/work8.png";
 import wrok9 from "../../../assets/kalai-port/work9.png";
 import wrok10 from "../../../assets/kalai-port/work10.png";
 import wrok11 from "../../../assets/kalai-port/wok13.png";
+import dum1 from "../../../assets/kalai-port/du1.png";
+import dum2 from "../../../assets/kalai-port/du2.png";
+import dum3 from "../../../assets/kalai-port/dum3.png";
+import dum4 from "../../../assets/kalai-port/dum5.png";
+import dum5 from "../../../assets/kalai-port/dum6.png";
+import dum6 from "../../../assets/kalai-port/dum7.png";
+import dum7 from "../../../assets/kalai-port/dum8.png";
 
 import "./styles/Testimonials.scss";
 import TextPage from "./components/textpage/TextPage";
@@ -52,6 +59,13 @@ export default class Testimonials extends Component {
                 wrok9,
                 wrok10,
                 wrok11,
+                dum1,
+                dum2,
+                dum3,
+                dum4,
+                dum5,
+                dum6,
+                dum7,
             ],
         };
     }

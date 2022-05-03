@@ -13,7 +13,10 @@ function Navbar({ dark, setdark, color }) {
             <div className="d-none d-lg-block">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <h1 style={{ color: color, fontWeight: 700 }}>
+                        <h1
+                            style={{ color: color, fontWeight: 700 }}
+                            className="his"
+                        >
                             Hi Kalaisurya!
                         </h1>
                         <button

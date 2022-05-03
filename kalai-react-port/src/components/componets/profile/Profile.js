@@ -226,7 +226,7 @@ function Profile({ color }) {
                                         fontWeight: 700,
                                     }}
                                 >
-                                    Eternosft
+                                    Eternosoft
                                 </h5>
                             </div>
                             <div className="another_box_content">
@@ -239,7 +239,7 @@ function Profile({ color }) {
                                             marginRight: "6px",
                                         }}
                                     >
-                                        Eternosft Developed
+                                        Eternosoft Developed
                                     </span>{" "}
                                     web app for College management system that
                                     includes Maintaining.

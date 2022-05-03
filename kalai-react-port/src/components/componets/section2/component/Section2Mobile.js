@@ -11,6 +11,7 @@ import react from "../../../../assets/kalai-port/react.png";
 import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
+import dum5 from '../../../../assets/kalai-port/dum5.png';
 import "./styles/Section2Mobile.scss";
 function Section2Mobile({ color }) {
     useEffect(() => {
@@ -19,7 +20,10 @@ function Section2Mobile({ color }) {
     }, []);
     return (
         <>
-            <div className="content-section2 mb-5 d-xs-block d-lg-none" id="seric">
+            <div
+                className="content-section2 mb-5 d-xs-block d-lg-none"
+                id="seric"
+            >
                 <h1
                     className="my ms-3"
                     data-aos="fade-down"
@@ -75,7 +79,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img src={dum5} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -83,7 +87,7 @@ function Section2Mobile({ color }) {
                             <div className="button-content">
                                 <h1
                                     className="javascript mt-2"
-                                    style={{ color: color }}
+                                    style={{ color: color, fontWeight: 700 }}
                                 >
                                     React Developer
                                 </h1>
@@ -126,7 +130,12 @@ function Section2Mobile({ color }) {
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">javascript</h1>
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    javascript
+                                </h1>
                                 <p className="loreams mt-2 ">
                                     JavaScript is a dynamic programming language
                                     that's used for web development,{" "}
@@ -162,13 +171,18 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img src={dum5} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">HTML & CSS</h1>
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    HTML & CSS
+                                </h1>
                                 <p className="loreams mt-2">
                                     HTML (the Hypertext Markup Language) and{" "}
                                     <span
@@ -209,7 +223,12 @@ function Section2Mobile({ color }) {
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">Bootstrap</h1>
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    Bootstrap
+                                </h1>
                                 <p className="loreams mt-2">
                                     Bootstrap is a{" "}
                                     <span
@@ -244,13 +263,18 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img src={dum5} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">UI & UX</h1>
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    UI & UX
+                                </h1>
                                 <p className="loreams mt-2">
                                     the user experience is the result of
                                     <br />
@@ -294,7 +318,12 @@ function Section2Mobile({ color }) {
                                 <img src={star} className="stars my-auto" />
                             </div>
                             <div className="button-content">
-                                <h1 className="javascript mt-2">Sass</h1>
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    Sass
+                                </h1>
                                 <p className="loreams mt-2">
                                     Sass which stands for '
                                     <span style={{ color: color }}>
@@ -470,6 +499,8 @@ function Section2Mobile({ color }) {
                                 id="exampleModalLabel"
                                 style={{
                                     margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
                                 }}
                             >
                                 HTML And CSS
@@ -513,7 +544,8 @@ function Section2Mobile({ color }) {
                                 <span
                                     style={{
                                         color: color,
-                                        fontWeight: 600,
+
+                                        fontWeight: 700,
                                     }}
                                 >
                                     CSS (Cascading Style Sheets)
@@ -557,6 +589,8 @@ function Section2Mobile({ color }) {
                                 id="exampleModalLabel"
                                 style={{
                                     margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
                                 }}
                             >
                                 React Developer
@@ -644,6 +678,8 @@ function Section2Mobile({ color }) {
                                 id="exampleModalLabel"
                                 style={{
                                     margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
                                 }}
                             >
                                 Bootstrap
@@ -731,6 +767,8 @@ function Section2Mobile({ color }) {
                                 id="exampleModalLabel"
                                 style={{
                                     margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
                                 }}
                             >
                                 UI AND UX
@@ -823,6 +861,8 @@ function Section2Mobile({ color }) {
                                 id="exampleModalLabel"
                                 style={{
                                     margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
                                 }}
                             >
                                 Sass
