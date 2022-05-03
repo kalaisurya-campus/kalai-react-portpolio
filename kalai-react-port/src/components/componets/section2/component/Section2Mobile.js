@@ -11,7 +11,7 @@ import react from "../../../../assets/kalai-port/react.png";
 import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
-import dum5 from '../../../../assets/kalai-port/dum5.png';
+import dum5 from "../../../../assets/kalai-port/dum5.png";
 import "./styles/Section2Mobile.scss";
 function Section2Mobile({ color }) {
     useEffect(() => {
@@ -104,9 +104,7 @@ function Section2Mobile({ color }) {
                                     </span>
                                     user interfaces.
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
@@ -150,9 +148,7 @@ function Section2Mobile({ color }) {
                                     </span>{" "}
                                     and lots more HTML and CSS.
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
@@ -196,9 +192,7 @@ function Section2Mobile({ color }) {
                                     are two of the core technologies for
                                     building Web pages.
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
@@ -242,9 +236,7 @@ function Section2Mobile({ color }) {
                                     development framework for the creation of
                                     websites and web apps.
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
@@ -291,9 +283,7 @@ function Section2Mobile({ color }) {
                                     </span>{" "}
                                     but is not limited to, a user interface.
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
@@ -340,14 +330,175 @@ function Section2Mobile({ color }) {
                                     </span>
                                     and more..
                                 </p>
-                                {/* <button className="readmore mt-2 mb-4">
-                                    Read More...
-                                </button> */}
+
                                 <p
                                     type="button"
                                     class="readmore"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal5"
+                                >
+                                    Read More...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            className="card-javas col-xs-10 col-sm-10 col-md-8 mt-5"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
+                            <div className="empty-image">
+                                <img src={dum5} className="empty-rocket" />
+                            </div>
+                            <div className="round-empty">
+                                <img src={star} className="stars my-auto" />
+                            </div>
+                            <div className="button-content">
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{ color: color, fontWeight: 700 }}
+                                >
+                                    Github
+                                </h1>
+                                <p className="loreams mt-2">
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        GitHub is a code hosting
+                                    </span>{" "}
+                                    platform for version control and
+                                    collaboration. It lets you and others work
+                                    together on{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        projects from anywhere
+                                    </span>
+                                    . This tutorial teaches you
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        GitHub essentials
+                                    </span>{" "}
+                                    like repositories,{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        branches
+                                    </span>
+                                    , commits, and
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        pull requests
+                                    </span>
+                                    .
+                                </p>
+
+                                <p
+                                    type="button"
+                                    class="readmore"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal6"
+                                >
+                                    Read More...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            className="card-javas col-xs-10 col-sm-10 col-md-8 mt-5"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
+                            <div className="empty-image">
+                                <img src={rock2} className="empty-rocket" />
+                            </div>
+                            <div className="round-empty">
+                                <img src={star} className="stars my-auto" />
+                            </div>
+                            <div className="button-content">
+                                <h1
+                                    className="javascript mt-2"
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                        textAlign: "center",
+                                    }}
+                                >
+                                    VsCode
+                                </h1>
+                                <p className="loreams mt-2">
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        {" "}
+                                        Visual Studio Code{" "}
+                                    </span>
+                                    is a streamlined{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        code editor
+                                    </span>{" "}
+                                    with support for{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        development operations like
+                                    </span>
+                                    debugging, task running, and version control
+                                    needs for a{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        quick code-build-debug
+                                    </span>{" "}
+                                    cycle featured IDEs,{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        such as Visual Studio IDE.
+                                    </span>
+                                </p>
+
+                                <p
+                                    type="button"
+                                    class="readmore"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal7"
                                 >
                                     Read More...
                                 </p>
@@ -791,7 +942,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={rock2}
+                                    src={dum5}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -929,6 +1080,253 @@ function Section2Mobile({ color }) {
                     </div>
                 </div>
             </div>
+
+            {/* git hub start modeal  */}
+            <div
+                class="modal fade"
+                id="exampleModal6"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+                style={{
+                    zIndex: "9000000",
+                }}
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1
+                                class="modal-title"
+                                id="exampleModalLabel"
+                                style={{
+                                    margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
+                                }}
+                            >
+                                Github
+                            </h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div
+                            class="modal-body"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <div className="image-set-model">
+                                <img
+                                    src={dum5}
+                                    className="empty-rocket w-50"
+                                    style={{
+                                        margin: "0 auto",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                />
+                            </div>
+
+                            <p
+                                className="loreams-texts mt-4 mb-4"
+                                style={{
+                                    textAlign: "center",
+                                }}
+                            >
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    GitHub is a code hosting
+                                </span>{" "}
+                                platform for version control and collaboration.
+                                It lets you and others work together on{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    projects from anywhere
+                                </span>
+                                . This tutorial teaches you
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    GitHub essentials
+                                </span>{" "}
+                                like repositories,{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    branches
+                                </span>
+                                , commits, and
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    pull requests
+                                </span>
+                                .
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* git end modal popup */}
+
+            {/* vs code start model */}
+
+            <div
+                class="modal fade"
+                id="exampleModal7"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+                style={{
+                    zIndex: "9000000",
+                }}
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1
+                                class="modal-title"
+                                id="exampleModalLabel"
+                                style={{
+                                    margin: "0 auto",
+                                    color: color,
+                                    fontWeight: 700,
+                                }}
+                            >
+                                VsCode
+                            </h1>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div
+                            class="modal-body"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <div className="image-set-model">
+                                <img
+                                    src={dum5}
+                                    className="empty-rocket w-50"
+                                    style={{
+                                        margin: "0 auto",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                />
+                            </div>
+
+                            <p
+                                className="loreams-texts mt-4 mb-4"
+                                style={{
+                                    textAlign: "center",
+                                }}
+                            >
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    {" "}
+                                    Visual Studio Code{" "}
+                                </span>
+                                is a streamlined{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    code editor
+                                </span>{" "}
+                                with support for{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    development operations like
+                                </span>
+                                debugging, task running, and version control
+                                needs for a{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    quick code-build-debug
+                                </span>{" "}
+                                cycle featured IDEs,{" "}
+                                <span
+                                    style={{
+                                        color: color,
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    such as Visual Studio IDE.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* vs code end model */}
         </>
     );
 }

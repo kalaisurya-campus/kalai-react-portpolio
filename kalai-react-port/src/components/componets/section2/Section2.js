@@ -186,13 +186,7 @@ function Section2({ color }) {
                                     />
                                 </div>
                                 <div className="laptop mt-5">
-                                    {/* <img
-                                        src={personround}
-                                        className="laptops"
-                                        data-aos="fade-down-right"
-                                        data-aos-easing="linear"
-                                        data-aos-duration="1500"
-                                    /> */}
+                                   
                                     <img src={rocketpersond}/>
                                 </div>
                             </div>

@@ -56,7 +56,7 @@
                 top: 5%;
                 left: 28%;
                 @include lgBreakPoint {
-                    left: 31%;
+                    left: 33%;
                     top: 20%;
                 }
                 @include xlBreakPoint {
@@ -75,13 +75,13 @@
                     border-radius: 50%;
                     border: 18px solid orangered;
                     @include lgBreakPoint {
-                        height: 180px !important;
+                        width: 40%;
                     }
                     @include xlBreakPoint {
-                        height: 240px !important;
+                        width: 50%;
                     }
                     @include xxlBreakPoint {
-                        height: 250px !important;
+                        width: 60%;
                     }
                 }
             }
