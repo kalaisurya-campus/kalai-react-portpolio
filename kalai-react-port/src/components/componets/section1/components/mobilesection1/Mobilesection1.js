@@ -20,10 +20,16 @@ import active from "../../../../../assets/kalai-port/activities.png";
 import vts from "../../../../../assets/kalai-port/vts.gif";
 import { Link } from "react-scroll";
 import "./styles/Mobilesection1.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Mobilesection1({ color }) {
+    const ContactList = () => {
+        toast("ContactMe:8778377119");
+    };
     return (
         <div className="section1mobile d-block d-lg-none" id="homes">
             <div className="inside-mobile">
+                <ToastContainer />
                 <div className="left-mobile">
                     <div className="offset-top">
                         <img src={offset} className="offs" />
@@ -38,7 +44,13 @@ function Mobilesection1({ color }) {
                     <h1 className="kalai mt-4 mb-3">
                         Kalai<span style={{ color: color }}>surya</span>
                     </h1>
-                    <span className="loream mt-5">
+                    <span
+                        className="loream mt-5"
+                        style={{
+                            paddingRight: "15px",
+                            paddingLeft: "10px",
+                        }}
+                    >
                         To obtain a position with a progressive{" "}
                         <span style={{ color: color }}>web development</span>
                         company with a{" "}
@@ -48,7 +60,10 @@ function Mobilesection1({ color }) {
                         To find a position that is{" "}
                         <span style={{ color: color }}>challenging.</span>
                     </span>
-                    <button className="hire mt-4 mb-3">
+                    <button
+                        className="hire mt-4 mb-3"
+                        onClick={() => ContactList()}
+                    >
                         Contact{" "}
                         <span style={{ color: color }} className="ms-2">
                             Me

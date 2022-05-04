@@ -25,7 +25,11 @@ import bootstrap from "../../../assets/kalai-port/bootstrap.png";
 import { Link } from "react-router-dom";
 import dum5 from "../../../assets/kalai-port/dum5.png";
 import dum8 from "../../../assets/kalai-port/dum8.png";
-import rocketpersond from '../../../assets/kalai-port/rocketstart.png';
+import rocketpersond from "../../../assets/kalai-port/rocketstart.png";
+import resume from "../../../assets/Resume/kalai-resume.pdf";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Section2({ color }) {
     useEffect(() => {
         AOS.init();
@@ -48,11 +52,12 @@ function Section2({ color }) {
         const bsModal = Modal.getInstance(modalEle);
         bsModal.hide();
     };
-
+    const notification = () => toast("Download Resume Successfuly!");
     return (
         <>
             <div className="section2 d-none d-lg-block" id="service">
                 <div className="section2-inside">
+                    <ToastContainer />
                     <div className="section2-left ">
                         <img src={rightoffset} className="left-off" />
 
@@ -106,8 +111,9 @@ function Section2({ color }) {
                                 data-aos-duration="1500"
                             >
                                 <a
-                                    download="file"
-                                    href="https://novoresume.com/editor/resume/5f594520-c844-11ec-bd37-dd260f65f024"
+                                    href={resume}
+                                    download="kalaiportfolio"
+                                    onClick={notification}
                                     style={{
                                         color: "black",
                                         textDecoration: "none",
@@ -186,8 +192,7 @@ function Section2({ color }) {
                                     />
                                 </div>
                                 <div className="laptop mt-5">
-                                   
-                                    <img src={rocketpersond}/>
+                                    <img src={rocketpersond} />
                                 </div>
                             </div>
 

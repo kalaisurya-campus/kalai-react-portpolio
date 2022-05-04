@@ -69,21 +69,22 @@
                     }
                 }
                 .my {
-                    font-size: 4rem;
+                    font-size: 3.7rem;
                     font-weight: 500;
                 }
                 .service {
-                    font-size: 4.2rem;
+                    font-size: 4rem;
                     font-weight: 600;
                     @include themed() {
                         color: t($service-text-colors);
                     }
                 }
                 .loreams {
-                    width: 80%;
-                    font-size: 2.2rem;
+                    width: 85%;
+                    font-size: 2rem;
                     line-height: 1.4;
                     font-weight: 400;
+                    // border: 2px solid red;
                 }
                 .download {
                     border: none;

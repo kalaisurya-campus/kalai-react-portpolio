@@ -11,7 +11,7 @@ function Navbar({ dark, setdark, color }) {
     const [slots, SetSlots] = useState(false);
 
     const chageColorBack = () => {
-        if (window.scrollY >= 20) {
+        if (window.scrollY >= 100) {
             SetSlots(true);
         } else {
             SetSlots(false);
@@ -20,14 +20,8 @@ function Navbar({ dark, setdark, color }) {
     window.addEventListener("scroll", chageColorBack);
     return (
         <>
-            <div className="d-none d-lg-block">
-                <nav
-                    className={
-                        slots
-                            ? "navbar active"
-                            : "navbar navbar-expand-lg navbar-light"
-                    }
-                >
+            {/* <div className="d-none d-lg-block">
+                <nav className="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <h1
                             style={{ color: color, fontWeight: 700 }}
@@ -132,7 +126,92 @@ function Navbar({ dark, setdark, color }) {
             </div>
             <div>
                 <NavbarMobile dark={dark} setdark={setdark} color={color} />
+            </div> */}
+
+            <div className="main-navbar-ttitle d-none d-lg-block">
+                <div className="inside-class-title">
+                    <div className="top-title">
+                        <h1
+                            style={{ color: color, fontWeight: 700 }}
+                            className="his"
+                        >
+                            Kalai!
+                            <span>
+                                <img
+                                    src={sm5}
+                                    style={{
+                                        width: "50px",
+
+                                        transform: "rotate(-20deg)",
+                                        objectFit: "cover",
+                                    }}
+                                />
+                            </span>
+                        </h1>
+                    </div>
+                    <div className="body-title">
+                        <ul class="uls">
+                            <li class="nav-item">
+                                <Link class="nav-link" to="home">
+                                    <span style={{ color: color }}>Ho</span>
+                                    me
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="service">
+                                    <span style={{ color: color }}>Serv</span>
+                                    ices
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="about">
+                                    <span style={{ color: color }}>About</span>
+                                    us
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="profile">
+                                    <span style={{ color: color }}>Pro</span>
+                                    file
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="chat">
+                                    <span style={{ color: color }}>Ch</span>
+                                    at
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="contact">
+                                    <span style={{ color: color }}> Cont</span>
+                                    act
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="footer-title">
+                        <div class="daynight">
+                            <label for="checkbox">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="checkbox"
+                                    onClick={() => setdark(!dark)}
+                                />
+                                <div class="toggle">
+                                    <div class="cloud"></div>
+                                    <div class="star"></div>
+                                    <div class="sea"></div>
+                                    <div class="mountains"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div>
+                <NavbarMobile dark={dark} setdark={setdark} color={color} />
+            </div> 
         </>
     );
 }

@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/Section7.scss";
 import contact from "../../../assets/kalai-port/contact.png";
 import address from "../../../assets/kalai-port/address.gif";
 import phone from "../../../assets/kalai-port/phone.gif";
 import email from "../../../assets/kalai-port/mail.gif";
 import website from "../../../assets/kalai-port/website.gif";
+import emailjs from "emailjs-com";
+
+import { FaStar } from "react-icons/fa";
 function Section7({ color }) {
+    const sendMail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                "service_xtdd9nb",
+                "template_6qhqb7m",
+                e.target,
+                "uoeS6Kk01IqV3ceeC"
+            )
+            .then((e) => {
+                console.log(e.text);
+            })
+            .catch((er) => {
+                console.log(er);
+            });
+        e.target.reset();
+    };
+
+    const star = Array(5).fill(0);
+    const [current, SetCurrentvalue] = useState(0);
+
+    const handleclick = (val) => {
+        SetCurrentvalue(val);
+    };
+    const colors = {
+        orange: "orange",
+        grey: "grey",
+    };
+
     return (
         <>
             <div className="section7" id="contact">
@@ -137,7 +169,29 @@ function Section7({ color }) {
                         <h1 className="mt-5" style={{ color: color }}>
                             Contact
                         </h1>
-                        <form className="col-lg-6 mt-5 mb-5">
+                        <div className="starsed mt-4 mb-3">
+                            {star.map((_, index) => {
+                                return (
+                                    <FaStar
+                                        onClick={() => handleclick(index + 1)}
+                                        style={{
+                                            cursor: "pointer",
+                                            marginRight: "20px",
+                                            fontSize: "2rem",
+                                        }}
+                                        color={
+                                            current > index
+                                                ? colors.orange
+                                                : colors.grey
+                                        }
+                                    />
+                                );
+                            })}
+                        </div>
+                        <form
+                            className="col-lg-6 mt-5 mb-5"
+                            onSubmit={sendMail}
+                        >
                             <div class="mb-3">
                                 <label
                                     for="exampleInputUserName1"
@@ -148,8 +202,10 @@ function Section7({ color }) {
                                 <input
                                     type="text"
                                     class="form-control"
+                                    name="name"
                                     id="exampleInputUserName1"
                                     aria-describedby="emailHelp"
+                                    required
                                 />
                             </div>
                             <div class="mb-3 ">
@@ -163,8 +219,27 @@ function Section7({ color }) {
                                     type="email"
                                     class="form-control"
                                     id="exampleInputEmail1"
+                                    name="email"
+                                    required
                                 />
                             </div>
+                            <div class="mb-3 ">
+                                <label
+                                    for="exampleInputEmail12"
+                                    class="form-label"
+                                >
+                                    FeedBack star Rating
+                                </label>
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="exampleInputEmail12"
+                                    name="star"
+                                    disabled
+                                    value={current}
+                                />
+                            </div>
+
                             <div class="mb-3">
                                 <label
                                     for="exampleInputTextArea1"
@@ -174,8 +249,10 @@ function Section7({ color }) {
                                 </label>
                                 <input
                                     type="textarea"
+                                    name="description"
                                     class="form-control"
                                     id="exampleInputTextArea1"
+                                    required
                                 />
                             </div>
 

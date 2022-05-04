@@ -16,14 +16,13 @@
         padding-bottom: 5%;
     }
     @include lgBreakPoint {
-        overflow-y: scroll;
-        // border: 2px solid red;
+        height: auto;
     }
     @include xlBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     @include xxlBreakPoint {
-        overflow-y: scroll;
+        height: auto;
     }
     .insode-profile-page {
         width: 100%;

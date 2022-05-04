@@ -12,12 +12,18 @@ import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
 import dum5 from "../../../../assets/kalai-port/dum5.png";
+import Resume from "../../../../assets/Resume/kalai-resume.pdf";
 import "./styles/Section2Mobile.scss";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Section2Mobile({ color }) {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const notification = () => toast("Download Resume Successfuly!");
     return (
         <>
             <div
@@ -44,7 +50,7 @@ function Section2Mobile({ color }) {
                     Services
                 </h1>
                 <p
-                    className="loreams"
+                    className="loreams mt-3 mb-4"
                     data-aos="fade-up-right"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
@@ -66,7 +72,17 @@ function Section2Mobile({ color }) {
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                 >
-                    Download CV
+                    <a
+                        href={Resume}
+                        download="kalaiResume"
+                        style={{
+                            color: "black",
+                            textDecoration: "none",
+                        }}
+                        onClick={notification}
+                    >
+                        Download CV
+                    </a>
                 </button>
             </div>
             <div className="mobilesection2 d-block d-lg-none">

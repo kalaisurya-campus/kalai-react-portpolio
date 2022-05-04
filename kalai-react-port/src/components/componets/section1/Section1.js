@@ -23,11 +23,17 @@ import "./styles/Section1.scss";
 import Resume from "../resume/Resume";
 import vts2 from "../../../assets/kalai-port/vts2.gif";
 import { useHistory } from "react-router-dom";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Section1({ color }) {
     const history = useHistory();
+
+    const ContactTest = () => toast(`ContactMe:8778377119`);
     return (
         <>
-            <div className="section1 d-none d-lg-block" id="home">
+            <div className="section1 d-none d-lg-block mt-5" id="home">
+                <ToastContainer />
                 <div className="inside-section1">
                     <div className="left-section1">
                         <div className="offset-top">
@@ -72,7 +78,9 @@ function Section1({ color }) {
                                 </span>
                                 .
                             </span>
-                            <button className="hire mt-5">Contact Me</button>
+                            <button className="hire mt-5" onClick={ContactTest}>
+                                Contact Me
+                            </button>
                             {/* <button onClick={() => history.push("/resume")}>
                                 Resume
                             </button> */}

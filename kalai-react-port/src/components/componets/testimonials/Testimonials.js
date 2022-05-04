@@ -109,9 +109,9 @@ export default class Testimonials extends Component {
                                     className="image-persons"
                                 />
                             </div>
-                            <div className="rocks">
+                            {/* <div className="rocks">
                                 <img src={rockets} className="per-rockets" />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="right-contents">
                             <TextPage color={this.props.color} />

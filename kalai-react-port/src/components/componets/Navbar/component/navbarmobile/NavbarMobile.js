@@ -11,7 +11,7 @@ function NavbarMobile({ dark, setdark, color }) {
                 <h1 className="mt-2">
                     Hi{" "}
                     <span style={{ color: color }}>
-                        Guy's{" "}
+                        kalai!{" "}
                         <span>
                             <img
                                 src={sm5}

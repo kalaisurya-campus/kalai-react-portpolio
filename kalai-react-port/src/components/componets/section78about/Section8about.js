@@ -35,14 +35,7 @@ function Section8about({ color }) {
                             </span>
                             <span className="surya">Kalaisurya</span>
                         </p>
-                        <p
-                            className="is mt-2"
-                            style={{
-                                paddingLeft: "25px",
-                                paddingRight: "25px",
-                                textAlign: "center",
-                            }}
-                        >
+                        <p className="is mt-2">
                             To find a{" "}
                             <span style={{ color: color }}>position</span> that
                             is challenging, rewarding and provides an
