@@ -1474,7 +1474,7 @@ function ServicesPages({ color }) {
                                 allows you to create style sheets faster.{" "}
                                 <span style={{ color: color, fontWeight: 700 }}>
                                     Sass is compatible with all versions of CSS.
-                                </span>
+                                </span> 
                                 </p>
                             </div>
                             <div class="modal-footer">
