@@ -12,7 +12,7 @@ import ui from "../../../assets/kalai-port/uiux.png";
 import figma from "../../../assets/kalai-port/figma.png";
 import github from "../../../assets/kalai-port/github.png";
 import resposive from "../../../assets/kalai-port/resposive.png";
-import resume from "../../../assets/Resume/Kalai-resume.pdf";
+import resume from "../../../assets/Resume/kalai-resume.pdf";
 import { ToastContainer, toast } from "react-toastify";
 import success from "../../../assets/kalai-port/succes.png";
 import AOS from "aos";
@@ -1417,6 +1417,80 @@ function ServicesPages({ color }) {
                 </div>
 
                 {/* css end modal opup */}
+
+                {/* sass model popups start */}
+
+
+                <div
+                    class="modal fade"
+                    id="staticBackdrop6"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5
+                                    class="modal-title"
+                                    id="staticBackdropLabel"
+                                >
+                                    <h3 style={{ color: color }}>Sass</h3>
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="left-image-page">
+                                    <img
+                                        src={sass}
+                                        alt="no Images"
+                                        className="rectjs w-100"
+                                    />
+                                </div>
+                                <p
+                                    className="react mt-3"
+                                    style={{
+                                        lineHeight: 1.8,
+                                        textAlign: "center",
+                                    }}
+                                >
+                                    <span style={{ color: color, fontWeight: 700 }}>
+                                    Sass (which stands for 'Syntactically
+                                    awesome style sheets){" "}
+                                </span>
+                                is an extension of CSS that enables you to use
+                                things like variables,{" "}
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    nested rules, inline imports and more.
+                                </span>{" "}
+                                It also helps to keep things organised and
+                                allows you to create style sheets faster.{" "}
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    Sass is compatible with all versions of CSS.
+                                </span>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* model popup end sass  */}
 
                 {/* bootstarp popup start */}
 

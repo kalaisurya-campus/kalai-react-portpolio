@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 import dum5 from "../../../assets/kalai-port/dum5.png";
 import dum8 from "../../../assets/kalai-port/dum8.png";
 import rocketpersond from "../../../assets/kalai-port/rocketstart.png";
-import resume from "../../../assets/Resume/Kalai-resume.pdf";
+import resume from "../../../assets/Resume/kalai-resume.pdf";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -929,7 +929,7 @@ function Section2({ color }) {
                     </div>
                 </div>
             </div>
-            <ServicesPages/>
+            <ServicesPages />
 
             {/* Bootstrap end */}
         </>

@@ -12,7 +12,7 @@ import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
 import dum5 from "../../../../assets/kalai-port/dum5.png";
-import Resume from "../../../../assets/Resume/Kalai-resume.pdf";
+import Resume from "../../../../assets/Resume/kalai-resume.pdf";
 import "./styles/Section2Mobile.scss";
 
 import { ToastContainer, toast } from "react-toastify";
