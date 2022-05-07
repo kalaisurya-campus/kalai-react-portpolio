@@ -33,8 +33,8 @@ function Section1({ color }) {
     return (
         <>
             <div className="section1 d-none d-lg-block mt-5" id="home">
-                <ToastContainer />
                 <div className="inside-section1">
+                    <ToastContainer />
                     <div className="left-section1">
                         <div className="offset-top">
                             <img src={offset} className="offs" />

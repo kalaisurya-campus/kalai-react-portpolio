@@ -16,6 +16,20 @@ import Resume from "../../../../assets/Resume/Kalai-resume.pdf";
 import "./styles/Section2Mobile.scss";
 
 import { ToastContainer, toast } from "react-toastify";
+
+import reactjs from "../../../../assets/kalai-port/rectjs2.png";
+import htmls from "../../../../assets/kalai-port/html-img1.png";
+import css from "../../../../assets/kalai-port/css-ima1.png";
+import sass from "../../../../assets/kalai-port/sass_img1.png";
+import javascripts from "../../../../assets/kalai-port/javascript-img1.png";
+import bootstraps from "../../../../assets/kalai-port/bootstrap-img1.png";
+import redux from "../../../../assets/kalai-port/redux .png";
+import context from "../../../../assets/kalai-port/context.png";
+import ui from "../../../../assets/kalai-port/uiux.png";
+import figma from "../../../../assets/kalai-port/figma.png";
+import github from "../../../../assets/kalai-port/github.png";
+import resposive from "../../../../assets/kalai-port/resposive.png";
+
 import "react-toastify/dist/ReactToastify.css";
 function Section2Mobile({ color }) {
     useEffect(() => {
@@ -95,7 +109,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={dum5} className="empty-rocket" />
+                                <img src={reactjs} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -138,7 +152,10 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img
+                                    src={javascripts}
+                                    className="empty-rocket"
+                                />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -183,7 +200,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={dum5} className="empty-rocket" />
+                                <img src={htmls} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -227,7 +244,10 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img
+                                    src={bootstraps}
+                                    className="empty-rocket"
+                                />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -271,7 +291,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={dum5} className="empty-rocket" />
+                                <img src={ui} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -318,7 +338,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img src={sass} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -365,7 +385,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={dum5} className="empty-rocket" />
+                                <img src={github} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -445,7 +465,7 @@ function Section2Mobile({ color }) {
                             data-aos-duration="1500"
                         >
                             <div className="empty-image">
-                                <img src={rock2} className="empty-rocket" />
+                                <img src={dum5} className="empty-rocket" />
                             </div>
                             <div className="round-empty">
                                 <img src={star} className="stars my-auto" />
@@ -600,7 +620,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={javascript}
+                                    src={javascripts}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -690,7 +710,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={html}
+                                    src={htmls}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -780,7 +800,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={react}
+                                    src={reactjs}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -869,7 +889,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={bootstrap}
+                                    src={bootstraps}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -958,7 +978,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={dum5}
+                                    src={ui}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -1052,7 +1072,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={rock2}
+                                    src={sass}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",
@@ -1140,7 +1160,7 @@ function Section2Mobile({ color }) {
                         >
                             <div className="image-set-model">
                                 <img
-                                    src={dum5}
+                                    src={github}
                                     className="empty-rocket w-50"
                                     style={{
                                         margin: "0 auto",

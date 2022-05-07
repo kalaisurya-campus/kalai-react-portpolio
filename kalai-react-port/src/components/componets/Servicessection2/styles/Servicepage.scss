@@ -1,0 +1,219 @@
+@use "../../../../scss/abstract/" as *;
+
+.content-section {
+    display: flex;
+    .content-section-left {
+        width: 50%;
+        // align-items: center;
+        padding-left: 3%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        @include xsBreakPoint {
+            width: 100%;
+        }
+        @include smBreakPoint {
+            width: 100%;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+        }
+        @include xxlBreakPoint {
+            width: 100%;
+        }
+        .my {
+            font-size: 3.7rem;
+            font-weight: 500;
+            @include lgBreakPoint {
+                font-size: 1.3rem;
+            }
+            @include xlBreakPoint {
+                font-size: 2.6rem;
+            }
+            @include xxlBreakPoint {
+                font-size: 2.8rem;
+            }
+        }
+        .service {
+            font-size: 4rem;
+            font-weight: 600;
+            @include themed() {
+                color: t($service-text-colors);
+            }
+            @include lgBreakPoint {
+                font-size: 1.3rem;
+            }
+            @include xlBreakPoint {
+                font-size: 2.6rem;
+            }
+            @include xxlBreakPoint {
+                font-size: 2.8rem;
+            }
+        }
+        .loreams {
+            width: 85%;
+            font-size: 2rem;
+            line-height: 1.4;
+            font-weight: 400;
+            // border: 2px solid red;
+            @include lgBreakPoint {
+                font-size: 1.3rem;
+            }
+            @include xlBreakPoint {
+                font-size: 1.5rem;
+                width: 100%;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+        .download {
+            border: none;
+            outline: none;
+            width: 30%;
+            padding: 15px;
+            background-color: $back_export_color-black;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            @include themed() {
+                color: t($button-white-text);
+            }
+
+            @include lgBreakPoint {
+                width: 25%;
+            }
+            @include xlBreakPoint {
+                width: 30%;
+            }
+        }
+        .download:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+    }
+    .content-section-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include xsBreakPoint {
+            width: 100%;
+        }
+        @include smBreakPoint {
+            width: 100%;
+        }
+        @include mdBreakPoint {
+            width: 100%;
+        }
+        @include lgBreakPoint {
+            width: 100%;
+        }
+        @include xlBreakPoint {
+            width: 100%;
+        }
+        @include xxlBreakPoint {
+            width: 100%;
+        }
+    }
+}
+.service-page {
+    width: 100%;
+    height: auto;
+    .inside-images {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        .left-image-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+            }
+            .rectjs {
+                width: 80%;
+                object-fit: cover;
+            }
+        }
+        .right-content-page {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            @include xxlBreakPoint {
+                width: 100%;
+            }
+            .react {
+                width: 100%;
+                font-size: 1.4rem;
+                line-height: 1.8;
+                @include xlBreakPoint {
+                    font-size: 1.2rem;
+                }
+            }
+            .redamore {
+                width: 26%;
+                border: none;
+                outline: none;
+                padding: 13px;
+                border-radius: 20px;
+                background-color: orange;
+                font-size: 1.2rem;
+                font-weight: 500;
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+                @include xlBreakPoint {
+                    width: 30% !important;
+                }
+                @include xxlBreakPoint {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

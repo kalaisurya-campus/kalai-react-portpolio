@@ -21,8 +21,8 @@
             margin: 0 auto;
         }
         .empty-image {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             background-color: $back_export_color-black;
             border-radius: 50%;
             display: flex;
@@ -31,10 +31,9 @@
             margin: 0 auto;
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             .empty-rocket {
-                width: 160px;
-                left: 17%;
+                width: 100%;
                 position: relative;
-                transform: rotate(-15deg);
+                object-fit: contain;
             }
         }
         .round-empty {

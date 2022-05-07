@@ -30,6 +30,7 @@ import resume from "../../../assets/Resume/Kalai-resume.pdf";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ServicesPages from "../Servicessection2/ServicesPages";
 function Section2({ color }) {
     useEffect(() => {
         AOS.init();
@@ -928,6 +929,7 @@ function Section2({ color }) {
                     </div>
                 </div>
             </div>
+            <ServicesPages/>
 
             {/* Bootstrap end */}
         </>

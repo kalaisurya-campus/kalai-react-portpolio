@@ -76,7 +76,7 @@ export default class MOdalPopup extends Component {
                     type="button"
                     class="reads-btn ms-3"
                     data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop1"
+                    data-bs-target="#staticBackdrop13"
                 >
                     <span style={{ color: this.props.color }}> Read</span>{" "}
                     More...
@@ -84,7 +84,7 @@ export default class MOdalPopup extends Component {
 
                 <div
                     class="modal fade"
-                    id="staticBackdrop1"
+                    id="staticBackdrop13"
                     data-bs-backdrop="static"
                     data-bs-keyboard="false"
                     tabindex="-1"

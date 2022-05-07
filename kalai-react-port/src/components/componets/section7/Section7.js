@@ -52,7 +52,7 @@ function Section7({ color }) {
                                     <div
                                         className="cardt"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop"
+                                        data-bs-target="#staticBackdrop14"
                                     >
                                         <div className="location mt-3">
                                             <ion-icon
@@ -80,7 +80,7 @@ function Section7({ color }) {
                                     <div
                                         className="cardt"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop12"
+                                        data-bs-target="#staticBackdrop15"
                                     >
                                         <div className="phone mt-3">
                                             <ion-icon
@@ -106,7 +106,7 @@ function Section7({ color }) {
                                     <div
                                         className="cardt"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop2"
+                                        data-bs-target="#staticBackdrop16"
                                     >
                                         <div className="mail mt-3">
                                             <ion-icon
@@ -134,7 +134,7 @@ function Section7({ color }) {
                                     <div
                                         className="cardt"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop3"
+                                        data-bs-target="#staticBackdrop17"
                                     >
                                         <div className="browser mt-3">
                                             <ion-icon
@@ -271,7 +271,7 @@ function Section7({ color }) {
 
             <div
                 class="modal fade"
-                id="staticBackdrop"
+                id="staticBackdrop14"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"
@@ -318,7 +318,7 @@ function Section7({ color }) {
             {/* phone apge */}
             <div
                 class="modal fade"
-                id="staticBackdrop12"
+                id="staticBackdrop15"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"
@@ -366,7 +366,7 @@ function Section7({ color }) {
 
             <div
                 class="modal fade"
-                id="staticBackdrop2"
+                id="staticBackdrop16"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"
@@ -413,7 +413,7 @@ function Section7({ color }) {
 
             <div
                 class="modal fade"
-                id="staticBackdrop3"
+                id="staticBackdrop17"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
                 tabindex="-1"

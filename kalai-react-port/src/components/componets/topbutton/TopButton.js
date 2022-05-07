@@ -6,7 +6,7 @@ function TopButton(props) {
     const [backbutton, SetBackButton] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 9300) {
+            if (window.scrollY > 15300) {
                 SetBackButton(true);
             } else {
                 SetBackButton(false);

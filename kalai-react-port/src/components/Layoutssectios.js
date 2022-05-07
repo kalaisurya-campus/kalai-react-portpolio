@@ -11,6 +11,7 @@ import Section5 from "./componets/section5/Section5";
 import Section6 from "./componets/section6/Section6";
 import Section7 from "./componets/section7/Section7";
 import Section8about from "./componets/section78about/Section8about";
+import ServicesPages from "./componets/Servicessection2/ServicesPages";
 import Testimonials from "./componets/testimonials/Testimonials";
 import TopButton from "./componets/topbutton/TopButton";
 import "./Layoutsection.scss";
@@ -24,7 +25,8 @@ function Layoutssectios({ dark, setdark, color }) {
         >
             <Navbar dark={dark} setdark={setdark} color={color} />
             <Section1 color={color} />
-            <Section2 color={color} />
+            {/* <Section2 color={color} /> */}
+            <ServicesPages color={color} />
             <Section8about color={color} />
             <Profile color={color} />
             <Section4 color={color} />
@@ -35,6 +37,7 @@ function Layoutssectios({ dark, setdark, color }) {
             <Homepagechat color={color} />
             <Footer color={color} />
             <TopButton />
+      
         </div>
     );
 }

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/Section8about.scss";
 import name from "../../../assets/kalai-port/juice.png";
 import circle from "../../../assets/kalai-port/rotates.png";
 import like1 from "../../../assets/kalai-port/like1.png";
 import like2 from "../../../assets/kalai-port/like2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Section8about({ color }) {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className="abouts" id="about">
             <div className="inside-abouts">
@@ -20,13 +26,21 @@ function Section8about({ color }) {
                 </div>
                 <div className="right-about-second">
                     <div className="content-about">
-                        <h1 className="mt-3">
+                        <h1
+                            className="mt-3"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                        >
                             ABOUT{" "}
                             <span style={{ color: color, fontWeight: 600 }}>
                                 ME
                             </span>
                         </h1>
-                        <p className="p-split mt-2">
+                        <p
+                            className="p-split mt-2"
+                            data-aos="fade-down"
+                            data-aos-duration="3000"
+                        >
                             <span className="myname">
                                 My{" "}
                                 <span style={{ color: color, fontWeight: 600 }}>
@@ -35,7 +49,11 @@ function Section8about({ color }) {
                             </span>
                             <span className="surya">Kalaisurya</span>
                         </p>
-                        <p className="is mt-2">
+                        <p
+                            className="is mt-2 mb-3"
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                        >
                             To find a{" "}
                             <span style={{ color: color }}>position</span> that
                             is challenging, rewarding and provides an
@@ -50,15 +68,21 @@ function Section8about({ color }) {
                     <div className="another-content-section">
                         <div className="box1">
                             <div className="left-box1">
-                                <p>
+                                <p data-aos="fade-up" data-aos-duration="3000">
                                     <span className="age-text">Age</span> :{" "}
                                     <span className="age-texts">23</span>
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-down"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Gender</span>:
                                     <span className="age-texts">Male</span>
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-left"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Developer</span>:
                                     <span className="age-texts">
                                         React{" "}
@@ -67,25 +91,43 @@ function Section8about({ color }) {
                                         </span>
                                     </span>
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Experience</span>
-                                    :<span className="age-texts">1 Years</span>
+                                    :
+                                    <span className="age-texts">1.4 Years</span>
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-down"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Freelance</span>:
                                     <span className="age-texts">Available</span>
                                 </p>
                             </div>
-                            <div className="right-box1">
+                            <div
+                                className="right-box1"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                            >
                                 <img src={like1} className="like1" />
                             </div>
                         </div>
                         <div className="box2">
-                            <div className="left-box2">
+                            <div
+                                className="left-box2"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                            >
                                 <img src={like2} className="like1" />
                             </div>
                             <div className="right-box2">
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Language</span>:
                                     <span
                                         className="age-texts"
@@ -94,7 +136,7 @@ function Section8about({ color }) {
                                         Telugu/Tamil/English
                                     </span>
                                 </p>
-                                <p>
+                                <p data-aos="fade-up" data-aos-duration="3000">
                                     <span className="age-text">Phone</span>:
                                     <span className="age-texts">
                                         +91 877-
@@ -104,7 +146,10 @@ function Section8about({ color }) {
                                         -7119
                                     </span>
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-down"
+                                    data-aos-duration="3000"
+                                >
                                     <span className="age-text">Email</span>:
                                     <span className="age-texts">
                                         <span style={{ color: color }}>
@@ -113,7 +158,7 @@ function Section8about({ color }) {
                                         .com
                                     </span>
                                 </p>
-                                <p>
+                                <p data-aos="fade-up" data-aos-duration="3000">
                                     <span className="age-text">Address</span>:
                                     <span className="age-texts">
                                         Krishnagiri
