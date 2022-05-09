@@ -3,7 +3,7 @@ import "./styles/Servicepage.scss";
 import reactjs from "../../../assets/kalai-port/rectjs2.png";
 import html from "../../../assets/kalai-port/html-img1.png";
 import css from "../../../assets/kalai-port/css-ima1.png";
-import sass from "../../../assets/kalai-port/sass_img1.png";
+import sass from "../../../assets/kalai-port/sas-dhilip-kalai.png";
 import javascript from "../../../assets/kalai-port/javascript-img1.png";
 import bootstrap from "../../../assets/kalai-port/bootstrap-img1.png";
 import redux from "../../../assets/kalai-port/redux .png";
@@ -12,14 +12,16 @@ import ui from "../../../assets/kalai-port/uiux.png";
 import figma from "../../../assets/kalai-port/figma.png";
 import github from "../../../assets/kalai-port/github.png";
 import resposive from "../../../assets/kalai-port/resposive.png";
-import resume from "../../../assets/Resume/kalai-resume.pdf";
+import resume from "../../../assets/Resume/Kalai-resume.pdf";
 import { ToastContainer, toast } from "react-toastify";
 import success from "../../../assets/kalai-port/succes.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Section2Mobile from "../section2/component/Section2Mobile";
+import Anothermobilesection2 from "../section2/components/Anothermobilesection2";
+import vscode from "../../../assets/kalai-port/vscode.png";
 function ServicesPages({ color }) {
-    const notification = () => toast("Download Resume Successfuly!");
+    const notification = () => toast("Are You Resume Download...!");
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -118,6 +120,7 @@ function ServicesPages({ color }) {
                                 data-aos="fade-down"
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
+                                className="text-titles"
                             >
                                 React Developer
                             </h1>
@@ -800,6 +803,69 @@ function ServicesPages({ color }) {
                             />
                         </div>
                     </div>
+
+                    {/* vscode start */}
+
+                    <div className="inside-images">
+                        <div
+                            className="left-image-page mb-5 mt-4"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                        >
+                            <img
+                                src={vscode}
+                                alt="no Images"
+                                className="rectjs"
+                            />
+                        </div>
+                        <div className="right-content-page mb-5 mt-4">
+                            <h1
+                                style={{ color: color }}
+                                data-aos="fade-down"
+                                data-aos-duration="3000"
+                            >
+                                VsCode
+                            </h1>
+                            <p
+                                className="react mt-3"
+                                data-aos="fade-right"
+                                data-aos-duration="3000"
+                            >
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    Visual Studio Code is a streamlined code
+                                    editor
+                                </span>
+                                with support for{" "}
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    development operations like
+                                </span>
+                                debugging,{" "}
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    task running,{" "}
+                                </span>{" "}
+                                and version control. It aims to provide just the
+                                tools a developer needs for a quick
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    code-build-debug cycle{" "}
+                                </span>{" "}
+                                and leaves more complex workflows to fuller
+                                featured IDEs,
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    such as Visual Studio IDE.
+                                </span>
+                            </p>
+
+                            <button
+                                className="redamore mt-1 mb-3 "
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop12"
+                            >
+                                Read More....
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* resposive texts */}
                 </div>
 
                 {/* react js modal pop start */}
@@ -1420,7 +1486,6 @@ function ServicesPages({ color }) {
 
                 {/* sass model popups start */}
 
-
                 <div
                     class="modal fade"
                     id="staticBackdrop6"
@@ -1461,20 +1526,36 @@ function ServicesPages({ color }) {
                                         textAlign: "center",
                                     }}
                                 >
-                                    <span style={{ color: color, fontWeight: 700 }}>
-                                    Sass (which stands for 'Syntactically
-                                    awesome style sheets){" "}
-                                </span>
-                                is an extension of CSS that enables you to use
-                                things like variables,{" "}
-                                <span style={{ color: color, fontWeight: 700 }}>
-                                    nested rules, inline imports and more.
-                                </span>{" "}
-                                It also helps to keep things organised and
-                                allows you to create style sheets faster.{" "}
-                                <span style={{ color: color, fontWeight: 700 }}>
-                                    Sass is compatible with all versions of CSS.
-                                </span> 
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Sass (which stands for 'Syntactically
+                                        awesome style sheets){" "}
+                                    </span>
+                                    is an extension of CSS that enables you to
+                                    use things like variables,{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        nested rules, inline imports and more.
+                                    </span>{" "}
+                                    It also helps to keep things organised and
+                                    allows you to create style sheets faster.{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Sass is compatible with all versions of
+                                        CSS.
+                                    </span>
                                 </p>
                             </div>
                             <div class="modal-footer">
@@ -1960,9 +2041,115 @@ function ServicesPages({ color }) {
                 </div>
 
                 {/* resposive uI models end */}
+
+                {/* resposive UI models start */}
+                <div
+                    class="modal fade"
+                    id="staticBackdrop12"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5
+                                    class="modal-title"
+                                    id="staticBackdropLabel"
+                                >
+                                    <h3 style={{ color: color }}>VsCode</h3>
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <div className="left-image-page">
+                                    <img
+                                        src={vscode}
+                                        alt="no Images"
+                                        className="rectjs w-100"
+                                    />
+                                </div>
+                                <p
+                                    className="react mt-3"
+                                    style={{
+                                        lineHeight: 1.8,
+                                        textAlign: "center",
+                                    }}
+                                >
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        Visual Studio Code is a streamlined code
+                                        editor
+                                    </span>
+                                    with support for{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        development operations like
+                                    </span>
+                                    debugging,{" "}
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        task running,{" "}
+                                    </span>{" "}
+                                    and version control. It aims to provide just
+                                    the tools a developer needs for a quick
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        code-build-debug cycle{" "}
+                                    </span>{" "}
+                                    and leaves more complex workflows to fuller
+                                    featured IDEs,
+                                    <span
+                                        style={{
+                                            color: color,
+                                            fontWeight: 700,
+                                        }}
+                                    >
+                                        such as Visual Studio IDE.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* resposive uI models end */}
             </div>
             <div>
-                <Section2Mobile />
+                {/* <Section2Mobile /> */}
+                <Anothermobilesection2 color={color} />
             </div>
         </>
     );

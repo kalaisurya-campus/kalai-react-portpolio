@@ -183,6 +183,7 @@
                     -webkit-box-shadow: -28px -24px 0px -11px orange;
                     -moz-box-shadow: -28px -24px 0px -11px lightgray;
                     height: auto;
+                    cursor: pointer;
                     .content_box {
                         display: flex;
                         justify-content: center;
@@ -252,6 +253,7 @@
                     justify-content: center;
                     top: 20px;
                     flex-direction: column;
+                    cursor: pointer;
                     @include themed() {
                         background: t($card-background);
                     }

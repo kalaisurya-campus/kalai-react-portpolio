@@ -78,9 +78,9 @@ function NavbarMobile({ dark, setdark, color }) {
                                 </Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="service">
-                                    <span style={{ color: color }}>Serv</span>
-                                    ices
+                                <Link class="nav-link" to="serice">
+                                    <span style={{ color: color }}>Ski</span>
+                                    lls
                                 </Link>
                             </li>
                             <li class="nav-item">

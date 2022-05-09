@@ -66,21 +66,32 @@ export default class TextPage extends Component {
                         {this.state.texts[this.state.currentImage]}
                     </p>
 
-                    <p className="loreams-text mt-3 mb-5">
-                        Lorem ipsum dolor sit amet,{" "}
-                        <span style={{ color: this.props.color }}>
-                            consectetur adipiscing elit
+                    <p
+                        className="loreams-text mt-3 mb-5"
+                        style={{ lineHeight: "1.8" }}
+                    >
+                        Loream Include these activities in{" "}
+                        <span
+                            style={{ color: this.props.color }}
+                            className="ms-3"
+                        >
+                            job-related skills and maturity and they can be a
                         </span>
-                        . Vulputate diam molestie pellentesque pulvinar sapien,
-                        sed viverra.
+                        <span className="ms-2">
+                            huge help when you’re lacking job experience.
+                        </span>
+                        <span style={{ color: this.props.color }}>
+                            {" "}
+                            Sports,Travelling,Movies
+                        </span>
                     </p>
 
                     <div className="buttons">
                         <MOdalPopup color={this.props.color} />
                     </div>
-                    <div className="images">
+                    {/* <div className="images">
                         <img src={groups} className="bottom-imageds" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

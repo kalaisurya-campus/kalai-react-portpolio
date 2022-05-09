@@ -17,7 +17,7 @@ import s1 from "../../../assets/kalai-port/s1.png";
 import s2 from "../../../assets/kalai-port/s2.png";
 import s3 from "../../../assets/kalai-port/s3.png";
 import s4 from "../../../assets/kalai-port/s4.png";
-import Section2Mobile from "./component/Section2Mobile";
+// import Section2Mobile from "./component/Section2Mobile";
 import react from "../../../assets/kalai-port/react.png";
 import javascript from "../../../assets/kalai-port/javascript.png";
 import html from "../../../assets/kalai-port/html.png";
@@ -26,11 +26,12 @@ import { Link } from "react-router-dom";
 import dum5 from "../../../assets/kalai-port/dum5.png";
 import dum8 from "../../../assets/kalai-port/dum8.png";
 import rocketpersond from "../../../assets/kalai-port/rocketstart.png";
-import resume from "../../../assets/Resume/kalai-resume.pdf";
+import resume from "../../../assets/Resume/Kalai-resume.pdf";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ServicesPages from "../Servicessection2/ServicesPages";
+import Anothermobilesection2 from "./components/Anothermobilesection2";
 function Section2({ color }) {
     useEffect(() => {
         AOS.init();
@@ -53,7 +54,7 @@ function Section2({ color }) {
         const bsModal = Modal.getInstance(modalEle);
         bsModal.hide();
     };
-    const notification = () => toast("Download Resume Successfuly!");
+    const notification = () => toast("Are You Resume Download...!");
     return (
         <>
             <div className="section2 d-none d-lg-block" id="service">
@@ -475,7 +476,10 @@ function Section2({ color }) {
                 </div>
             </div>
             <div>
-                <Section2Mobile color={color} />
+                {/* <Section2Mobile color={color} />
+                 */}
+
+                <Anothermobilesection2 />
             </div>
             {/* JAVASCRIPT modal */}
             <div
@@ -929,7 +933,7 @@ function Section2({ color }) {
                     </div>
                 </div>
             </div>
-            <ServicesPages />
+            {/* <ServicesPages /> */}
 
             {/* Bootstrap end */}
         </>

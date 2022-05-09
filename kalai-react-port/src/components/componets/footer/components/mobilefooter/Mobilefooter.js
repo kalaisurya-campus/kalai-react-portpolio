@@ -38,7 +38,7 @@ function Mobilefooter(props) {
                     </div>
                     <div className="button-services">
                         <Link class="nav-link" to="seric">
-                            Services
+                            Skills
                         </Link>
                     </div>
                     <div className="button-contact">

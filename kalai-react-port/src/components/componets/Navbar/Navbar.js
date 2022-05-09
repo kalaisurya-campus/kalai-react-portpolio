@@ -159,8 +159,8 @@ function Navbar({ dark, setdark, color }) {
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="service">
-                                    <span style={{ color: color }}>Serv</span>
-                                    ices
+                                    <span style={{ color: color }}>Ski</span>
+                                    lls
                                 </Link>
                             </li>
                             <li class="nav-item">
@@ -211,7 +211,7 @@ function Navbar({ dark, setdark, color }) {
             </div>
             <div>
                 <NavbarMobile dark={dark} setdark={setdark} color={color} />
-            </div> 
+            </div>
         </>
     );
 }

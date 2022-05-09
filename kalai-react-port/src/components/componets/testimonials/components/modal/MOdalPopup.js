@@ -121,6 +121,23 @@ export default class MOdalPopup extends Component {
                                         width: "80%",
                                     }}
                                 />
+
+                                <p
+                                    className="loreams-text mt-3 mb-5"
+                                    style={{ width: "100%", fontSize: "20px" }}
+                                >
+                                    Loream Include these activities in{" "}
+                                    <span style={{ color: this.props.color }} >
+                                        job-related skills and maturity and they
+                                        can be a
+                                    </span>
+                                    huge help when you’re lacking job
+                                    experience.
+                                    <span style={{ color: this.props.color }}>
+                                        {" "}
+                                        Sports,Travelling,Movies
+                                    </span>
+                                </p>
                             </div>
                             <div class="modal-footer">
                                 <button

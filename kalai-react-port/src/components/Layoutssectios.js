@@ -37,7 +37,6 @@ function Layoutssectios({ dark, setdark, color }) {
             <Homepagechat color={color} />
             <Footer color={color} />
             <TopButton />
-      
         </div>
     );
 }

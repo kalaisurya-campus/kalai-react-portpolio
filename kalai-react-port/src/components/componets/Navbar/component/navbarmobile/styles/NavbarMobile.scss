@@ -1,8 +1,9 @@
 @use "../../../../../../scss/abstract/" as *;
 
 .offcanvas {
-    z-index: 300000000000000000000000;
+    z-index: 9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
     overflow: hidden;
+
     @include themed() {
         background: t($background-liner-sets) !important;
     }

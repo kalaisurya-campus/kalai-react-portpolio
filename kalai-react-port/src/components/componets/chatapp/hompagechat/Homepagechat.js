@@ -9,7 +9,7 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { GoogleLogin } from "react-google-login";
-import chats from "../../../../assets/kalai-port/chat1.png";
+import chats from "../../../../assets/kalai-port/chat_lasts-new.png";
 firebase.initializeApp({
     apiKey: "AIzaSyBulhG9GPcAeAUgop8J5ts4NdXvHNrYWG4",
     authDomain: "kalai-portpolio-408b4.firebaseapp.com",
@@ -32,7 +32,7 @@ function Homepagechat({ color }) {
                     Chat
                 </h1>
                 <div className="left-chat ">
-                    <img src={chats} className="main-chat-image" />
+                    <img src={chats} className="main-chat-image img-fluid" />
                 </div>
                 <div className="right-chat-section">
                     <section>

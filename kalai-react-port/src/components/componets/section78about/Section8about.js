@@ -30,6 +30,7 @@ function Section8about({ color }) {
                             className="mt-3"
                             data-aos="fade-up"
                             data-aos-duration="3000"
+                            className="ms-2"
                         >
                             ABOUT{" "}
                             <span style={{ color: color, fontWeight: 600 }}>
@@ -37,7 +38,7 @@ function Section8about({ color }) {
                             </span>
                         </h1>
                         <p
-                            className="p-split mt-2"
+                            className="p-split mt-2 ms-2"
                             data-aos="fade-down"
                             data-aos-duration="3000"
                         >
@@ -47,7 +48,12 @@ function Section8about({ color }) {
                                     Name Is
                                 </span>
                             </span>
-                            <span className="surya">Kalaisurya</span>
+                            <span className="surya">
+                                Kalai
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    surya
+                                </span>
+                            </span>
                         </p>
                         <p
                             className="is mt-2 mb-3"
@@ -97,7 +103,12 @@ function Section8about({ color }) {
                                 >
                                     <span className="age-text">Experience</span>
                                     :
-                                    <span className="age-texts">1.4 Years</span>
+                                    <span
+                                        className="age-texts"
+                                        style={{ color: color }}
+                                    >
+                                        1.4 Years
+                                    </span>
                                 </p>
                                 <p
                                     data-aos="fade-down"
@@ -160,7 +171,10 @@ function Section8about({ color }) {
                                 </p>
                                 <p data-aos="fade-up" data-aos-duration="3000">
                                     <span className="age-text">Address</span>:
-                                    <span className="age-texts">
+                                    <span
+                                        className="age-texts"
+                                        style={{ color: color }}
+                                    >
                                         Krishnagiri
                                     </span>
                                 </p>

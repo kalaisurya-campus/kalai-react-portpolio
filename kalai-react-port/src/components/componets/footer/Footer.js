@@ -41,7 +41,7 @@ function Footer(props) {
                     </div>
                     <div className="button-servicess">
                         <Link class="nav-link" to="service">
-                            Services
+                            Skills
                         </Link>
                     </div>
                     <div className="button-contacts">
@@ -49,6 +49,9 @@ function Footer(props) {
                             Contact
                         </Link>
                     </div>
+                </div>
+                <div className="copy-right">
+                    Copyright 2021 PortFolio Inc. All rights Reserved
                 </div>
             </div>
             <div>

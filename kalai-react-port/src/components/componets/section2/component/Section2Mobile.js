@@ -12,7 +12,7 @@ import javascript from "../../../../assets/kalai-port/javascript.png";
 import html from "../../../../assets/kalai-port/html.png";
 import bootstrap from "../../../../assets/kalai-port/bootstrap.png";
 import dum5 from "../../../../assets/kalai-port/dum5.png";
-import Resume from "../../../../assets/Resume/kalai-resume.pdf";
+import Resume from "../../../../assets/Resume/Kalai-resume.pdf";
 import "./styles/Section2Mobile.scss";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -37,11 +37,11 @@ function Section2Mobile({ color }) {
         AOS.refresh();
     }, []);
 
-    const notification = () => toast("Download Resume Successfuly!");
+    const notification = () => toast("Are You Resume Download...!");
     return (
         <>
             <div
-                className="content-section2 mb-5 d-xs-block d-lg-none"
+                className="content-section2 mb-5 d-none d-block d-lg-none"
                 id="seric"
             >
                 <h1
@@ -99,7 +99,7 @@ function Section2Mobile({ color }) {
                     </a>
                 </button>
             </div>
-            <div className="mobilesection2 d-block d-lg-none">
+            <div className="mobilesection2 d-none d-block d-lg-none">
                 <div className="conatiner mx-auto">
                     <div className="row p-4 mx-auto">
                         <div
@@ -543,7 +543,7 @@ function Section2Mobile({ color }) {
                     </div>
                 </div>
             </div>
-            <div className="containers d-block d-lg-none">
+            <div className="containers d-none d-block d-lg-none">
                 <div className="set-projects1">
                     <div
                         className="car1 mb-5 mt-3"

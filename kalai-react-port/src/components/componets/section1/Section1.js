@@ -56,7 +56,12 @@ function Section1({ color }) {
                             >
                                 Hy! I Am
                             </h1>
-                            <h1 className="kalai mt-4">Kalaisurya</h1>
+                            <h1 className="kalai mt-4">
+                                Kalai
+                                <span style={{ color: color, fontWeight: 700 }}>
+                                    surya
+                                </span>
+                            </h1>
                             <span className="loream mt-4">
                                 To obtain a position with a progressive web
                                 development company with a{" "}
@@ -79,7 +84,13 @@ function Section1({ color }) {
                                 .
                             </span>
                             <button className="hire mt-5" onClick={ContactTest}>
-                                Contact Me
+                                Contact{" "}
+                                <span
+                                    style={{ color: color, fontWeight: 700 }}
+                                    className="ms-2"
+                                >
+                                    Me
+                                </span>
                             </button>
                             {/* <button onClick={() => history.push("/resume")}>
                                 Resume
