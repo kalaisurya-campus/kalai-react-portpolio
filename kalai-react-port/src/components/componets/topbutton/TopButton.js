@@ -33,7 +33,7 @@ function TopButton(props) {
                     </div>
                 )}
             </div>
-            <div className="mobile d-block d-lg-none">
+            <div className="mobile">
                 <ScrollToTop
                     smooth
                     component={
