@@ -20,6 +20,10 @@ import "aos/dist/aos.css";
 import Section2Mobile from "../section2/component/Section2Mobile";
 import Anothermobilesection2 from "../section2/components/Anothermobilesection2";
 import vscode from "../../../assets/kalai-port/vscode.png";
+import group1 from "../../../assets/kalai-port/group1.png";
+import group2 from "../../../assets/kalai-port/group2.png";
+import group3 from "../../../assets/kalai-port/group3.png";
+import group4 from "../../../assets/kalai-port/group4.png";
 function ServicesPages({ color }) {
     const notification = () => toast("Are You Resume Download...!");
     useEffect(() => {
@@ -867,7 +871,42 @@ function ServicesPages({ color }) {
 
                     {/* resposive texts */}
                 </div>
-
+                <div className="main-done-lists mt-2 mb-5">
+                    <img
+                        src={group1}
+                        className="img-fluid main-dones"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop44"
+                    />
+                    <img
+                        src={group3}
+                        className="img-fluid main-dones"
+                        data-aos="fade-down"
+                        data-aos-duration="3000"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop45"
+                    />
+                </div>
+                <div className="another-dones mt-5 mb-5">
+                    <img
+                        src={group2}
+                        className="img-fluid main-dones"
+                        data-aos="fade-down"
+                        data-aos-duration="3000"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop46"
+                    />
+                    <img
+                        src={group4}
+                        className="img-fluid main-dones"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop47"
+                    />
+                </div>
                 {/* react js modal pop start */}
 
                 <div
@@ -2147,6 +2186,161 @@ function ServicesPages({ color }) {
 
                 {/* resposive uI models end */}
             </div>
+
+            {/* Done Model Popup start */}
+
+            <div
+                class="modal fade"
+                id="staticBackdrop44"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">
+                                Projects Done...
+                            </h3>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src={group1} className="img-fluid" />
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="modal fade"
+                id="staticBackdrop45"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">
+                                Satisfied Clients Done...
+                            </h3>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src={group3} className="img-fluid" />
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="modal fade"
+                id="staticBackdrop46"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">
+                                Cup Of Coffe Done...
+                            </h3>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src={group2} className="img-fluid" />
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="modal fade"
+                id="staticBackdrop47"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">
+                                Winner Done...
+                            </h3>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src={group4} className="img-fluid" />
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Done Model Popup end */}
             <div>
                 {/* <Section2Mobile /> */}
                 <Anothermobilesection2 color={color} />

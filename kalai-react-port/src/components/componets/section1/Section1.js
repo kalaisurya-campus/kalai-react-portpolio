@@ -92,9 +92,7 @@ function Section1({ color }) {
                                     Me
                                 </span>
                             </button>
-                            {/* <button onClick={() => history.push("/resume")}>
-                                Resume
-                            </button> */}
+                           
                         </div>
                         <div className="bottom-image">
                             <img src={section1rocket} className="rocket" />

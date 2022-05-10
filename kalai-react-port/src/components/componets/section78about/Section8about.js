@@ -14,7 +14,7 @@ function Section8about({ color }) {
     return (
         <div className="abouts" id="about">
             <div className="inside-abouts">
-                <div className="left-about-first">
+                <div className="left-about-first mb-5">
                     <div className="back">
                         <div className="image1">
                             <img src={name} className="persons" />
@@ -25,7 +25,7 @@ function Section8about({ color }) {
                     </div>
                 </div>
                 <div className="right-about-second">
-                    <div className="content-about">
+                    <div className="content-about mt-4">
                         <h1
                             className="mt-3"
                             data-aos="fade-up"

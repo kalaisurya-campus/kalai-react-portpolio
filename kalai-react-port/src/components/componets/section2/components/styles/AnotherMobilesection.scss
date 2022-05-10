@@ -34,6 +34,14 @@
             // width:80%;
         }
     }
+
+    .main-dones {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        cursor: pointer;
+    }
     // .react-box::before,
     // .react-box::after {
     //     content: "";

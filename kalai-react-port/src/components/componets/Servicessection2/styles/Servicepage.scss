@@ -222,3 +222,22 @@
         }
     }
 }
+
+.main-done-lists {
+    display: flex;
+    cursor: pointer;
+    .main-dones {
+        width: 34%;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
+.another-dones {
+    display: flex;
+    cursor: pointer;
+    .main-dones {
+        width: 34%;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}

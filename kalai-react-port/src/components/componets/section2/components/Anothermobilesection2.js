@@ -15,6 +15,11 @@ import figma from "../../../../assets/kalai-port/figma.png";
 import github from "../../../../assets/kalai-port/github.png";
 import resposive from "../../../../assets/kalai-port/resposive.png";
 import vscode from "../../../../assets/kalai-port/vscode.png";
+
+import desk1 from "../../../../assets/kalai-port/group1.png";
+import desk2 from "../../../../assets/kalai-port/group2.png";
+import desk3 from "../../../../assets/kalai-port/group3.png";
+import desk4 from "../../../../assets/kalai-port/group4.png";
 function Anothermobilesection2({ color }) {
     const notification = () => toast("Are You Resume Download...!");
     return (
@@ -719,6 +724,16 @@ function Anothermobilesection2({ color }) {
                                 Read More....
                             </button>
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 className="ms-3">Done</h2>
+
+                    <div className="main-dones mb-2">
+                        <img src={desk1} className="img-fluid" />
+                        <img src={desk3} className="img-fluid" />
+                        <img src={desk2} className="img-fluid" />
+                        <img src={desk4} className="img-fluid" />
                     </div>
                 </div>
             </div>

@@ -26,7 +26,6 @@
     .inside-abouts {
         width: 100%;
         display: flex;
-
         height: 100%;
         @include xsBreakPoint {
             flex-direction: column;
@@ -51,6 +50,7 @@
             }
             @include mdBreakPoint {
                 width: 100%;
+                padding-bottom: 20px;
             }
             @include lgBreakPoint {
                 width: 100%;
@@ -77,13 +77,13 @@
                         top: 18%;
                     }
                     @include mdBreakPoint {
-                        width: 80%;
+                        width: 60%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         margin: 0 auto;
                         left: 8%;
-                        top: 12%;
+                        top: 25%;
                     }
                     @include lgBreakPoint {
                         width: 80%;
@@ -106,8 +106,8 @@
                         top: 5%;
                     }
                     @include mdBreakPoint {
-                        width: 100%;
-                        top: 5%;
+                        width: 80%;
+                        top: 15%;
                     }
                 }
             }
