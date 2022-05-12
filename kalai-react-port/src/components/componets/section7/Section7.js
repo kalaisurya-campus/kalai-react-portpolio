@@ -29,7 +29,6 @@ function Section7({ color }) {
 
     const star = Array(5).fill(0);
     const [current, SetCurrentvalue] = useState(0);
-
     const handleclick = (val) => {
         SetCurrentvalue(val);
     };
@@ -41,7 +40,7 @@ function Section7({ color }) {
     return (
         <>
             <div className="section7" id="contact">
-                <h1 className="ms-4 mt-2 mb-2">
+                <h1 className="ms-4 mt-5 mb-4">
                     Contact <span className="me-colors">ME</span>
                 </h1>
                 <div className="inside-contant">
