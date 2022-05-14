@@ -62,6 +62,7 @@ function Section1({ color }) {
                                     surya
                                 </span>
                             </h1>
+                            <h1 className="mt-2">React Developer</h1>
                             <span className="loream mt-4">
                                 To obtain a position with a progressive web
                                 development company with a{" "}
@@ -83,6 +84,7 @@ function Section1({ color }) {
                                 </span>
                                 .
                             </span>
+
                             <button className="hire mt-5" onClick={ContactTest}>
                                 Contact{" "}
                                 <span
@@ -92,7 +94,6 @@ function Section1({ color }) {
                                     Me
                                 </span>
                             </button>
-                           
                         </div>
                         <div className="bottom-image">
                             <img src={section1rocket} className="rocket" />

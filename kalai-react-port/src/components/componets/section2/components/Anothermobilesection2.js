@@ -99,7 +99,7 @@ function Anothermobilesection2({ color }) {
                                 React Developer
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
@@ -122,7 +122,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none "
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop31"
                             >
@@ -144,7 +144,7 @@ function Anothermobilesection2({ color }) {
                                 React Redux
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -174,7 +174,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none "
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop32"
                             >
@@ -198,7 +198,7 @@ function Anothermobilesection2({ color }) {
                                 React ContextApi
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
@@ -227,7 +227,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop33"
                             >
@@ -251,7 +251,7 @@ function Anothermobilesection2({ color }) {
                                 JavaScript
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -275,7 +275,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop34"
                             >
@@ -296,7 +296,7 @@ function Anothermobilesection2({ color }) {
                                 HTML
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -321,7 +321,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop35"
                             >
@@ -342,7 +342,7 @@ function Anothermobilesection2({ color }) {
                                 CSS
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -398,7 +398,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop44"
                             >
@@ -418,7 +418,7 @@ function Anothermobilesection2({ color }) {
                                 SASS
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
                             >
@@ -439,7 +439,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop36"
                             >
@@ -463,7 +463,7 @@ function Anothermobilesection2({ color }) {
                                 Bootstrap
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -493,7 +493,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop37"
                             >
@@ -514,7 +514,7 @@ function Anothermobilesection2({ color }) {
                                 Figma
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -538,7 +538,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop38"
                             >
@@ -559,7 +559,7 @@ function Anothermobilesection2({ color }) {
                                 UI/UX
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -581,7 +581,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop39"
                             >
@@ -602,7 +602,7 @@ function Anothermobilesection2({ color }) {
                                 Github
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -623,7 +623,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop40"
                             >
@@ -647,7 +647,7 @@ function Anothermobilesection2({ color }) {
                                 Resposive Ui Design's
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -667,7 +667,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop41"
                             >
@@ -688,7 +688,7 @@ function Anothermobilesection2({ color }) {
                                 VsCode
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -717,7 +717,7 @@ function Anothermobilesection2({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop42"
                             >

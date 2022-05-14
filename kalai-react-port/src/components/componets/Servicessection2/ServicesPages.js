@@ -120,7 +120,7 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-down"
                                 data-aos-easing="linear"
                                 data-aos-duration="1500"
@@ -129,7 +129,7 @@ function ServicesPages({ color }) {
                                 React Developer
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3 d-none"
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
@@ -152,11 +152,11 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3 d-none "
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop"
                                 data-aos="fade-left"
-                                data-aos-duration="3000"
+                                data-aos-duration="3000 "
                             >
                                 Read More....
                             </button>
@@ -166,7 +166,7 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5 mb-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
                             >
@@ -174,7 +174,7 @@ function ServicesPages({ color }) {
                                 React Redux
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -204,7 +204,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none "
                                 data-bs-toggle="modal"
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
@@ -243,14 +243,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
                                 React ContextApi
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
@@ -279,7 +279,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop2"
                                 data-aos="fade-right"
@@ -295,14 +295,14 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5 mb-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
                                 JavaScript
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -326,7 +326,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none "
                                 data-bs-toggle="modal"
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
@@ -365,14 +365,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
                                 HTML
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -397,7 +397,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop4"
                                 data-aos="fade-down"
@@ -413,14 +413,14 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5 mb-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center"}}
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
                             >
                                 CSS
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -451,7 +451,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop5"
                                 data-aos="fade-right"
@@ -486,14 +486,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
                                 SASS
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
                             >
@@ -514,7 +514,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop6"
                                 data-aos="fade-right"
@@ -530,14 +530,14 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5 mb-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-left"
                                 data-aos-duration="3000"
                             >
                                 Bootstrap
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -567,7 +567,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none "
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop7"
                                 data-aos="fade-up"
@@ -606,14 +606,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
                                 Figma
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -637,7 +637,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop8"
                                 data-aos="fade-right"
@@ -652,14 +652,14 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5 mb-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
                                 UI/UX
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -681,7 +681,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none "
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop9"
                                 data-aos="fade-up"
@@ -716,14 +716,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
                                 Github
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -744,7 +744,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop10"
                                 data-aos="fade-left"
@@ -760,14 +760,14 @@ function ServicesPages({ color }) {
                     <div className="inside-images mt-5">
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-up"
                                 data-aos-duration="3000"
                             >
                                 Resposive Ui Design's
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
@@ -787,7 +787,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop11"
                             >
@@ -824,14 +824,14 @@ function ServicesPages({ color }) {
                         </div>
                         <div className="right-content-page mb-5 mt-4">
                             <h1
-                                style={{ color: color }}
+                                style={{ color: color,textAlign:"center" }}
                                 data-aos="fade-down"
                                 data-aos-duration="3000"
                             >
                                 VsCode
                             </h1>
                             <p
-                                className="react mt-3"
+                                className="react mt-3  d-none"
                                 data-aos="fade-right"
                                 data-aos-duration="3000"
                             >
@@ -860,7 +860,7 @@ function ServicesPages({ color }) {
                             </p>
 
                             <button
-                                className="redamore mt-1 mb-3 "
+                                className="redamore mt-1 mb-3  d-none"
                                 data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop12"
                             >
@@ -871,7 +871,7 @@ function ServicesPages({ color }) {
 
                     {/* resposive texts */}
                 </div>
-                <div className="main-done-lists mt-2 mb-5">
+                <div className="main-done-lists mt-2 mb-5 d-none">
                     <img
                         src={group1}
                         className="img-fluid main-dones"
@@ -889,7 +889,7 @@ function ServicesPages({ color }) {
                         data-bs-target="#staticBackdrop45"
                     />
                 </div>
-                <div className="another-dones mt-5 mb-5">
+                <div className="another-dones mt-5 mb-5 d-none">
                     <img
                         src={group2}
                         className="img-fluid main-dones"
